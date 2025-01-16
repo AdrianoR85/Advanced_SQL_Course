@@ -41,3 +41,13 @@ select
 	SUM(Sales) over (partition by OrderStatus order by OrderDate 
 	rows between 2 preceding and current row) TotalSales
 from Sales.Orders
+
+-- Rank each order based on their sales from highest to lowest 
+-- Additonally provide details suck order Id, order date
+
+select
+	OrderID,
+	OrderDate,
+	Sales,
+	RANK() over(order by sales desc) as RankSales
+from Sales.Orders

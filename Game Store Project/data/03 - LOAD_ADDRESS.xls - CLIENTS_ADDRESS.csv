@@ -1,0 +1,1001 @@
+ID,RUA,CIDADE,ESTADO,REGIÃO,IDCLIENTE
+1,Quadra Quadra 303 Conjunto 05 892,São Sebastião,DF,CENTRO-OESTE,903
+2,Rua Firmino Almeida Tavares 1950,Londrina,PR,SUL,436
+3,Rua José Ismério da Silva 633,Ferraz de Vasconcelos,SP,SUDESTE,247
+4,Avenida do Contorno 124,Barbacena,MG,SUDESTE,45
+5,Rua dos Ipês 837,Foz do Iguaçu,PR,SUL,278
+6,Rua Mário Paulo Ferreira 1274,São José dos Campos,SP,SUDESTE,801
+7,Avenida Afonso Pena 1887,Goiânia,GO,CENTRO-OESTE,296
+8,Rua Pedro Sfredo 1875,Barbacena,MG,SUDESTE,46
+9,Quadra QC 16 Conjunto B Bloco 03 1981,Valparaíso de Goiás,GO,CENTRO-OESTE,975
+10,Rua Ricieri Ricardo Ticianelli 391,Londrina,PR,SUL,437
+11,Alameda José Castanheira 1656,Belém,PA,NORTE,57
+12,Rua Dezenove 1848,Rio de Janeiro,RJ,SUDESTE,670
+13,Rua Eduardo Novak 1558,Ponta Grossa,PR,SUL,594
+14,Alameda Um 945,Belém,PA,NORTE,58
+15,Rua João Alfredo 166,Duque de Caxias,RJ,SUDESTE,235
+16,Rua Zeferino Sales 1915,Recife,PE,NORDESTE,631
+17,Rua Catende 1040,Santo André,SP,SUDESTE,757
+18,Travessa Joana Tcherezov 1143,São José dos Pinhais,PR,SUL,806
+19,Rua Gabriel Monteiro de Castro 1699,Salvador,BA,NORDESTE,718
+20,Quadra QR 504 Conjunto 07 871,Samambaia,DF,CENTRO-OESTE,742
+21,Rua Pelegrino Leonetti 606,Sorocaba,SP,SUDESTE,918
+22,Rua Papa João XXIII 1957,Suzano,SP,SUDESTE,928
+23,Rua Vinícius de Morais 1867,Itabira,MG,SUDESTE,355
+24,Praça Henrique Dias 228,Olinda,PE,NORDESTE,526
+25,Rua Kalore 793,Mogi-Guaçu,SP,SUDESTE,493
+26,Rua Eugênio Paulucci 1361,Bauru,SP,SUDESTE,51
+27,Rua Tucumã 912,Campinas,SP,SUDESTE,124
+28,Caminho G 1725,Salvador,BA,NORDESTE,719
+29,Rua Quatro 17,Caraguatatuba,SP,SUDESTE,146
+30,Rua Frequência 1999,Olinda,PE,NORDESTE,527
+31,Rua Maragogipe 1862,Recife,PE,NORDESTE,632
+32,Rua Cecildes Moreira de Faria 1468,Belo Horizonte,MG,SUDESTE,69
+33,Rua Cento e Cinco 703,Sete Lagoas,MG,SUDESTE,913
+34,Rua Barão do Rio Branco 739,Sarandi,PR,SUL,906
+35,Rua Passa Quatro 1817,Uberaba,MG,SUDESTE,953
+36,Travessa Roberto Couto 615,Cariacica,ES,SUDESTE,152
+37,Rua Soldado Abílio dos Santos 1243,Vitória,ES,SUDESTE,986
+38,Rua José Vicente Bonilha 1579,Franco da Rocha,SP,SUDESTE,290
+39,Rua Nair de Souza Silva 1840,Cachoeiro de Itapemirim,ES,SUDESTE,115
+40,Rua Holanda 1796,Teresina,PI,NORDESTE,945
+41,Vila do Chá 80,Salvador,BA,NORDESTE,720
+42,Estrada Municipal dos Porretes 1842,Francisco Morato,SP,SUDESTE,289
+43,Rua Vicente Correia Lyra 844,Boa Vista,RR,NORTE,101
+44,Rua Colina Imperial 543,Petrolina,PE,NORDESTE,567
+45,Avenida M 1238,São Luís,MA,NORDESTE,817
+46,Rua Paraná 944,Americana,SP,SUDESTE,8
+47,Rua Augusto Gabriel de Paiva 1150,Santa Luzia,MG,SUDESTE,750
+48,Praça Arquiteto Neddermeyer 1456,Goiânia,GO,CENTRO-OESTE,297
+49,Rua Salvador Albano 1649,São Paulo,SP,SUDESTE,829
+50,Rua Luiz Rezzini 901,Sarandi,PR,SUL,907
+51,Rua General Valgas Neves 121,Joinville,SC,SUL,415
+52,Rua Potiragua 887,Feira de Santana,BA,NORDESTE,243
+53,Rua Plínio Câmara 1825,Fortaleza,CE,NORDESTE,256
+54,Rua Metalúrgica 809,Salvador,BA,NORDESTE,721
+55,Rua Fortaleza 493,Cuiabá,MT,CENTRO-OESTE,205
+56,Rua Tietê 1016,Recife,PE,NORDESTE,633
+57,Rua Tupi 517,Barueri,SP,SUDESTE,50
+58,Rua José Eugênio 95,Niterói,RJ,SUDESTE,511
+59,Rua Paul Scheuber 1064,Avaré,SP,SUDESTE,41
+60,Rua 1 1579,Manaus,AM,NORTE,463
+61,Rua Pirapó 803,Maringá,PR,SUL,483
+62,Rua dos Cavaquinhos 1353,Belo Horizonte,MG,SUDESTE,70
+63,Vila Alvorada 92,Rio de Janeiro,RJ,SUDESTE,671
+64,Rua Coronel Joaquim Lacerda 368,Curitiba,PR,SUL,213
+65,Rua Sergipe 113,Petrópolis,RJ,SUDESTE,576
+66,Rua Dunquerque 756,Santo André,SP,SUDESTE,758
+67,Rua Calíope 786,Goiânia,GO,CENTRO-OESTE,298
+68,Rua Professor Henrique Hargreaves 1540,Juiz de Fora,MG,SUDESTE,421
+69,Rua Arsênio Tavolieri 1262,São Paulo,SP,SUDESTE,830
+70,Avenida I 464,Maracanaú,CE,NORDESTE,477
+71,Rua Pupo Nogueira 1734,São Paulo,SP,SUDESTE,831
+72,Rua Virgílio Arcie 1798,Colombo,PR,SUL,179
+73,Rua Sátiro Dias 1275,Manaus,AM,NORTE,464
+74,Rua Paulo de Morais 1848,São Paulo,SP,SUDESTE,832
+75,Rua Caviúna 1764,Guarulhos,SP,SUDESTE,335
+76,Travessa Nossa Senhora da Conceição 1256,Tucuruí,PA,NORTE,950
+77,Rua Frederico Ozanam 1468,Pirassununga,SP,SUDESTE,587
+78,Rua Frei Miguelino 1376,João Pessoa,PB,NORDESTE,410
+79,Rua São Judas Thadeu 1249,Presidente Prudente,SP,SUDESTE,618
+80,Rua Maria Francisca 177,Serra Talhada,PE,NORDESTE,910
+81,Quadra 310 Norte Avenida NS 8 287,Palmas,TO,NORTE,538
+82,Rua João Rodrigues Chaves 1278,São Paulo,SP,SUDESTE,833
+83,Avenida São Roque 314,Salvador,BA,NORDESTE,722
+84,Rua Aladino Fim 802,Capão Bonito,SP,SUDESTE,145
+85,Rua Cravolândia 1081,Paulista,PE,NORDESTE,560
+86,Vila Doutor Menezes 103,Fortaleza,CE,NORDESTE,257
+87,Rua José da Costa Carvalho 1120,Petrópolis,RJ,SUDESTE,577
+88,Rua Adauto Pereira 915,Paulo Afonso,BA,NORDESTE,564
+89,Rua Professor Pantoja Leite 921,Rio de Janeiro,RJ,SUDESTE,672
+90,Rua Lagoa Real 1560,Rio de Janeiro,RJ,SUDESTE,673
+91,Rua Constantino de Souza 379,São Paulo,SP,SUDESTE,834
+92,Rua Saint Martin 1060,Bauru,SP,SUDESTE,52
+93,Rua Antero Moreira Campos 330,Barbacena,MG,SUDESTE,47
+94,Travessa dos Pinheiros 1160,Petrolina,PE,NORDESTE,568
+95,Alameda das Cabiúnas 904,Cataguases,MG,SUDESTE,161
+96,Rua Altino Almeida 34,Marília,SP,SUDESTE,480
+97,Praça Paulo da Portela 956,Rio de Janeiro,RJ,SUDESTE,674
+98,Rua Indalécio Arruda Costa 1542,Santos,SP,SUDESTE,769
+99,Avenida Três 1515,Paulista,PE,NORDESTE,561
+100,Rua Dezesseis 645,São Luís,MA,NORDESTE,818
+101,Rua Dom Manuel 706,São João de Meriti,RJ,SUDESTE,789
+102,Rua Lauro Muller 730,Nova Iguaçu,RJ,SUDESTE,516
+103,Rua Márcia V. 131,Redenção,PA,NORTE,652
+104,Rua Sebastião Piassa 147,Apucarana,PR,SUL,20
+105,Rodovia BR-116 1541,Curitiba,PR,SUL,214
+106,Rua 5 987,Goiânia,GO,CENTRO-OESTE,299
+107,Rua Júpiter 557,Sorocaba,SP,SUDESTE,919
+108,Rua Roma 881,Uberlândia,MG,SUDESTE,959
+109,Rua do Expedicionário 1199,Cascavel,PR,SUL,158
+110,Rua Raimundo de Carvalho 1560,Três Rios,RJ,SUDESTE,949
+111,Rua Benedita de Souza Pupo 1307,Itatiba,SP,SUDESTE,376
+112,Rua Domingos Louverturi 1900,Sete Lagoas,MG,SUDESTE,914
+113,Acesso E-Quatro 133,Porto Alegre,RS,SUL,601
+114,Rua Paulo Araújo Novaes 1308,São Paulo,SP,SUDESTE,835
+115,Rua Rio Claro 1896,São Luís,MA,NORDESTE,819
+116,Rua Arroio do Tigre 1562,Viamão,RS,SUL,979
+117,Rua 17 1617,Rio Claro,SP,SUDESTE,668
+118,Rua Oiti 1236,Araguari,MG,SUDESTE,29
+119,Rua Juruá 1589,São João de Meriti,RJ,SUDESTE,790
+120,Rua Trinta e Quatro 671,Belo Horizonte,MG,SUDESTE,71
+121,Rua Nossa Senhora da Conceição 974,Corumbá,MS,CENTRO-OESTE,188
+122,Rua Quinhentos e Quarenta e Três 1471,Volta Redonda,RJ,SUDESTE,996
+123,Quadra SHCES Quadra 0405 Bloco B 798,Cruzeiro,DF,CENTRO-OESTE,199
+124,Rua Chuí 161,Itaquaquecetuba,SP,SUDESTE,374
+125,Rua das Andorinhas 791,Jacareí,SP,SUDESTE,398
+126,Rua das Araras 1919,Salto,SP,SUDESTE,715
+127,Rua Estrela Dalva 356,Petrolina,PE,NORDESTE,569
+128,Rua Panhames 963,São Paulo,SP,SUDESTE,836
+129,Rua Domingos Jalmeno Costa 425,São José,SC,SUL,795
+130,Rua Cinco 1984,Bragança Paulista,SP,SUDESTE,103
+131,Rua Santo Agostinho 267,Gravatá,PE,NORDESTE,324
+132,Avenida Ângelo Pertini 1583,Itapira,SP,SUDESTE,373
+133,Rua Câmara 1585,Serra,ES,SUDESTE,908
+134,Rua São José 1916,Salto,SP,SUDESTE,716
+135,Rua Osório dos Santos Carvalho 1472,Umuarama,PR,SUL,965
+136,Rua Álvaro Ribeiro 214,Americana,SP,SUDESTE,9
+137,Rua Waldemiro José Borges 1284,Curitiba,PR,SUL,215
+138,Rua Padre Albino Sella 1112,Uberaba,MG,SUDESTE,954
+139,Rua Gustavo dos Santos Silveira 1305,Tatuí,SP,SUDESTE,937
+140,Rua Sarapui 719,Rio de Janeiro,RJ,SUDESTE,675
+141,Rua 77 1344,Luziânia,GO,CENTRO-OESTE,447
+142,Rua Hugo Zanini 355,Sertãozinho,SP,SUDESTE,911
+143,Estrada Itaóca 1451,São Gonçalo,RJ,SUDESTE,778
+144,Rua Picapau 1588,Feira de Santana,BA,NORDESTE,244
+145,Rua 3 1081,Araguaína,TO,NORTE,27
+146,Rua da Rabeca 456,Natal,RN,NORDESTE,505
+147,Rua Olindo Dartora 1825,Franco da Rocha,SP,SUDESTE,291
+148,2ª Travessa da Luz 1822,Jaboatão dos Guararapes,PE,NORDESTE,387
+149,Rua Maria Acciutti Bertaioli 1443,Mogi das Cruzes,SP,SUDESTE,490
+150,Rua Antônio Molina Martins Filho 253,Londrina,PR,SUL,438
+151,Avenida Dona Julieta 1802,Paranaguá,PR,SUL,547
+152,Quadra Quadra 108 Conjunto 02 1073,Recanto das Emas,DF,CENTRO-OESTE,627
+153,Avenida D 1241,Fortaleza,CE,NORDESTE,258
+154,Rua Rio Comprido 1315,Contagem,MG,SUDESTE,181
+155,Rua Moacir Albuquerque 1051,Recife,PE,NORDESTE,634
+156,Rua Marçal Soveral 1648,Passo Fundo,RS,SUL,551
+157,Rua Haroldo Veloso 1940,Ananindeua,PA,NORTE,12
+158,Avenida Eugen Wissmann 1170,Itu,SP,SUDESTE,381
+159,Rua Antônio Blanco 915,São Carlos,SP,SUDESTE,776
+160,Rua Arnaldo Carvalho Martins 70,Ituiutaba,MG,SUDESTE,384
+161,Rua Antônio Cintra Júnior 1554,Bauru,SP,SUDESTE,53
+162,Avenida Alírio Sales 728,Vitória da Conquista,BA,NORDESTE,991
+163,Rua Rio Turiaçu 1635,Recife,PE,NORDESTE,635
+164,Rua 12 1727,Rio Verde,GO,CENTRO-OESTE,709
+165,Rua Ari Barroso 1194,Jaboatão dos Guararapes,PE,NORDESTE,388
+166,Avenida Vinte e Dois de Julho 287,Macapá,AP,NORTE,456
+167,Rua Alzira de Almeida Silva 1893,Maceió,AL,NORDESTE,460
+168,Rua Tabimanu 1247,Jaboatão dos Guararapes,PE,NORDESTE,389
+169,Rua Zuca Accioly 1161,Fortaleza,CE,NORDESTE,259
+170,Rua Quinze de Agosto 968,Belém,PA,NORTE,59
+171,Rua Doutor Nivaldo Ênio de Moura e Costa 477,São José dos Pinhais,PR,SUL,807
+172,Rua Pedro Inácio Costa 1842,Porto Velho,RO,NORTE,612
+173,Rua Itaituba 1041,Jaboatão dos Guararapes,PE,NORDESTE,390
+174,Rua Mário Tamashiro 1390,Praia Grande,SP,SUDESTE,614
+175,Rua José Guimarães 1268,São Paulo,SP,SUDESTE,837
+176,Rua Doutor Moisés Santiago 1750,Juiz de Fora,MG,SUDESTE,422
+177,Rua Beni 681,Nova Iguaçu,RJ,SUDESTE,517
+178,Rua Ada Gomes da Silva 1636,São José do Rio Preto,SP,SUDESTE,798
+179,Travessa Desembargador Ivanhoe Nóbrega de Salles 1201,São Paulo,SP,SUDESTE,838
+180,Rua Hugolino Pereira dos Santos 1590,São Gonçalo,RJ,SUDESTE,779
+181,Rua Botuverá 1504,Recife,PE,NORDESTE,636
+182,Rua Antonino Araújo 1416,Arcoverde,PE,NORDESTE,38
+183,Rua Maurício Lacerda 1107,Passo Fundo,RS,SUL,552
+184,Vila Lopes 348,Fortaleza,CE,NORDESTE,260
+185,Quadra CNM 01 Bloco B 695,Ceilândia,DF,CENTRO-OESTE,169
+186,Rua Figueira 852,Nova Iguaçu,RJ,SUDESTE,518
+187,Rua Marechal Deodoro 677,São Bernardo do Campo,SP,SUDESTE,771
+188,Rua General Câmara 612,Caxias do Sul,RS,SUL,167
+189,Rua Dezesseis 634,Jaboatão dos Guararapes,PE,NORDESTE,391
+190,Rua 7 1079,Fortaleza,CE,NORDESTE,261
+191,Rua Antônio Name Chaib 1211,Campinas,SP,SUDESTE,125
+192,Rua Aristones Trindade 1470,Recife,PE,NORDESTE,637
+193,Rua Professor Sabino Silva 1041,Salvador,BA,NORDESTE,723
+194,Rua Correntes 111,São Lourenço da Mata,PE,NORDESTE,815
+195,Rua Evaldo Braga 1339,Joinville,SC,SUL,416
+196,Rua Hildemar Maia 1620,Macapá,AP,NORTE,457
+197,Rua São João Del Rei 36,Santo André,SP,SUDESTE,759
+198,Rua Francisco Fernandes Matheus 443,Franca,SP,SUDESTE,282
+199,Rua Souto Maior 1589,Campo Grande,MS,CENTRO-OESTE,132
+200,Rua Trinta e Sete 1157,Rondonópolis,MT,CENTRO-OESTE,711
+201,Rua Hum 1707,São José dos Campos,SP,SUDESTE,802
+202,Rua Escriva Beato Monsenhor 1155,Campinas,SP,SUDESTE,126
+203,Rua Seis de Janeiro 792,Montes Claros,MG,SUDESTE,497
+204,Travessa Terceira 583,Belém,PA,NORTE,60
+205,Rua Palmital 779,Montes Claros,MG,SUDESTE,498
+206,Rua Joaquim Cleto 711,São Gonçalo,RJ,SUDESTE,780
+207,Avenida Lauro Sodré 1966,Rio de Janeiro,RJ,SUDESTE,676
+208,Rua Cláudio Ciacco 617,São João da Boa Vista,SP,SUDESTE,788
+209,Quadra QE 11 Área Especial G 408,Guará,DF,CENTRO-OESTE,329
+210,Rua Trinta e Cinco 484,Belo Horizonte,MG,SUDESTE,72
+211,Rua Tupanciretã 325,Passo Fundo,RS,SUL,553
+212,Rua Belo Horizonte 132,Umuarama,PR,SUL,966
+213,Travessa Olívia Faria Barbeiro 6,São Gonçalo,RJ,SUDESTE,781
+214,Acesso Nelson Silva 1402,Porto Alegre,RS,SUL,602
+215,Rua G 526,Belo Horizonte,MG,SUDESTE,73
+216,Área Área Especial 01/04 48,Cruzeiro,DF,CENTRO-OESTE,200
+217,Rua São Luiz 683,Cariacica,ES,SUDESTE,153
+218,Alameda das Casuarinas 421,Amparo,SP,SUDESTE,10
+219,Rua Geraldo Parreiras 978,Contagem,MG,SUDESTE,182
+220,Quadra Quadra 602 Conjunto 05-C 1621,Recanto das Emas,DF,CENTRO-OESTE,628
+221,Rua X 1288,Volta Redonda,RJ,SUDESTE,997
+222,Rua da Saudade 595,Divinópolis,MG,SUDESTE,230
+223,Rua Marechal Hermes da Fonseca 121,Caraguatatuba,SP,SUDESTE,147
+224,Rua Santa Cruz 460,Itapevi,SP,SUDESTE,371
+225,Avenida Marginal A 671,Presidente Prudente,SP,SUDESTE,619
+226,Rua Maria Geralda Paulo 1108,Blumenau,SC,SUL,95
+227,Rua Odete Pires Nery 3,Vila Velha,ES,SUDESTE,983
+228,Travessa Dercy Batista 251,São Luís,MA,NORDESTE,820
+229,Rua Guilhermina Carmen Serra 1118,Curitiba,PR,SUL,216
+230,Quadra QNJ 28 355,Taguatinga,DF,CENTRO-OESTE,935
+231,Rua Professor Stroele 965,Petrópolis,RJ,SUDESTE,578
+232,Rua Tareira 259,São Paulo,SP,SUDESTE,839
+233,Rua Camille Chamoun 70,Campo Grande,MS,CENTRO-OESTE,133
+234,Rua Vitória 1648,Aparecida de Goiânia,GO,CENTRO-OESTE,17
+235,Rua Conceição 969,Japeri,RJ,SUDESTE,402
+236,Rua Chile 1577,Salvador,BA,NORDESTE,724
+237,Rua Joaquim Camargo Barros 1476,Tatuí,SP,SUDESTE,938
+238,Travessa Reino dos Andras 1581,São Paulo,SP,SUDESTE,840
+239,Rua Osório Alves 1621,Itapeva,SP,SUDESTE,370
+240,Avenida Califórnia 44,Gravataí,RS,SUL,325
+241,Rua Doutor Celestino 1312,Cruzeiro,SP,SUDESTE,201
+242,Rua Padre Aloísio Baumeister 863,Toledo,PR,SUL,948
+243,Beco Jacinto 712,Manaus,AM,NORTE,465
+244,Rua Herculano Gomes 269,Bagé,RS,SUL,43
+245,Rua José de Almeida 1896,São Paulo,SP,SUDESTE,841
+246,Rua Serra do Tubarão 1780,Londrina,PR,SUL,439
+247,Travessa Ribeiro Macedo 125,São Paulo,SP,SUDESTE,842
+248,Rua Ianomani 1597,Diadema,SP,SUDESTE,228
+249,Quadra Quadra 066 827,Luziânia,GO,CENTRO-OESTE,448
+250,Rua José Tavares Figueiredo 1420,Campos dos Goytacazes,RJ,SUDESTE,143
+251,Rua Nestor Ramos 947,Ji-Paraná,RO,NORTE,408
+252,Rua São Francisco de Salles 222,Piracicaba,SP,SUDESTE,583
+253,Rua Artur Alves de Senna 1868,Osasco,SP,SUDESTE,532
+254,Rua 24 794,Formosa,GO,CENTRO-OESTE,255
+255,Rua Setenta e Nove 1808,São Luís,MA,NORDESTE,821
+256,Rua Angelina M. Senegaglia 99,São José dos Pinhais,PR,SUL,808
+257,Rua F 456,Ponte Nova,MG,SUDESTE,598
+258,Rua Amarante 1153,Guarulhos,SP,SUDESTE,336
+259,Quadra QNN 19 Conjunto L 1196,Ceilândia,DF,CENTRO-OESTE,170
+260,Rua Quinze 1587,Araguari,MG,SUDESTE,30
+261,Rua Sulinas 924,Foz do Iguaçu,PR,SUL,279
+262,Rua Pavão 1153,Rio Verde,GO,CENTRO-OESTE,710
+263,Rua Candeias 235,Belo Horizonte,MG,SUDESTE,74
+264,Rua José Carlos Calheiros 939,Maceió,AL,NORDESTE,461
+265,Rua Morubixaba 773,São Paulo,SP,SUDESTE,843
+266,Rua Alice Nascimento Sbrissia 1637,São José dos Pinhais,PR,SUL,809
+267,Quadra Quadra 003 Conjunto A 508,Brazlândia,DF,CENTRO-OESTE,111
+268,Rua Frei Antônio 1944,Itabuna,BA,NORDESTE,360
+269,Rua Catequista Maria Marcina Almeida 1867,João Pessoa,PB,NORDESTE,411
+270,Rua Irã 749,Igarassu,PE,NORDESTE,348
+271,Rua Mário Zapelini 136,Criciúma,SC,SUL,194
+272,Passagem Brigadeiro Cecche 598,Belém,PA,NORTE,61
+273,Rua Alegrete 446,Santa Cruz do Sul,RS,SUL,749
+274,Rua Rolândia 1794,Pinhais,PR,SUL,582
+275,Quadra SHIS QI 07 Conjunto 08 907,Lago Sul,DF,CENTRO-OESTE,431
+276,Rua Dezessete 271,Uberlândia,MG,SUDESTE,960
+277,Quadra 308 Sul Alameda 7 881,Palmas,TO,NORTE,539
+278,Rua Domingos Campoy Bernal 456,São José dos Campos,SP,SUDESTE,803
+279,Rua São Borja 1158,Alegrete,RS,SUL,5
+280,Rua José Alcides Rocha 370,Fortaleza,CE,NORDESTE,262
+281,Rua Quixada 516,Santo André,SP,SUDESTE,760
+282,Vila Gouveia 1892,Fortaleza,CE,NORDESTE,263
+283,Rua Javaé 1671,Goiânia,GO,CENTRO-OESTE,300
+284,Rua Guiana Holandesa 314,Praia Grande,SP,SUDESTE,615
+285,Rua Nastácia 290,Taubaté,SP,SUDESTE,941
+286,Rua 311 1314,Catalão,GO,CENTRO-OESTE,163
+287,Rua Casemiro Paturalski 956,Ribeirão Preto,SP,SUDESTE,660
+288,Rua Professora Ilma Anechinni Zumack 592,Vitória,ES,SUDESTE,987
+289,4ª Travessa Maria das Dores da Silva 137,Camaragibe,PE,NORDESTE,119
+290,Rua do Gaia 1633,Sabará,MG,SUDESTE,713
+291,Rua G 1994,Anápolis,GO,CENTRO-OESTE,15
+292,Rua Doutor José Salvador Ferreira 467,Curitiba,PR,SUL,217
+293,Rua do Violão 444,Petrolina,PE,NORDESTE,570
+294,Beco São Paulo 1677,Santarém,PA,NORTE,755
+295,Beco Capitão Limonada 1583,Serra,ES,SUDESTE,909
+296,Rua Dezenove - A 1308,Ribeirão Preto,SP,SUDESTE,661
+297,Quadra SQN 404 Bloco B 1079,Brasília,DF,CENTRO-OESTE,105
+298,Quadra SRES Quadra 03 Bloco B 1833,Cruzeiro,DF,CENTRO-OESTE,202
+299,Rua Jorge Carlos Jardim 1093,Umuarama,PR,SUL,967
+300,Rua Jader Medeiros 912,Petrolina,PE,NORDESTE,571
+301,Rua Amparo 306,Taboão da Serra,SP,SUDESTE,931
+302,Rua Venezuela 290,Ipatinga,MG,SUDESTE,352
+303,Rua das Petúnias 1384,Sete Lagoas,MG,SUDESTE,915
+304,Rua Glenn Miller 1372,Viamão,RS,SUL,980
+305,Rua Apóstolo Matheus 830,Cachoeiro de Itapemirim,ES,SUDESTE,116
+306,Rua Nagoya 1378,Diadema,SP,SUDESTE,229
+307,Rua Domingos Peneda 616,Paranaguá,PR,SUL,548
+308,Rua Primeiro de Maio 714,Manaus,AM,NORTE,466
+309,Rua Palmares 1181,Itapecerica da Serra,SP,SUDESTE,365
+310,Rua Pedra do Indaiá 1873,Rio de Janeiro,RJ,SUDESTE,677
+311,Rua Pastor Voges 83,São Leopoldo,RS,SUL,811
+312,Rua São João 874,Tupã,SP,SUDESTE,951
+313,Rua Joviano do Nascimento 909,Ribeirão das Neves,MG,SUDESTE,655
+314,Rua Norita 379,Belo Horizonte,MG,SUDESTE,75
+315,Avenida Voizen 1364,Belo Horizonte,MG,SUDESTE,76
+316,Rua Gentil do Ouro 718,Contagem,MG,SUDESTE,183
+317,Rua Joaquim Serra 1697,São Paulo,SP,SUDESTE,844
+318,Rua Francisco Sá 1478,Teófilo Otoni,MG,SUDESTE,944
+319,Rua São Luís do Curu 1170,Fortaleza,CE,NORDESTE,264
+320,Beco do Paru 904,Salvador,BA,NORDESTE,725
+321,Avenida Doutor Hélio Campos 580,Jundiaí,SP,SUDESTE,426
+322,Rua Visconde de Nacar 251,Curitiba,PR,SUL,218
+323,Rua Hebi Ackel 1846,Guarulhos,SP,SUDESTE,337
+324,Rua D 1802,Paranavaí,PR,SUL,549
+325,Beco Três 383,Porto Alegre,RS,SUL,603
+326,Rua Pardinho 1283,Carapicuíba,SP,SUDESTE,149
+327,Rua Monte das Oliveiras 1724,São Paulo,SP,SUDESTE,845
+328,Rua Osmira Muniz 1334,Caratinga,MG,SUDESTE,151
+329,Rua Antônio Taveira de Miranda 1148,Ribeirão Preto,SP,SUDESTE,662
+330,Rua Cento e Dois 1961,Alvorada,RS,SUL,7
+331,Avenida Mantiqueira 816,Lorena,SP,SUDESTE,445
+332,Rua Engenheiro Correia Lima 1207,Goiânia,GO,CENTRO-OESTE,301
+333,Rua José Alves Nogueira 690,São Paulo,SP,SUDESTE,846
+334,Rua Eikow Kamiya 1516,Bauru,SP,SUDESTE,54
+335,Travessa Mar de Aral 1692,São Paulo,SP,SUDESTE,847
+336,Rua Almenara 527,Passos,MG,SUDESTE,555
+337,Rua Cieira 1381,Sorocaba,SP,SUDESTE,920
+338,Rua Progresso 1634,São Paulo,SP,SUDESTE,848
+339,Caminho Catu 508,Feira de Santana,BA,NORDESTE,245
+340,Rua Laurentino Xavier dos Santos 1145,São Paulo,SP,SUDESTE,849
+341,Rua João Risseto 683,Curitiba,PR,SUL,219
+342,Rua Vicente Fachinelli 1378,Londrina,PR,SUL,440
+343,Rua das Acácias 1408,Guarapuava,PR,SUL,332
+344,Rua Laranjal 427,Guarulhos,SP,SUDESTE,338
+345,Avenida Tenente Guido 746,Salvador,BA,NORDESTE,726
+346,Avenida dos Jacarandás 1855,Atibaia,SP,SUDESTE,39
+347,Rua Corumbaíba 719,Goiânia,GO,CENTRO-OESTE,302
+348,Rua Santana 777,Suzano,SP,SUDESTE,929
+349,Rua Aldemiro Francisco de Moura 1717,Mossoró,RN,NORDESTE,501
+350,Rua José Leite de Souza 1486,Itu,SP,SUDESTE,382
+351,Rua das Orquídeas 1316,Ribeirão Pires,SP,SUDESTE,658
+352,Rua São José da Coroa Grande 618,São Lourenço da Mata,PE,NORDESTE,816
+353,Rua Rio Mar 575,Paulista,PE,NORDESTE,562
+354,Rua José Marques 1405,Palmeira dos Índios,AL,NORDESTE,545
+355,Praça Coronel Tristão José de Fraga 1810,Porto Alegre,RS,SUL,604
+356,Rua P 975,Porto Alegre,RS,SUL,605
+357,Rua Vilela 1116,Imperatriz,MA,NORDESTE,351
+358,Rua Vinte e Um 60,Montes Claros,MG,SUDESTE,499
+359,Rua Coronel Caetano Júlio 426,João Pessoa,PB,NORDESTE,412
+360,Caminho 1-A 1321,Salvador,BA,NORDESTE,727
+361,Rua JI-059 434,Aparecida de Goiânia,GO,CENTRO-OESTE,18
+362,Rua Ouro Preto 1418,Sete Lagoas,MG,SUDESTE,916
+363,Vila Alegre 282,Belém,PA,NORTE,62
+364,Rua do Cadete 36,São Paulo,SP,SUDESTE,850
+365,Rua Benedito Correia 1401,Camaragibe,PE,NORDESTE,120
+366,Travessa São Carlos 1651,Jundiaí,SP,SUDESTE,427
+367,Rua Presidente Tancredo Neves 143,Araçatuba,SP,SUDESTE,23
+368,Rua Cinquenta e Três 931,Macaé,RJ,SUDESTE,453
+369,Rua Almirante Tértius Rabelo 521,Natal,RN,NORDESTE,506
+370,Rua Rio Uraria 1209,Manaus,AM,NORTE,467
+371,Rua Benfica 1767,Betim,MG,SUDESTE,91
+372,Rua Miranda Valverde 994,Rio de Janeiro,RJ,SUDESTE,678
+373,Travessa E 1399,Patos de Minas,MG,SUDESTE,558
+374,Rua Carlos Roberto Batiston 1639,Franca,SP,SUDESTE,283
+375,Rua Igaraçu 1826,Campinas,SP,SUDESTE,127
+376,Rua Flávio Beltrame 1650,Piracicaba,SP,SUDESTE,584
+377,Rua Moema 106,Jacareí,SP,SUDESTE,399
+378,Rua G 204,Canoas,RS,SUL,144
+379,Quadra 209 Sul Avenida NS 15 1164,Palmas,TO,NORTE,540
+380,Rua Pedro Fonseca 1541,Salvador,BA,NORDESTE,728
+381,Rua São Policarpo 198,Campinas,SP,SUDESTE,128
+382,Rua São Gabriel 1823,Rio de Janeiro,RJ,SUDESTE,679
+383,Rua Augusto Pinheiro 1250,Mauá,SP,SUDESTE,486
+384,5ª Travessa Sucupira do Norte 1807,Jaboatão dos Guararapes,PE,NORDESTE,392
+385,3ª Travessa Vila Nova 930,Vitória de Santo Antão,PE,NORDESTE,994
+386,Rua Efana 1755,Belford Roxo,RJ,SUDESTE,68
+387,Rua São Panfilo 1900,São Paulo,SP,SUDESTE,851
+388,Rua Rionero 517,São Paulo,SP,SUDESTE,852
+389,Rua Setenta 901,Abreu e Lima,PE,NORDESTE,1
+390,Rua Sete 396,Valinhos,SP,SUDESTE,970
+391,Rua José Basílio de Carvalho 1444,Sorocaba,SP,SUDESTE,921
+392,Rua Deoclécio Falcão Freire 1642,Mossoró,RN,NORDESTE,502
+393,Rua Itaipava 1481,Ipatinga,MG,SUDESTE,353
+394,Acesso D 692,Porto Alegre,RS,SUL,606
+395,Rua Miguel Árabe 628,Uberaba,MG,SUDESTE,955
+396,Rua Pedro de Carvalho 938,Rio de Janeiro,RJ,SUDESTE,680
+397,Rua Gaspar Valenga 27,Curitiba,PR,SUL,220
+398,Rua Felipe Betti 388,Sorocaba,SP,SUDESTE,922
+399,Rua João Ferrari 1088,Araçatuba,SP,SUDESTE,24
+400,Rua Nabor Campos 604,Contagem,MG,SUDESTE,184
+401,Rua Ternura 1849,Igarassu,PE,NORDESTE,349
+402,Rua Ferroviário Walmir Moraes 444,Recife,PE,NORDESTE,638
+403,Rua Presidente Getúlio Vargas 1902,Taubaté,SP,SUDESTE,942
+404,Rua Jamil André 1824,Mogi-Mirim,SP,SUDESTE,495
+405,Rua Itaocara 956,São Gonçalo,RJ,SUDESTE,782
+406,Rua Barão de Cotegipe 1332,Viamão,RS,SUL,981
+407,Rua Caiçara 1181,Itapecerica da Serra,SP,SUDESTE,366
+408,Rua Aristóteles Bezerra 181,Fortaleza,CE,NORDESTE,265
+409,Rua Moacir de Campos 1391,Limeira,SP,SUDESTE,434
+410,Estrada do Caputera 739,Itapecerica da Serra,SP,SUDESTE,367
+411,Rua Canela de Aracuan 1012,São Paulo,SP,SUDESTE,853
+412,Loteamento Jardim Oliveira 515,Salvador,BA,NORDESTE,729
+413,Avenida Andorinhas 1405,Ipatinga,MG,SUDESTE,354
+414,Rua Guajará 1049,Duque de Caxias,RJ,SUDESTE,236
+415,Rua Procópio Ferreira 974,Cotia,SP,SUDESTE,190
+416,Rua Entre Rios 1129,Salvador,BA,NORDESTE,730
+417,Rua México Rossi 1532,São Vicente,SP,SUDESTE,904
+418,Quadra Quadra 113 Conjunto 12 1700,Recanto das Emas,DF,CENTRO-OESTE,629
+419,Rua Berna 1473,Rio de Janeiro,RJ,SUDESTE,681
+420,Beco Figueiredo 990,Rio de Janeiro,RJ,SUDESTE,682
+421,Servidão Jatobá 353,Florianópolis,SC,SUL,250
+422,Rua da Jaqueira 1707,Itabuna,BA,NORDESTE,361
+423,Rua José Ersching 1247,Jaraguá do Sul,SC,SUL,404
+424,Rua João Locke 1581,Curitiba,PR,SUL,221
+425,Rua Antônio Taroni 1062,São Paulo,SP,SUDESTE,854
+426,Rua Dona Marita 679,Queimados,RJ,SUDESTE,622
+427,Largo do Respeito 1225,Rio de Janeiro,RJ,SUDESTE,683
+428,Rua Vera Maria de Melo Freitas 620,Mossoró,RN,NORDESTE,503
+429,Rua Armando Mendonça 806,Belém,PA,NORTE,63
+430,Quadra 1007 Sul Alameda 18 617,Palmas,TO,NORTE,541
+431,Rua Santo Onofre 1495,Belo Horizonte,MG,SUDESTE,77
+432,Rua Tupinambá 830,São Luís,MA,NORDESTE,822
+433,Travessa Dona Maria Gaiarsa 422,Santo André,SP,SUDESTE,761
+434,Rua José Roncatto 1444,Valinhos,SP,SUDESTE,971
+435,Rua Cento e Cinquenta e Um 1340,Montes Claros,MG,SUDESTE,500
+436,Rua Rio Curua 1685,São Leopoldo,RS,SUL,812
+437,Viela Moacir Alves 251,Tatuí,SP,SUDESTE,939
+438,Rua Isidoro Bispo dos Santos 368,Salvador,BA,NORDESTE,731
+439,Rua Ângelo Menel 1632,Jaraguá do Sul,SC,SUL,405
+440,Rua Tabelião João Nunes Travassos 1057,João Pessoa,PB,NORDESTE,413
+441,Avenida General San Martin 1087,Recife,PE,NORDESTE,639
+442,Quadra QR 107 216,Samambaia,DF,CENTRO-OESTE,743
+443,Rua Deputado Wanderley Júnior 1800,Curitiba,PR,SUL,222
+444,Rua Três Pontes 352,Rio de Janeiro,RJ,SUDESTE,684
+445,Rua Napoleão Francisco da Cruz Neves 1842,Paulista,PE,NORDESTE,563
+446,Rua Cinqüenta 1457,Campinas,SP,SUDESTE,129
+447,Avenida Doutor Hermínio Ometto 680,Leme,SP,SUDESTE,433
+448,Rua Xerentes 532,Goiânia,GO,CENTRO-OESTE,303
+449,Avenida Joaquim Teixeira Alves 83,Dourados,MS,CENTRO-OESTE,233
+450,Rua Ricardo Seefeldt 441,Joinville,SC,SUL,417
+451,Rua Alzira Maria Ferreira 14,Belo Horizonte,MG,SUDESTE,78
+452,Rua Pascoal Uggioni 1866,Criciúma,SC,SUL,195
+453,Rua Cachoeirinha 1,Várzea Grande,MT,CENTRO-OESTE,976
+454,Viela Evilásio Tenório Cavalcante 725,Osasco,SP,SUDESTE,533
+455,Rua Vicente Sabará Cavalcante 815,Ji-Paraná,RO,NORTE,409
+456,Rua Eudoro Lemos 1291,São Paulo,SP,SUDESTE,855
+457,Rua Frei Caneca 527,Campo Limpo Paulista,SP,SUDESTE,141
+458,Rua Erva Cidreira 843,Porto Velho,RO,NORTE,613
+459,Rua Reverendo João Euclides Pereira 255,São Paulo,SP,SUDESTE,856
+460,Rua Rio de Janeiro 1915,Santa Rita,PB,NORDESTE,753
+461,Rua Ligação 1859,Coronel Fabriciano,MG,SUDESTE,186
+462,Rua VB 6 1301,Goiânia,GO,CENTRO-OESTE,304
+463,Avenida Ricarte Soares Silva 915,Franca,SP,SUDESTE,284
+464,Quadra QR 512 Conjunto 11 1909,Samambaia,DF,CENTRO-OESTE,744
+465,Rua Projetada Avelar 127,Rio de Janeiro,RJ,SUDESTE,685
+466,Rua Recife 1130,Manaus,AM,NORTE,468
+467,Rua Manoel Antunes Pissarra 1567,Uberlândia,MG,SUDESTE,961
+468,Rua Assia Tanus Bedran 651,São João de Meriti,RJ,SUDESTE,791
+469,Rua Luís Augusto Palmerim 902,São Paulo,SP,SUDESTE,857
+470,Rua Ana Maria Horta 375,São Paulo,SP,SUDESTE,858
+471,Rua Saturno 1138,Petrolina,PE,NORDESTE,572
+472,Rua Roberto de Campos Bicudo 187,São Vicente,SP,SUDESTE,905
+473,Rua Dezoito 266,Macaé,RJ,SUDESTE,454
+474,Rua Robson Dutra de Freitas 1098,Vitória,ES,SUDESTE,988
+475,Rua Nair Alves 1811,Camaragibe,PE,NORDESTE,121
+476,Rua Ernesto Tonellatti 905,Londrina,PR,SUL,441
+477,Rua Stéfano Franceschini 837,São Paulo,SP,SUDESTE,859
+478,Rua Coronel Marinho Sobrinho 960,São Paulo,SP,SUDESTE,860
+479,Rua Agenor Leme dos Santos 957,Sorocaba,SP,SUDESTE,923
+480,Rua João Augusto Kelly 291,Barra do Piraí,RJ,SUDESTE,48
+481,Rua Dracena 1433,São Roque,SP,SUDESTE,902
+482,Beco A 279,Rio de Janeiro,RJ,SUDESTE,686
+483,Rua da Saudade 149,Cuiabá,MT,CENTRO-OESTE,206
+484,Rua Policarpo Beloni 1942,Votuporanga,SP,SUDESTE,1000
+485,Praça Montevidéo 1099,Porto Alegre,RS,SUL,607
+486,Rua Serra do Cachimbo 869,Natal,RN,NORDESTE,507
+487,Rua Tito Rosas 699,Recife,PE,NORDESTE,640
+488,Rua Dionísio Cerqueira 1487,Itajaí,SC,SUL,363
+489,Rua Professora Maria Augusta Mendonça 265,Campina Grande,PB,NORDESTE,123
+490,Rua Sônia Maria Moraes Angel Jones 778,São Paulo,SP,SUDESTE,861
+491,Avenida Três 727,São Luís,MA,NORDESTE,823
+492,Rua Descampado 1602,São Paulo,SP,SUDESTE,862
+493,Rua Vinte e Sete 1567,São José dos Campos,SP,SUDESTE,804
+494,Praça Doutor Marcelo Tostes 629,São Paulo,SP,SUDESTE,863
+495,Rua Santa Suzana 1142,Queimados,RJ,SUDESTE,623
+496,Quadra QR 414 Conjunto 09-B 1498,Samambaia,DF,CENTRO-OESTE,745
+497,Rua Júlia Skora 750,Curitiba,PR,SUL,223
+498,Rua Cunha Barbosa 822,São Paulo,SP,SUDESTE,864
+499,Quadra QR 611 Conjunto 06 82,Samambaia,DF,CENTRO-OESTE,746
+500,Rua Curuari 134,São Paulo,SP,SUDESTE,865
+501,Quadra Quadra 472 1874,Luziânia,GO,CENTRO-OESTE,449
+502,Travessa Grassi 1871,São Paulo,SP,SUDESTE,866
+503,Rua João Manoel Bittencourt 902,São José,SC,SUL,796
+504,Rua Reinaldo Uebel 294,São Leopoldo,RS,SUL,813
+505,Rua Conde Siciliano 134,São Bernardo do Campo,SP,SUDESTE,772
+506,Rua da Marcassita 928,Petrolina,PE,NORDESTE,573
+507,Rua das Camélias 1658,Castro,PR,SUL,159
+508,Rua Valeria 1784,São Gonçalo,RJ,SUDESTE,783
+509,Rua Turiassu 1020,Campo Grande,MS,CENTRO-OESTE,134
+510,Praça Henrique Mendes 1656,Maracanaú,CE,NORDESTE,478
+511,Quadra Quadra 009 Conjunto J 468,Gama,DF,CENTRO-OESTE,293
+512,Travessa dos Artilheiros 805,Osasco,SP,SUDESTE,534
+513,Rua João Previtalle 872,Valinhos,SP,SUDESTE,972
+514,Rua João Ferrarine 402,Colombo,PR,SUL,180
+515,Largo dos Caixeiros Viajantes 92,Porto Alegre,RS,SUL,608
+516,Rua Rio Araguari 1123,Macapá,AP,NORTE,458
+517,Rua Irmã Ancila 1530,Santa Luzia,MG,SUDESTE,751
+518,Rua São Pedro 1893,Manaus,AM,NORTE,469
+519,Quadra Quadra 041 449,Gama,DF,CENTRO-OESTE,294
+520,Rua Joaquim Gregório da Silva 5,Ribeirão das Neves,MG,SUDESTE,656
+521,Viela Antas 610,Guarulhos,SP,SUDESTE,339
+522,Passagem Bento Amador 1603,Belém,PA,NORTE,64
+523,Rua Sinval Soares 1096,Itaúna,MG,SUDESTE,379
+524,Quadra EQ 16/26 605,Gama,DF,CENTRO-OESTE,295
+525,Rua João Gabriel de Lima 297,Campo Limpo Paulista,SP,SUDESTE,142
+526,Rua das Palmas 1848,Fortaleza,CE,NORDESTE,266
+527,Quadra Quadra 127 263,Novo Gama,GO,CENTRO-OESTE,525
+528,Rua São João 1974,Goiânia,GO,CENTRO-OESTE,305
+529,Rua Presidente Getúlio Vargas 129,Cariacica,ES,SUDESTE,154
+530,Rua Seis 380,Coronel Fabriciano,MG,SUDESTE,187
+531,Rua Manuel Tomar 1434,São Paulo,SP,SUDESTE,867
+532,Avenida Thomaz Gonzaga 53,Salvador,BA,NORDESTE,732
+533,Vila Mariana 148,Itaúna,MG,SUDESTE,380
+534,Rua Antônio Austregesilo 486,Rio de Janeiro,RJ,SUDESTE,687
+535,Rua Doze de Fevereiro 1401,Rio de Janeiro,RJ,SUDESTE,688
+536,Rua Vinícius de Moraes 1794,Piracicaba,SP,SUDESTE,585
+537,Rua José de Oliveira Dias 1766,Taboão da Serra,SP,SUDESTE,932
+538,Rua José Dias 1223,Cataguases,MG,SUDESTE,162
+539,Rua Maria Auxiliadora Diniz Laburu 639,Campo Grande,MS,CENTRO-OESTE,135
+540,Rua Sebastião Nicolino 895,Cruzeiro,SP,SUDESTE,203
+541,Praça Diego Sanches Salim Longo Pereira 1408,Lins,SP,SUDESTE,435
+542,Travessa Santa Clara 1406,Botucatu,SP,SUDESTE,102
+543,Rua Maria Lourdes de Franca 566,Sousa,PB,NORDESTE,925
+544,Rua Belo Horizonte 663,Rio de Janeiro,RJ,SUDESTE,689
+545,Avenida Doutor Júlio Maranhão 1313,Jaboatão dos Guararapes,PE,NORDESTE,393
+546,Rua Doutor Fábio de Mello Bonilha 1383,Ponta Grossa,PR,SUL,595
+547,Rua Manaus 440,Cuiabá,MT,CENTRO-OESTE,207
+548,Rua Cafarnaum 1491,Recife,PE,NORDESTE,641
+549,Rua Almirante Lobo 359,São Paulo,SP,SUDESTE,868
+550,Travessa Darci Vargas 745,Rio de Janeiro,RJ,SUDESTE,690
+551,Rua Dezoito 1089,Resende,RJ,SUDESTE,653
+552,Estrada da Independência 1030,Rio de Janeiro,RJ,SUDESTE,691
+553,Rua Treze de Maio 1906,Amparo,SP,SUDESTE,11
+554,Rua Pará 1862,Castro,PR,SUL,160
+555,Rua Josefa Amicci 542,Avaré,SP,SUDESTE,42
+556,Vila Tatuí 1418,Fortaleza,CE,NORDESTE,267
+557,Rotatória Clóvis Ferraz 643,Ourinhos,SP,SUDESTE,536
+558,Rua São Francisco 543,Olinda,PE,NORDESTE,528
+559,Avenida João Furtado Gouveia Sobrinho 1273,Itatiba,SP,SUDESTE,377
+560,Rua Alba Valdez 310,Camaragibe,PE,NORDESTE,122
+561,Rua Nova Xavantina 237,Cuiabá,MT,CENTRO-OESTE,208
+562,Rua Passagem 1524,Governador Valadares,MG,SUDESTE,323
+563,Rua Constantino Rosa 792,São Paulo,SP,SUDESTE,869
+564,Rua Nova Friburgo 200,Cotia,SP,SUDESTE,191
+565,Rua Carlos D. Fernandes 1852,Santa Rita,PB,NORDESTE,754
+566,Rua José Lopes Berruezo 6,Presidente Prudente,SP,SUDESTE,620
+567,Avenida Principal 1656,Cuiabá,MT,CENTRO-OESTE,209
+568,Travessa do Geraldo 1797,Rio de Janeiro,RJ,SUDESTE,692
+569,1ª Travessa de Esperança Viver 1184,Salvador,BA,NORDESTE,733
+570,Rua dos Jívaros 691,Campinas,SP,SUDESTE,130
+571,Rua Tolentino Xavier Lemos 361,Vitória,ES,SUDESTE,989
+572,Rua Treze de Maio 1617,Guarujá,SP,SUDESTE,334
+573,Rua Serra dos Penitentes 51,Itapevi,SP,SUDESTE,372
+574,Rua Rosalino Silva 464,São Paulo,SP,SUDESTE,870
+575,Rua Roberto Romão de Moraes 1366,São Paulo,SP,SUDESTE,871
+576,Rua Desembargador Cícero de Toledo Piza 1838,São Paulo,SP,SUDESTE,872
+577,Rua Sorocaba 1088,Gurupi,TO,NORTE,346
+578,Beco Califórnia 1073,Belo Horizonte,MG,SUDESTE,79
+579,Rua Manoel Ferreira 339,Florianópolis,SC,SUL,251
+580,Rua Francisco Pinheiro 1336,São Gonçalo,RJ,SUDESTE,784
+581,Rua Ferdinando de Lúcia 215,São Paulo,SP,SUDESTE,873
+582,Rua Umbelino Bueno de Carvalho 1609,São Paulo,SP,SUDESTE,874
+583,Rua Laranjeira 672,Divinópolis,MG,SUDESTE,231
+584,Rua Bento Soares Mota 185,São Paulo,SP,SUDESTE,875
+585,Rua Feliciano Madruga 339,João Pessoa,PB,NORDESTE,414
+586,Travessa São Francisco 82,Cacoal,RO,NORTE,118
+587,Quadra QNN 03 Conjunto N 1864,Ceilândia,DF,CENTRO-OESTE,171
+588,1ª Travessa Santa Tereza 137,Salvador,BA,NORDESTE,734
+589,Beco José Dírcio 75,Belo Horizonte,MG,SUDESTE,80
+590,Rua Pedro Américo 1498,Goiânia,GO,CENTRO-OESTE,306
+591,Rua São Jorge 1474,Rio Branco,AC,NORTE,667
+592,Rua Buriti 1178,Queimados,RJ,SUDESTE,624
+593,Rua Alberto Lotto 1049,Araras,SP,SUDESTE,35
+594,Rua Barão de Vallim 1300,São Paulo,SP,SUDESTE,876
+595,Avenida Euclides de Figueiredo 1156,Piracicaba,SP,SUDESTE,586
+596,Travessa Vinícius Coutinho 1146,Colatina,ES,SUDESTE,177
+597,Rua Operários 1048,Paranavaí,PR,SUL,550
+598,Quadra QNN 19 Conjunto B 185,Ceilândia,DF,CENTRO-OESTE,172
+599,Avenida Nossa Senhora da Lapa 620,Cubatão,SP,SUDESTE,204
+600,Avenida dos Semaneiros 35,São Paulo,SP,SUDESTE,877
+601,Rua Osterno Potenciano e Silva 712,Goiânia,GO,CENTRO-OESTE,307
+602,3ª Travessa Trinta e Um de Março 308,Abreu e Lima,PE,NORDESTE,2
+603,Rua Tomaz Sochaczewski 1882,São José dos Pinhais,PR,SUL,810
+604,Rua do Parque 1174,São Carlos,SP,SUDESTE,777
+605,Quadra 42 101,Planaltina de Goiás,GO,CENTRO-OESTE,589
+606,Rua O 1063,Itabira,MG,SUDESTE,356
+607,Rua Caiapônia 719,Guarulhos,SP,SUDESTE,340
+608,Rua Ribeira do Pombal 988,Rio de Janeiro,RJ,SUDESTE,693
+609,Rua Jardim Itacaranha 581,Salvador,BA,NORDESTE,735
+610,Rua José Antônio Leme 585,Sorocaba,SP,SUDESTE,924
+611,Rua Terra Boa 1075,Recife,PE,NORDESTE,642
+612,Servidão Robson Fernendes da Rosa 1845,Teresópolis,RJ,SUDESTE,947
+613,Rua das Flores 660,Florianópolis,SC,SUL,252
+614,Travessa Avenida Central 197,Caxias,MA,NORDESTE,166
+615,Rua João Kubinski 516,Ponta Grossa,PR,SUL,596
+616,Rua Presidente Prudente 1106,Catanduva,SP,SUDESTE,164
+617,Rua Hipólito Vasconcelos 1195,Rio de Janeiro,RJ,SUDESTE,694
+618,Rua Conselheiro Lafayete 928,Viamão,RS,SUL,982
+619,Rua Antônio Rossi 1092,Criciúma,SC,SUL,196
+620,Rua Serra dos Carajás 306,Guarulhos,SP,SUDESTE,341
+621,Rua Elísio Vetorello 19,Francisco Beltrão,PR,SUL,287
+622,Avenida Domingos Jorge Velho 815,Manaus,AM,NORTE,470
+623,Rua Curitiba 1771,Franca,SP,SUDESTE,285
+624,Rua Palestina 1867,Arapiraca,AL,NORDESTE,31
+625,Quadra Quadra 270 1349,Luziânia,GO,CENTRO-OESTE,450
+626,Rua Manoel da Costa Ferreira 122,Feira de Santana,BA,NORDESTE,246
+627,Rua Vinte e Cinco-A 44,Volta Redonda,RJ,SUDESTE,998
+628,Rua Senhor Lais Amadi 634,Valinhos,SP,SUDESTE,973
+629,Rua Benjamin Rodrigues Pereira 946,Mogi das Cruzes,SP,SUDESTE,491
+630,Rua Joaquim Silva 1904,São Gonçalo,RJ,SUDESTE,785
+631,Praça Olívia Vaz Romero 1713,Mogi das Cruzes,SP,SUDESTE,492
+632,Quadra SQS 313 Bloco C 1395,Brasília,DF,CENTRO-OESTE,106
+633,Alameda Praia de Itacaré 1735,Salvador,BA,NORDESTE,736
+634,Rua Índia 932,Francisco Beltrão,PR,SUL,288
+635,Rua César Marengo 41,São Paulo,SP,SUDESTE,878
+636,Rua Teresópolis 1359,Santo André,SP,SUDESTE,762
+637,Rua Novo Horizonte 1700,Campo Grande,MS,CENTRO-OESTE,136
+638,Rua Gauguim 775,Cotia,SP,SUDESTE,192
+639,Rua São Geraldo 969,Duque de Caxias,RJ,SUDESTE,237
+640,Rua Cadete Edson 1899,Resende,RJ,SUDESTE,654
+641,Rua Othon Palace 1172,Embu,SP,SUDESTE,240
+642,Rua Poeta Paulo Leminski Filho 985,Maringá,PR,SUL,484
+643,Rua Engenheiro César Polilo 738,São Paulo,SP,SUDESTE,879
+644,Rua 271 1429,Goiânia,GO,CENTRO-OESTE,308
+645,Travessa Tamba 1562,Rio de Janeiro,RJ,SUDESTE,695
+646,Rua Alberto Leite 443,Rio de Janeiro,RJ,SUDESTE,696
+647,Avenida Portugal 984,Várzea Paulista,SP,SUDESTE,978
+648,Rua Arminda de Lima 1352,Guarulhos,SP,SUDESTE,342
+649,Travessa Venezuela 139,Natal,RN,NORDESTE,508
+650,Rua Luciano Marrano 711,São Paulo,SP,SUDESTE,880
+651,Rua Jorge Joaquim Carneiro 1629,Florianópolis,SC,SUL,253
+652,Rua Padre Demerval Gomes 840,Belo Horizonte,MG,SUDESTE,81
+653,Rua Doutor Geraldo de Andrade 205,Recife,PE,NORDESTE,643
+654,Rua Dom Bosco 950,Contagem,MG,SUDESTE,185
+655,Rua Comandante Marcolino de Souza 816,Petrópolis,RJ,SUDESTE,579
+656,Rua Campo Belo 425,Cariacica,ES,SUDESTE,155
+657,Rua Trinta e Cinco 236,Abreu e Lima,PE,NORDESTE,3
+658,Alameda Pinhão 291,Bauru,SP,SUDESTE,55
+659,Rua Filipense 364,Manaus,AM,NORTE,471
+660,Quadra Quadra 605 Conjunto 07 810,Recanto das Emas,DF,CENTRO-OESTE,630
+661,Quadra QI 07 Conjunto K 325,Guará,DF,CENTRO-OESTE,330
+662,Rua Professora Mazini Bueno 936,Niterói,RJ,SUDESTE,512
+663,Rua Nhanhá do Couto 1233,Goiânia,GO,CENTRO-OESTE,309
+664,Largo Paula Cândido 235,Rio de Janeiro,RJ,SUDESTE,697
+665,Passagem Emília Ribeiro 877,Ananindeua,PA,NORTE,13
+666,Rua José Provezi 1526,Blumenau,SC,SUL,96
+667,Passagem Nossa Senhora das Graças 1844,Santarém,PA,NORTE,756
+668,Rua do Viveiro 427,Recife,PE,NORDESTE,644
+669,Rua Walter Nascimento Bezerra 245,Araraquara,SP,SUDESTE,32
+670,Rua Seis 1375,Santa Luzia,MG,SUDESTE,752
+671,Rua SC 22 1930,Goiânia,GO,CENTRO-OESTE,310
+672,Rua João Quirino 1641,Planaltina,DF,CENTRO-OESTE,588
+673,Rua Sete 1123,Guarapari,ES,SUDESTE,331
+674,Rua Colônia Libanêsa 1104,Anápolis,GO,CENTRO-OESTE,16
+675,Rua Ladislau Paszkiewicz 649,Curitiba,PR,SUL,224
+676,Rua Doutor Nilo Peçanha 953,Niterói,RJ,SUDESTE,513
+677,Rua Sete de Setembro 1171,Eunápolis,BA,NORDESTE,242
+678,Rua Antônio Brunhollo 1421,Nova Friburgo,RJ,SUDESTE,515
+679,Rua Doutor Francisco Antunes Júnior 410,Pelotas,RS,SUL,566
+680,Rua Cacilda Silva 867,Taubaté,SP,SUDESTE,943
+681,Rua Caravelas 1655,Vitória da Conquista,BA,NORDESTE,992
+682,Rua José Valente dos Santos 856,Macapá,AP,NORTE,459
+683,Rua Copixaba 1370,Recife,PE,NORDESTE,645
+684,Rua Manoel Ferreira Leite 560,Palmas,TO,NORTE,542
+685,2ª Travessa Itabira 1514,Recife,PE,NORDESTE,646
+686,Avenida Eça de Queirós Lages de Mesquita 293,Itaituba,PA,NORTE,362
+687,Rua Victório Venzol 897,São Bernardo do Campo,SP,SUDESTE,773
+688,Rua Ubatuba 1732,Jaboatão dos Guararapes,PE,NORDESTE,394
+689,Rua Nazaré 260,Ribeirão Pires,SP,SUDESTE,659
+690,Quadra SHIS QL 06 Conjunto 03 1561,Lago Sul,DF,CENTRO-OESTE,432
+691,Rua Itapuã 104,Recife,PE,NORDESTE,647
+692,Estrada Barão do Rio Branco 812,Santo André,SP,SUDESTE,763
+693,Rua Santa Cláudia 814,Manaus,AM,NORTE,472
+694,Rua Clair Camargo 1387,Ribeirão Preto,SP,SUDESTE,663
+695,Rua Seis 1226,Itapetininga,SP,SUDESTE,369
+696,Rua Niterói 845,Uberlândia,MG,SUDESTE,962
+697,Rua dos Cesteiros 485,Caxias do Sul,RS,SUL,168
+698,Rua Benjamim Pereira Da Silva 1784,Hortolândia,SP,SUDESTE,347
+699,Rua Ernesto Nazaré 642,Tatuí,SP,SUDESTE,940
+700,Rua Xerentes 206,Goiânia,GO,CENTRO-OESTE,311
+701,Beco B 1801,Porto Alegre,RS,SUL,609
+702,Rua Rosa Silvestre 1787,Fortaleza,CE,NORDESTE,268
+703,Servidão Irineu João de Souza 1294,São José,SC,SUL,797
+704,Quadra EQNN 22/24 Bloco F 815,Ceilândia,DF,CENTRO-OESTE,173
+705,Rua T 654,Goiânia,GO,CENTRO-OESTE,312
+706,Rua Antônio Carlos Coutinho 1240,Belo Horizonte,MG,SUDESTE,82
+707,Rua Nossa Senhora do Amparo 1399,Belo Horizonte,MG,SUDESTE,83
+708,Rua 15 de Maio 1904,Natal,RN,NORDESTE,509
+709,Rua Miguel Calmon 79,Duque de Caxias,RJ,SUDESTE,238
+710,Rua A 371,Vitória de Santo Antão,PE,NORDESTE,995
+711,Rua Amapá 1591,Nova Iguaçu,RJ,SUDESTE,519
+712,Rua Jorge Palmiro Mercado 894,São Paulo,SP,SUDESTE,881
+713,Rua Nelson Fernandes 184,Vila Velha,ES,SUDESTE,984
+714,Rua Marechal Eurico Gaspar Dutra 1015,São José do Rio Preto,SP,SUDESTE,799
+715,Rua Manoel Rubim 81,Belo Horizonte,MG,SUDESTE,84
+716,Avenida João Roberto Correia 1887,Praia Grande,SP,SUDESTE,616
+717,Rua Jacy Lopes 1581,Ponte Nova,MG,SUDESTE,599
+718,Rua Itabuna 1213,Nova Iguaçu,RJ,SUDESTE,520
+719,Travessa João Batista 1342,São Gonçalo,RJ,SUDESTE,786
+720,Avenida Barão do Rego Barros 792,São Paulo,SP,SUDESTE,882
+721,Estrada dos Bandeirantes 451,Rio de Janeiro,RJ,SUDESTE,698
+722,Avenida Pedro Ludovico Teixeira 1504,Goiânia,GO,CENTRO-OESTE,313
+723,Praça Craveiro do Campo 253,São Paulo,SP,SUDESTE,883
+724,Rua Judéia 124,Luziânia,GO,CENTRO-OESTE,451
+725,Rua Rolando Pedreira 1636,Rio de Janeiro,RJ,SUDESTE,699
+726,Rua Paulo Mangabeira Albernaz 131,Sumaré,SP,SUDESTE,926
+727,Rua Carlos Alberto 1097,Nova Iguaçu,RJ,SUDESTE,521
+728,Travessa Itu 48,Umuarama,PR,SUL,968
+729,Travessa Pratinha 389,Uberaba,MG,SUDESTE,956
+730,Rua Victor Cornélio 960,Londrina,PR,SUL,442
+731,Rua Suely Pereira 598,Bagé,RS,SUL,44
+732,Rua Maria Fressato Basso 1281,Araucária,PR,SUL,36
+733,Rua General Osório 419,Blumenau,SC,SUL,97
+734,Rua Artur Gomes de Carvalho 1008,Salvador,BA,NORDESTE,737
+735,Avenida Doutor Flávio Rocha 644,Franca,SP,SUDESTE,286
+736,Quadra SQS 116 Bloco C 273,Brasília,DF,CENTRO-OESTE,107
+737,Rua Santinho Linhares 1589,Itabira,MG,SUDESTE,357
+738,Rua Campo Verde 795,Aparecida de Goiânia,GO,CENTRO-OESTE,19
+739,Rua Rio Paramirim 1319,Ribeirão Preto,SP,SUDESTE,664
+740,Rodovia SC 448 217,Criciúma,SC,SUL,197
+741,Rua Airton Sena 1712,São Paulo,SP,SUDESTE,884
+742,Travessa Patrícia Vieira 1335,Patos,PB,NORDESTE,557
+743,Rua Quatro 388,Petrolina,PE,NORDESTE,574
+744,Rua das Bandeiras 175,Marília,SP,SUDESTE,481
+745,Rua Quartzo 206,Rio de Janeiro,RJ,SUDESTE,700
+746,Rua São Geraldo 1935,Uberaba,MG,SUDESTE,957
+747,Rua Aracaju 1273,Belo Horizonte,MG,SUDESTE,85
+748,Rua Bonifácio Guimarães 1069,Ponte Nova,MG,SUDESTE,600
+749,Rua Maestro Alberto Frateschi 1417,Uberaba,MG,SUDESTE,958
+750,Rua Francisco Bernardo Boticher 1245,Joinville,SC,SUL,418
+751,Rua Armando Tavares 755,Santo Antônio de Jesus,BA,NORDESTE,768
+752,Rua Teotônio Vilela 586,Salvador,BA,NORDESTE,738
+753,Rua Rosa Claro Martins 1709,São José dos Campos,SP,SUDESTE,805
+754,Passagem São Pedro 522,Belém,PA,NORTE,65
+755,Rua Apólo de Almeida 1644,Jundiaí,SP,SUDESTE,428
+756,Beco Quatro de Julho 880,Manaus,AM,NORTE,473
+757,Rua Santos Dumont 13,Jataí,GO,CENTRO-OESTE,407
+758,Rua Pedro Rozio Coelho 708,Londrina,PR,SUL,443
+759,Rua Coronel Estanislau Frota 1787,Sobral,CE,NORDESTE,917
+760,Rua Carlos Rosas 991,Alagoinhas,BA,NORDESTE,4
+761,Rua Bela Vista 650,Salvador,BA,NORDESTE,739
+762,Rua João Puchaski 1595,Curitiba,PR,SUL,225
+763,Rua C 1112,Sabará,MG,SUDESTE,714
+764,Quadra Cento e Cinqüenta e Sete 618,Ananindeua,PA,NORTE,14
+765,Rua José Sampaio de Oliveira 722,Araçatuba,SP,SUDESTE,25
+766,Rua Inglaterra 228,Fortaleza,CE,NORDESTE,269
+767,Rua Luiz Fachini 225,Bebedouro,SP,SUDESTE,56
+768,Rua do Café 1252,Poços de Caldas,MG,SUDESTE,592
+769,Quadra QS 605 Bloco A 1381,Samambaia,DF,CENTRO-OESTE,747
+770,Rua Professora Julieta Nicolich da Costa 1605,Florianópolis,SC,SUL,254
+771,Rua Areado 854,Carapicuíba,SP,SUDESTE,150
+772,Rua Barão de Tefe 891,Petrópolis,RJ,SUDESTE,580
+773,Rua Raul Antunes 1566,Passo Fundo,RS,SUL,554
+774,Rua Treze 881,Santa Bárbara D'Oeste,SP,SUDESTE,748
+775,Rua Teodolino Costa 220,Gravataí,RS,SUL,326
+776,Rua Cariaca 1876,Rio de Janeiro,RJ,SUDESTE,701
+777,Rua Wanderley 1704,São Paulo,SP,SUDESTE,885
+778,Rua Jesuíno Antônio de Oliveira 1032,Ponta Grossa,PR,SUL,597
+779,Avenida Presidente Epitácio Pessoa 764,Paulo Afonso,BA,NORDESTE,565
+780,Rua Marechal Antônio Faustino 1987,Rio de Janeiro,RJ,SUDESTE,702
+781,Rua Olímpia 1954,Itaquaquecetuba,SP,SUDESTE,375
+782,Rua Antero Silva 712,Divinópolis,MG,SUDESTE,232
+783,Avenida Orlandinho Terzo de Emílio 1831,Araraquara,SP,SUDESTE,33
+784,Rua Maurício de Nassau 1816,Araçatuba,SP,SUDESTE,26
+785,Rua Odilon Correia 1066,Vitória da Conquista,BA,NORDESTE,993
+786,Avenida Nações 1589,Passos,MG,SUDESTE,556
+787,Travessa Santa Bárbara 337,Itabira,MG,SUDESTE,358
+788,Rua Rock Alexandre Prudêncio 1377,Criciúma,SC,SUL,198
+789,Rua Dezesseis 1596,Mauá,SP,SUDESTE,487
+790,Rua João-de-Barro 1261,Joinville,SC,SUL,419
+791,Rua 14 MP 234,Rio Claro,SP,SUDESTE,669
+792,Rua Vinte e Cinco 936,São Luís,MA,NORDESTE,824
+793,Rua Cláudio Manoel da Costa 343,Curitiba,PR,SUL,226
+794,Rua Cidade de Matipó 789,Poá,SP,SUDESTE,591
+795,Rua Quatorze 1546,Caraguatatuba,SP,SUDESTE,148
+796,Rua FL 8 1029,Goiânia,GO,CENTRO-OESTE,314
+797,Rua Acácia 1559,Jaboatão dos Guararapes,PE,NORDESTE,395
+798,Rua Bf 527,Cabo de Santo Agostinho,PE,NORDESTE,112
+799,Rua Salvador Barbosa 929,São Luís,MA,NORDESTE,825
+800,Rua Suíça 942,Guarulhos,SP,SUDESTE,343
+801,Rua Bruno Starke 149,Blumenau,SC,SUL,98
+802,Rua Pirineus 977,Goiânia,GO,CENTRO-OESTE,315
+803,Rua Manoel Rodrigues Roseira 1017,Osasco,SP,SUDESTE,535
+804,Rua Muller Campos 1208,São João de Meriti,RJ,SUDESTE,792
+805,Estrada da Lagoinha 1888,Queimados,RJ,SUDESTE,625
+806,Rua Jorge Maraccini Ponfílio 1421,São Paulo,SP,SUDESTE,886
+807,Avenida Central 626,Maracanaú,CE,NORDESTE,479
+808,Rua Treze 662,Petrolina,PE,NORDESTE,575
+809,Rua Goiania 258,Cachoeirinha,RS,SUL,114
+810,Quadra 812 Sul Avenida LO 21 692,Palmas,TO,NORTE,543
+811,Rua José Rodrigues Mendes 1496,Patos de Minas,MG,SUDESTE,559
+812,Praça do Imigrante 1674,Itatiba,SP,SUDESTE,378
+813,Rua 15 A 824,Manaus,AM,NORTE,474
+814,Rua João Mossin 1025,Sertãozinho,SP,SUDESTE,912
+815,Rua Valdecy Savignon 1095,Cachoeiro de Itapemirim,ES,SUDESTE,117
+816,Rua Xavier da Silva 1888,Foz do Iguaçu,PR,SUL,280
+817,Rua Zenaide Franco de Faria Mello 617,Mogi-Guaçu,SP,SUDESTE,494
+818,Rua Sebastião Fernandes da Silva 1798,Ferraz de Vasconcelos,SP,SUDESTE,248
+819,Avenida Rocha Pombo 625,Praia Grande,SP,SUDESTE,617
+820,Quadra 20 340,Planaltina de Goiás,GO,CENTRO-OESTE,590
+821,Rua Torres Tibagi 1687,São Paulo,SP,SUDESTE,887
+822,Rua Vinte e Dois 11,Rio de Janeiro,RJ,SUDESTE,703
+823,Rua Ângelo Borgo 1142,Vila Velha,ES,SUDESTE,985
+824,Rua Treze 148,Cuiabá,MT,CENTRO-OESTE,210
+825,Travessa Décio de Toledo Leite 910,Santo André,SP,SUDESTE,764
+826,Rua Padre Estanislau de Campos 1623,São Paulo,SP,SUDESTE,888
+827,Quadra 404 Sul Avenida NS 2 595,Palmas,TO,NORTE,544
+828,Rua Carlos de Souza Machado 367,Itumbiara,GO,CENTRO-OESTE,386
+829,Rua Três 1731,Várzea Grande,MT,CENTRO-OESTE,977
+830,Praça Jarbas Aratangy 168,São Paulo,SP,SUDESTE,889
+831,Rua Sétima 1088,Ituiutaba,MG,SUDESTE,385
+832,Avenida Voluntários da Pátria 1281,Londrina,PR,SUL,444
+833,Rua Vigília 776,Olinda,PE,NORDESTE,529
+834,Rua Pedro Xavier Martins 1274,Petrópolis,RJ,SUDESTE,581
+835,Rua Luís Alberto Favoreto 872,Maringá,PR,SUL,485
+836,Travessa do Carmo 183,Salvador,BA,NORDESTE,740
+837,Acesso Nove A 848,Porto Alegre,RS,SUL,610
+838,Rua Senador Pompeu 1666,Teresina,PI,NORDESTE,946
+839,Alameda Santa Luzia 661,Itu,SP,SUDESTE,383
+840,Rua José Coelho da Silva 1897,Rondonópolis,MT,CENTRO-OESTE,712
+841,Quadra QNP 13 Conjunto U 1515,Ceilândia,DF,CENTRO-OESTE,174
+842,Rua Guerra Junqueiro 1896,Belo Horizonte,MG,SUDESTE,86
+843,Rua Doze 926,Itapecerica da Serra,SP,SUDESTE,368
+844,Rua Gergelim 257,Fortaleza,CE,NORDESTE,270
+845,Estrada Antônio José de Oliveira 873,Apucarana,PR,SUL,21
+846,Rua Edward de Oliveira 903,Campo Grande,MS,CENTRO-OESTE,137
+847,Vila São Bernardino 1906,Fortaleza,CE,NORDESTE,271
+848,Rua Heitor de Almeida 1068,São Luís,MA,NORDESTE,826
+849,Avenida Henrique Fernandes 676,Birigüi,SP,SUDESTE,93
+850,Rua Vinte e Sete 215,Jacareí,SP,SUDESTE,400
+851,Rua Ana 1279,Macaé,RJ,SUDESTE,455
+852,Rua João Pinto 1468,Campo Grande,MS,CENTRO-OESTE,138
+853,Rua Maestro Marzagão 17,São Paulo,SP,SUDESTE,890
+854,Rua Sílvio Penteado Guimarães 1995,Santos,SP,SUDESTE,770
+855,Rua Sebastião da Rocha 1414,Maceió,AL,NORDESTE,462
+856,Avenida Lemos Monteiro 635,São Caetano do Sul,SP,SUDESTE,775
+857,Rua Jornalista José M. Ribeiro 1308,Lorena,SP,SUDESTE,446
+858,Rua Santa Ana 905,Gravataí,RS,SUL,327
+859,Rua das Palmeiras Reais 700,Araguaína,TO,NORTE,28
+860,Rua Jamésia 1789,Cotia,SP,SUDESTE,193
+861,Rua João Batista Barrozo Filho 1823,São Paulo,SP,SUDESTE,891
+862,Rua Rio Volga 397,Uberlândia,MG,SUDESTE,963
+863,Rua Teixeira dos Anjos 1243,Belo Horizonte,MG,SUDESTE,87
+864,Rodovia Comandante João Ribeiro de Barros 206,Tupã,SP,SUDESTE,952
+865,Rua Pires de Souto 1150,Nova Iguaçu,RJ,SUDESTE,522
+866,Avenida Montemagno 725,São Paulo,SP,SUDESTE,892
+867,Rua Eurico Castro Monteiro 273,Juiz de Fora,MG,SUDESTE,423
+868,Rua Peppino Agrelli 384,São José do Rio Preto,SP,SUDESTE,800
+869,Rua Haroldo Barbosa 798,Presidente Prudente,SP,SUDESTE,621
+870,Rua Doutor Manoel Borba 1417,Carpina,PE,NORDESTE,157
+871,Alameda Ana Nery 869,Corumbá,MS,CENTRO-OESTE,189
+872,Rua Padre Faustino 254,São Paulo,SP,SUDESTE,893
+873,Rua Jaudat Rachid 887,Colatina,ES,SUDESTE,178
+874,Avenida Nelo Pisani 1511,Mococa,SP,SUDESTE,489
+875,Rua 31 288,Goiânia,GO,CENTRO-OESTE,316
+876,Rua Curitiba 1729,Cabo Frio,RJ,SUDESTE,113
+877,Rua Marquês de Abrantes 469,Rio de Janeiro,RJ,SUDESTE,704
+878,Rua Tupiniquins 961,Recife,PE,NORDESTE,648
+879,Quadra QNG 24 817,Taguatinga,DF,CENTRO-OESTE,936
+880,Rua José Boanerges Cesar 75,Rio de Janeiro,RJ,SUDESTE,705
+881,Rua Bela Vista I 1345,Cariacica,ES,SUDESTE,156
+882,Rua Martim Afonso de Souza 856,Ribeirão Preto,SP,SUDESTE,665
+883,Rua Vista Atlântica 1495,Vitória,ES,SUDESTE,990
+884,Rua V 1748,Fortaleza,CE,NORDESTE,272
+885,Rua Benedito Alves Bandeira 159,Belém,PA,NORTE,66
+886,Rua Barra do Piraí 1573,Fortaleza,CE,NORDESTE,273
+887,Avenida Clemente Teodoro da Silva 977,Itajubá,MG,SUDESTE,364
+888,Rua Vereador Tomás da Costa 514,Atibaia,SP,SUDESTE,40
+889,Rua Triângulo Mineiro 397,Joinville,SC,SUL,420
+890,Rua Um 985,Almirante Tamandaré,PR,SUL,6
+891,Travessa Julceia 1920,Niterói,RJ,SUDESTE,514
+892,Travessa Quinto Império 464,São Paulo,SP,SUDESTE,894
+893,Quadra Quadra 125 1204,Luziânia,GO,CENTRO-OESTE,452
+894,Rua Mário Spineli 1118,Cuiabá,MT,CENTRO-OESTE,211
+895,Rua Alexandre Dumas 766,São Paulo,SP,SUDESTE,895
+896,Rua das Pitangueiras 1157,São Bernardo do Campo,SP,SUDESTE,774
+897,Rua Jasmin 770,Rio de Janeiro,RJ,SUDESTE,706
+898,Rua Doze de Janeiro 213,Japeri,RJ,SUDESTE,403
+899,Rua Narcísio Maximiliano da Silva 1541,Blumenau,SC,SUL,99
+900,Rua José M. Carvalho 1655,São João Del Rei,MG,SUDESTE,794
+901,Rua Vinte e Nove 1177,Itabira,MG,SUDESTE,359
+902,Quadra EQNP 16/20 Bloco F 538,Ceilândia,DF,CENTRO-OESTE,175
+903,Rua Rouxinol 135,Umuarama,PR,SUL,969
+904,Rua Bernardo Guimarães 754,Lages,SC,SUL,429
+905,Rua Nair Marques de Souza 951,Taboão da Serra,SP,SUDESTE,933
+906,Rua Silvestre José Dantas 321,São Paulo,SP,SUDESTE,896
+907,Rua Aldorando José de Souza 1184,Uberlândia,MG,SUDESTE,964
+908,Praça Doutor João Pereira Monteiro Júnior 42,São Paulo,SP,SUDESTE,897
+909,Praça São Lázaro 123,Salvador,BA,NORDESTE,741
+910,Rua Rio Vermelho 1895,Recife,PE,NORDESTE,649
+911,Rua 113 242,Fortaleza,CE,NORDESTE,274
+912,Rua Edgard Werneck 1294,Rio de Janeiro,RJ,SUDESTE,707
+913,Rua do Açafrão 1664,Olinda,PE,NORDESTE,530
+914,Rua Edson Brasil 137,Fortaleza,CE,NORDESTE,275
+915,Rua Fernão Dias 273,Guaratinguetá,SP,SUDESTE,333
+916,Rua Francisco Casamassa 310,Franco da Rocha,SP,SUDESTE,292
+917,Quadra SQN 403 1390,Brasília,DF,CENTRO-OESTE,108
+918,Rua F 1027,Duque de Caxias,RJ,SUDESTE,239
+919,Rua Ernesto Barreto 211,Campinas,SP,SUDESTE,131
+920,Rua Sírius 965,Belo Horizonte,MG,SUDESTE,88
+921,Rua Alagoas 1047,Catanduva,SP,SUDESTE,165
+922,Rua Advogado João Alves da Cunha Lima 644,Bragança Paulista,SP,SUDESTE,104
+923,Rua Flande 978,Rio de Janeiro,RJ,SUDESTE,708
+924,Rua Pirangi 802,Goiânia,GO,CENTRO-OESTE,317
+925,Rua Roberto Simonsen 180,Nova Iguaçu,RJ,SUDESTE,523
+926,Rua Ingá 1953,Ribeirão Preto,SP,SUDESTE,666
+927,Quadra QNP 26 Conjunto S 1650,Ceilândia,DF,CENTRO-OESTE,176
+928,Rua Vinte e Um de Abril 181,Goiânia,GO,CENTRO-OESTE,318
+929,Quadra SQN 306 Bloco G 443,Brasília,DF,CENTRO-OESTE,109
+930,Rua João Meurer 668,Jaraguá do Sul,SC,SUL,406
+931,Rua Judite Danon 1142,Nova Iguaçu,RJ,SUDESTE,524
+932,Rua Flores de Maio 378,Queimados,RJ,SUDESTE,626
+933,Rua Doutor Carlos Carvalho Rosa 515,Birigüi,SP,SUDESTE,94
+934,Rua Doze de Outubro 346,Recife,PE,NORDESTE,650
+935,Travessa Saturnino de Brito 448,Santo André,SP,SUDESTE,765
+936,Rua Atalanta 509,São Paulo,SP,SUDESTE,898
+937,Rua Argélia 1542,São Leopoldo,RS,SUL,814
+938,Rua Santa Maria Goretti 956,Santo André,SP,SUDESTE,766
+939,Rua Maria dos Santos Ramos 171,Palhoça,SC,SUL,537
+940,Praça C-0231 758,Goiânia,GO,CENTRO-OESTE,319
+941,Rua W 14 1365,Goiânia,GO,CENTRO-OESTE,320
+942,Rua Joaquim Carneiro da Silva 21,Recife,PE,NORDESTE,651
+943,Rua Vinte 339,São Luís,MA,NORDESTE,827
+944,Quadra SEPS 713/913 1566,Brasília,DF,CENTRO-OESTE,110
+945,Passagem Wilson Brito 199,Belém,PA,NORTE,67
+946,Travessa Augusto Guedes dos Santos 1584,Jaboatão dos Guararapes,PE,NORDESTE,396
+947,Rua São Lucas 1187,Apucarana,PR,SUL,22
+948,Rua João Tonalezzi 329,Ferraz de Vasconcelos,SP,SUDESTE,249
+949,Beco Barcelos 165,Porto Alegre,RS,SUL,611
+950,Avenida Principal 1363,Gravataí,RS,SUL,328
+951,Rua Zoroastro Alves de Souza 1719,Marília,SP,SUDESTE,482
+952,Rua dos Estudantes 652,Sumaré,SP,SUDESTE,927
+953,Rua Sidrônio Andrade 1453,Lages,SC,SUL,430
+954,Rua Vassouras 1061,São João de Meriti,RJ,SUDESTE,793
+955,Rua Lauro Sodré 800,Nilópolis,RJ,SUDESTE,510
+956,Rua Joventina Maria de Santana 1301,Igarassu,PE,NORDESTE,350
+957,Travessa Um 1277,Valinhos,SP,SUDESTE,974
+958,Rua Eleutério Varela 1985,São Luís,MA,NORDESTE,828
+959,Rua Sargento Wolf 216,Marabá,PA,NORTE,476
+960,Rua Turivara 32,Jacareí,SP,SUDESTE,401
+961,Rua H 471,Juiz de Fora,MG,SUDESTE,424
+962,Rua 5 Unidade 203 798,Goiânia,GO,CENTRO-OESTE,321
+963,Travessa Aracy Alvellos Eudociak 1266,Campo Grande,MS,CENTRO-OESTE,139
+964,Rua Andreia Pacini 40,São Paulo,SP,SUDESTE,899
+965,Rua Frei Domingos 128,Palmeira dos Índios,AL,NORDESTE,546
+966,Beco São Francisco 532,Manaus,AM,NORTE,475
+967,Rua Fideralina Gomes de Almeida 1904,Taboão da Serra,SP,SUDESTE,934
+968,Avenida Cascavel 964,Goiânia,GO,CENTRO-OESTE,322
+969,Rua Doutor Alexandre Ferreira 1644,São Paulo,SP,SUDESTE,900
+970,Rua Francisco Cipriano de Paula 60,Mossoró,RN,NORDESTE,504
+971,Rua Dez 1790,Campo Largo,PR,SUL,140
+972,Rua Maria Elvira Paiva 1367,São Gonçalo,RJ,SUDESTE,787
+973,Rua Antônio da Cunha Filho 1958,Araxá,MG,SUDESTE,37
+974,Avenida Joaquim Teixeira Alves 1345,Dourados,MS,CENTRO-OESTE,234
+975,Rua 4 1265,Fortaleza,CE,NORDESTE,276
+976,Praça Obrandina Guidini 818,São Paulo,SP,SUDESTE,901
+977,Rua José Henrique Batista 1763,Barra Mansa,RJ,SUDESTE,49
+978,Rua Seis 558,Suzano,SP,SUDESTE,930
+979,Rua José Mafra 1796,Blumenau,SC,SUL,100
+980,Rua Dois 1375,Cuiabá,MT,CENTRO-OESTE,212
+981,Rua Água Branca 1221,Guarulhos,SP,SUDESTE,344
+982,Rua F-2 1428,Belo Horizonte,MG,SUDESTE,89
+983,Rua Major Manoel Cândido 1725,Poços de Caldas,MG,SUDESTE,593
+984,Rua Granito 314,Olinda,PE,NORDESTE,531
+985,Avenida José Jerônimo 876,Araraquara,SP,SUDESTE,34
+986,Praça das Bandeiras 1607,Ribeirão das Neves,MG,SUDESTE,657
+987,Rua T 1518,Fortaleza,CE,NORDESTE,277
+988,Rua Princesa Isabel 1079,Volta Redonda,RJ,SUDESTE,999
+989,Rua Gambia 1936,Embu,SP,SUDESTE,241
+990,Rua das Orquídeas 1940,Jaboatão dos Guararapes,PE,NORDESTE,397
+991,Rua Engenheiro Reginaldo Arcuri 765,Juiz de Fora,MG,SUDESTE,425
+992,Rua Setenta e Oito 1184,Mauá,SP,SUDESTE,488
+993,Viela Navegantes 359,Guarulhos,SP,SUDESTE,345
+994,Rua Cheroke 1319,Mogi-Mirim,SP,SUDESTE,496
+995,Rua Professor Kydd James Galliano 190,Curitiba,PR,SUL,227
+996,Rua Galeão Carvalhal 1053,Santo André,SP,SUDESTE,767
+997,Rua Caldas 1916,Betim,MG,SUDESTE,92
+998,Rua Botucatu 328,Salto,SP,SUDESTE,717
+999,Alameda Sargento Rolembach 765,Foz do Iguaçu,PR,SUL,281
+1000,Praça Córsega 712,Belo Horizonte,MG,SUDESTE,90

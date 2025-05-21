@@ -25,7 +25,7 @@ I use it to learn how to:
 
 ### 🗺️ Database Diagram
 
-![Game Store Database](./game_store_model.png)
+![Game Store Database](./Game%20Store%20Project/Model/game_store_model.png)
 
 ### 🧱 Tables in the Project
 

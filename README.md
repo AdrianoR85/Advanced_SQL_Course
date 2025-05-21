@@ -37,7 +37,7 @@ I use it to learn how to:
 - `Product` – Games in the store  
 - `Category` – Type of game (Action, Adventure, etc.)
 
-You can find the SQL code in the [Game Store folder](./game-store) <!-- Edite se o nome da pasta for diferente -->
+You can find the SQL code in the [Game Store folder](./Game%20Store%20Project) <!-- Edite se o nome da pasta for diferente -->
 
 ---
 

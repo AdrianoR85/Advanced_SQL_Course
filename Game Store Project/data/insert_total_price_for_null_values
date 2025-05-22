@@ -1,0 +1,9 @@
+UPDATE purchase p
+SET total_price = sub.total
+FROM (
+    SELECT purchase_id, SUM(quantity * price) AS total
+    FROM purchase_item
+    GROUP BY purchase_id
+) sub
+WHERE p.purchase_id = sub.purchase_id
+  AND p.total_price IS NULL;

@@ -103,3 +103,25 @@ SELECT
 	rm.total_by_region
 FROM region_monthly rm
 WHERE rm.region_rank = 1
+
+-----------------------------------------------------------------------------------------------------
+-- -> Month-over-month growth by region
+WITH monthly_totals AS (
+    SELECT
+        DATE(DATE_TRUNC('month', purchase_date)) AS sale_month,
+        ship_region,
+        COUNT(*) AS total,
+		LAG(COUNT(*)) OVER (PARTITION BY ship_region ORDER BY DATE(DATE_TRUNC('month', purchase_date)) ) AS previous_month_total
+    FROM purchase
+    GROUP BY 1, 2
+)
+SELECT 
+	sale_month,
+	ship_region,
+	total AS current_total,
+	previous_month_total,
+	ROUND(
+		100 * (total - previous_month_total) / NULLIF(previous_month_total,0),2
+	) AS growth_pct
+FROM monthly_totals
+

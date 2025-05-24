@@ -79,3 +79,27 @@ FROM purchase
 WHERE DATE_PART('year', purchase_date) = 2022
 GROUP BY 1,2,3
 ORDER BY 1,2,5 DESC;
+
+-----------------------------------------------------------------------------------------------------
+
+-- -> Region with the most purchases per month.
+WITH region_monthly AS (
+	SELECT
+		DATE_PART('year', purchase_date) AS sale_year,
+		DATE_PART('month', purchase_date) AS sale_month,
+		ship_region,
+		COUNT(*) AS total_by_region,
+		RANK() OVER (
+			PARTITION BY DATE_PART('year', purchase_date), DATE_PART('month', purchase_date)
+			ORDER BY COUNT(*) DESC
+		) AS region_rank
+	FROM purchase
+	GROUP BY 1, 2, 3
+)
+SELECT
+	rm.sale_year,
+	rm.sale_month,
+	rm.ship_region,
+	rm.total_by_region
+FROM region_monthly rm
+WHERE rm.region_rank = 1

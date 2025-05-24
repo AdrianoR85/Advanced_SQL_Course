@@ -59,3 +59,23 @@ JOIN (
 ) AS monthly
 ON sales.sale_year = monthly.sale_year
 ORDER BY sales.sale_year;
+
+-----------------------------------------------------------------------------------------------------
+-- → Which region purchases the most monthly? And what is its percentage of the total?
+SELECT 
+    DATE_PART('year', purchase_date) AS sale_year,
+    DATE_PART('month', purchase_date) AS sale_month,
+    ship_region AS region,
+    COUNT(*) AS total_by_region_month,
+	ROUND(
+		COUNT(*) * 100.0 / SUM(COUNT(*)) 
+		OVER (
+        	PARTITION BY DATE_PART('year', purchase_date), DATE_PART('month', purchase_date)
+    	),2) AS pct_by_region,
+    SUM(COUNT(*)) OVER (
+        PARTITION BY DATE_PART('year', purchase_date), DATE_PART('month', purchase_date)
+    ) AS total_by_month
+FROM purchase
+WHERE DATE_PART('year', purchase_date) = 2022
+GROUP BY 1,2,3
+ORDER BY 1,2,5 DESC;

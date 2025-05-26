@@ -16,3 +16,40 @@ FROM purchase
 WHERE shipped_date IS NOT NULL AND DATE_PART('year', purchase_date) = 2022
 GROUP BY 1, 2
 ORDER BY 1, 2;
+
+-- -> ABC classification
+WITH product_sales AS (
+    SELECT 
+        p.product_id AS code,
+        p.product_name AS product,
+        SUM(pi.quantity * p.unit_price) AS total_quantity
+    FROM product p
+    JOIN purchase_item pi ON p.product_id = pi.product_id
+    JOIN purchase pu ON pi.purchase_id = pu.purchase_id
+    WHERE EXTRACT(YEAR FROM pu.purchase_date) = 2024
+    GROUP BY p.product_id, p.product_name
+	ORDER BY 3 DESC
+),
+ranked_product AS (
+    SELECT
+        code,
+        product,
+        total_quantity,
+        ROUND(total_quantity * 100.0 / SUM(total_quantity) OVER(), 2) AS pct_total,
+        ROUND(SUM(total_quantity) OVER(ORDER BY total_quantity DESC) * 100.0 / 
+              SUM(total_quantity) OVER(), 2) AS pct_acumulado
+    FROM product_sales
+)
+SELECT 
+    code,
+    product,
+    total_quantity,
+    pct_total,
+    pct_acumulado,
+    CASE 
+        WHEN pct_acumulado <= 80 THEN 'A'
+        WHEN pct_acumulado <= 95 THEN 'B'
+        ELSE 'C'
+    END AS class_abc
+FROM ranked_product
+ORDER BY total_quantity DESC;

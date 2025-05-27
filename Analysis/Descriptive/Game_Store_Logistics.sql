@@ -7,6 +7,8 @@ FROM purchase
 GROUP BY sale_date
 ORDER BY sale_date;
 
+--------------------------------------------------------------------------------------
+
 -- -> What is the average annual shipping time by region?
 SELECT 
     DATE_PART('year', purchase_date) AS year,

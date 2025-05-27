@@ -85,4 +85,23 @@ WHERE sale_rank <= 5 and year = '2024'
 ORDER BY year, total DESC;
 
 --------------------------------------------------------------------------------------
-
+-- -> ABC Classification by product quantity in stock
+WITH ranked_product_in_stock AS (
+	SELECT 
+		product_name,
+		units_in_stock,
+		ROUND(units_in_stock * 100.0 / SUM(units_in_stock) OVER(), 2) AS pct_by_product,
+		ROUND(
+			SUM(units_in_stock) OVER(ORDER BY units_in_stock DESC) * 100.0 /
+			SUM(units_in_stock) OVER(), 2) AS pct_accumulated,
+		SUM(units_in_stock) OVER() AS total_in_stock
+	FROM product
+)
+SELECT 
+	*,
+	CASE 
+		WHEN pct_accumulated <= 80 THEN 'A'
+		WHEN pct_accumulated <= 90 THEN 'B'
+		ELSE 'C'
+	END AS class_abc
+FROM ranked_product_in_stock

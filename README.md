@@ -7,6 +7,7 @@ Here I share my SQL code, small projects, and data analysis.
 
 - [`🕹️ Game Store Project`](#-game-store-project)
 - [`🪟 Window Functions`](#-window-functions)
+- [`📊 Analysis`](#-analysis)
 - [`🛠️ Tools Used`](#-tools-used)
 - [`🎯 My Goal`](#-my-goal)
 - [`🤝 Contributing`](#-contributing)
@@ -54,6 +55,14 @@ These are advanced SQL functions.
 They help to compare rows and make better analysis.
 
 Find the code [here](./window-functions) <!-- Edite conforme o caminho real -->
+
+---
+## 📊 Analysis
+
+This directory contains descriptive and investigative analysis using SQL.  
+Inside the `Description and Investigation` folder, you will find the SQL files used for deeper data exploration and reporting.
+
+Explore the SQL scripts [here](./Analysis)
 
 ---
 

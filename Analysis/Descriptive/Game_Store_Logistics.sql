@@ -1,47 +1,57 @@
--- -> What is the average shipping time per month?
+-- This query calculates the average shipping time (in days) for each month.
+-- It shows how many days on average it takes from purchase to shipment per month.
+
 SELECT 
-	TO_CHAR(purchase_date, 'YYYY-MM') AS sale_date,
-	ROUND(AVG(EXTRACT(DAY FROM shipped_date - purchase_date)), 2) AS avg_days
+	TO_CHAR(purchase_date, 'YYYY-MM') AS sale_date,  -- Formats the purchase date as Year-Month for grouping
+	ROUND(AVG(EXTRACT(DAY FROM shipped_date - purchase_date)), 2) AS avg_days  -- Calculates average difference in days rounded to 2 decimals
 FROM purchase
--- WHERE DATE_PART('year',purchase_date) = 2022
+-- WHERE DATE_PART('year',purchase_date) = 2022 -- (Optional) filter by year 2022
 GROUP BY sale_date
 ORDER BY sale_date;
 
+
 --------------------------------------------------------------------------------------
 
--- -> What is the average annual shipping time by region?
+-- This query returns the average shipping time in days per year and shipping region.
+-- It calculates the average number of days between purchase and shipment by region for the year 2022.
+
 SELECT 
-    DATE_PART('year', purchase_date) AS year,
-	ship_region,
-    ROUND(AVG(EXTRACT(DAY FROM shipped_date - purchase_date)), 2) AS avg_days
+    DATE_PART('year', purchase_date) AS year,     -- Extracts the year from purchase date
+	ship_region,                                  -- Shipping region
+    ROUND(AVG(EXTRACT(DAY FROM shipped_date - purchase_date)), 2) AS avg_days  -- Average shipping time in days, rounded
 FROM purchase
-WHERE shipped_date IS NOT NULL AND DATE_PART('year', purchase_date) = 2022
-GROUP BY 1, 2
-ORDER BY 1, 2;
+WHERE shipped_date IS NOT NULL                   -- Only consider purchases that were shipped
+  AND DATE_PART('year', purchase_date) = 2022   -- Filter for the year 2022
+GROUP BY 1, 2                                    -- Group by year and shipping region
+ORDER BY 1, 2;                                  -- Order results by year and region
+
 
 --------------------------------------------------------------------------------------
 
--- -> ABC classification
+-- This query classifies products into ABC categories based on their sales in 2024.
+-- It sums total sales value per product, calculates each product’s contribution percentage,
+-- then assigns ABC class: 'A' for top ~80%, 'B' for next ~15%, and 'C' for the rest.
+
 WITH product_sales AS (
     SELECT 
-        p.product_id AS code,
-        p.product_name AS product,
-        SUM(pi.quantity * p.unit_price) AS total_quantity
+        p.product_id AS code,                      -- Product identifier
+        p.product_name AS product,                 -- Product name
+        SUM(pi.quantity * p.unit_price) AS total_quantity  -- Total sales value per product
     FROM product p
     JOIN purchase_item pi ON p.product_id = pi.product_id
     JOIN purchase pu ON pi.purchase_id = pu.purchase_id
     WHERE EXTRACT(YEAR FROM pu.purchase_date) = 2024
     GROUP BY p.product_id, p.product_name
-	ORDER BY 3 DESC
+    ORDER BY 3 DESC
 ),
 ranked_product AS (
     SELECT
         code,
         product,
         total_quantity,
-        ROUND(total_quantity * 100.0 / SUM(total_quantity) OVER(), 2) AS pct_total,
+        ROUND(total_quantity * 100.0 / SUM(total_quantity) OVER(), 2) AS pct_total,  -- Percent of total sales for each product
         ROUND(SUM(total_quantity) OVER(ORDER BY total_quantity DESC) * 100.0 / 
-              SUM(total_quantity) OVER(), 2) AS pct_acumulado
+              SUM(total_quantity) OVER(), 2) AS pct_acumulado                        -- Cumulative percent for ranking
     FROM product_sales
 )
 SELECT 
@@ -51,23 +61,25 @@ SELECT
     pct_total,
     pct_acumulado,
     CASE 
-        WHEN pct_acumulado <= 80 THEN 'A'
-        WHEN pct_acumulado <= 95 THEN 'B'
-        ELSE 'C'
+        WHEN pct_acumulado <= 80 THEN 'A'       -- Classify top ~80% as 'A'
+        WHEN pct_acumulado <= 95 THEN 'B'       -- Next ~15% as 'B'
+        ELSE 'C'                                -- Remaining as 'C'
     END AS class_abc
 FROM ranked_product
 ORDER BY total_quantity DESC;
 
 --------------------------------------------------------------------------------------
 
--- What are the 5 products with the most sales?
+-- This query identifies the top 5 products with the highest quantity sold in each year.
+-- It ranks products by quantity sold per year and selects the top 5 for 2024.
+
 WITH ranked_sale AS (
 	SELECT
-		EXTRACT('year' FROM pu.purchase_date) AS year, 
-		p.product_name AS product,
-		SUM(pi.quantity) AS total,
+		EXTRACT('year' FROM pu.purchase_date) AS year,  -- Extract purchase year
+		p.product_name AS product,                       -- Product name
+		SUM(pi.quantity) AS total,                       -- Total quantity sold
 		ROW_NUMBER() OVER(
-			PARTITION BY EXTRACT('year' FROM pu.purchase_date)
+			PARTITION BY EXTRACT('year' FROM pu.purchase_date)  -- Rank within each year
 			ORDER BY SUM(pi.quantity) DESC
 		) AS sale_rank
 	FROM product p
@@ -81,12 +93,12 @@ SELECT
 	total,
 	sale_rank
 FROM ranked_sale
-WHERE sale_rank <= 5 and year = '2024'
+WHERE sale_rank <= 5 AND year = '2024'  -- Filter top 5 for 2024 only
 ORDER BY year, total DESC;
+
 
 --------------------------------------------------------------------------------------
 -- -> ABC Classification by product quantity in stock
-
 /*
  What This Does
 - product_name: Name of the product.

@@ -1,4 +1,6 @@
--- -> Update the stock when insert purchase item
+-- Update the stock when insert purchase item
+-- When a product is purchased (Purchase_item is entered), the stock (units_in_stock) should decrease.
+
 CREATE OR REPLACE FUNCTION update_stock_after_purchase()
 RETURNS TRIGGER AS $$
 BEGIN

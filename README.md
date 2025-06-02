@@ -55,7 +55,27 @@ These are advanced SQL functions.
 They help to compare rows and make better analysis.
 
 Find the code [here](./window-functions) <!-- Edite conforme o caminho real -->
+---
+## Function and Trigger Structure
+### Function
+```sql
+ CREATE OR REPLACE FUNCTION function_name()
+ RETURNS return_type AS $$
+ BEGIN
+     -- function logic here
+     RETURN ...;
+ END;
+ $$ LANGUAGE plpgslq;
+```
 
+### Trigger
+```sql
+ CREATE TRIGGER trigger_name()
+ { BEFORE | AFTER | INSTEAD OF }
+ { INSERT OR UPDATE OR DELETE } ON table_name
+ FOR EACH ROW
+ EXECUTE { PROCEDURE | FUNCTION } name();
+```
 ---
 ## 📊 Analysis
 

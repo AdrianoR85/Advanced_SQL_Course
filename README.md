@@ -55,6 +55,7 @@ These are advanced SQL functions.
 They help to compare rows and make better analysis.
 
 Find the code [here](./window-functions) <!-- Edite conforme o caminho real -->
+
 ---
 ## Function and Trigger Structure
 ### Function
@@ -76,6 +77,7 @@ Find the code [here](./window-functions) <!-- Edite conforme o caminho real -->
  FOR EACH ROW
  EXECUTE { PROCEDURE | FUNCTION } name();
 ```
+
 ---
 ## 📊 Analysis
 

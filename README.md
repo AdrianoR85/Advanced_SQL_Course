@@ -49,19 +49,38 @@ It return a single row for each row. The granularity stay the same.
 ### Windows Function Syntax
 ![](./assets/window-syntax.png)
 
-
 ![How to use 'FRAME'](./assets/frame-syntax.png)
 
-This folder has code examples using:
 
-- `ROW_NUMBER()`
-- `RANK()`
-- `DENSE_RANK()`
-- `LEAD()` and `LAG()`
-
-These are advanced SQL functions.  
-They help to compare rows and make better analysis.
-
+#### This code is an example of how to use window functions in SQL.
+```sql
+SELECT
+  purchase_id,
+  purchase_date,
+  
+  -- Previous and next values
+  LAG(total_price, 2, 0) OVER (ORDER BY purchase_date, purchase_id) AS total_2_rows_before,
+  total_price AS total_per_purchase,
+  LEAD(total_price, 1, 0) OVER (ORDER BY purchase_date, purchase_id) AS total_1_row_after,
+  
+  -- Total per date
+  SUM(total_price) OVER (PARTITION BY purchase_date) AS total_per_day,
+  ROW_NUMBER() OVER (PARTITION BY purchase_date ORDER BY total_price DESC) AS rank_by_daily_total,
+  
+  -- Cumulative total up to the current row
+  SUM(total_price) OVER (
+    ORDER BY purchase_date, purchase_id 
+    ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+  ) AS cumulative_total,
+  
+  -- Grand total
+  SUM(total_price) OVER () AS grand_total
+  
+FROM purchase
+WHERE purchase_date >= '2024-01-01'
+ORDER BY purchase_date, purchase_id
+LIMIT 1000;
+```
 Find the code [here](./window-functions) <!-- Edite conforme o caminho real -->
 
 ---

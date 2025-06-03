@@ -25,7 +25,7 @@ The Game Store Project is a small database I created to help me learn SQL in a p
 
 ### 🗺️ Database Diagram
 <p align="center">
-  <img src="./Game Store Project/Model/game_store_model.png" width="85%" alt="Game Store Database Model"/>
+  <img src="./Game Store Project/Model/game_store_model.png" width="100%" alt="Game Store Database Model"/>
 </p>
 
 
@@ -66,11 +66,11 @@ Use a window function when you want to:
 
 ### Windows Function Syntax
 <p align="center">
-  <img src="./assets/window-syntax.png" width="70%" alt="window syntax"/>
+  <img src="./assets/window-syntax.png" width="100%" alt="window syntax"/>
 </p>
 
 <p align="center">
-  <img src="./assets/frame-syntax.png" width="70%" alt="frame syntax"/>
+  <img src="./assets/frame-syntax.png" width="100%" alt="frame syntax"/>
 </p>
 
 

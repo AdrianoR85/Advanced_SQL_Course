@@ -4,15 +4,21 @@ Welcome to my SQL learning repository!
 Here I share my SQL code, small projects, and data analysis.
 
 ## 🧩 Contents
-
-- [`🕹️ Game Store Project`](#-game-store-project)
-- [`🪟 Window Functions`](#-window-functions)
-- [`📊 Analysis`](#-analysis)
-- [`🛠️ Tools Used`](#-tools-used)
-- [`🎯 My Goal`](#-my-goal)
-- [`🤝 Contributing`](#-contributing)
-
----
+- [x] [`🕹️ Game Store Project`](#-game-store-project)
+- [x] [`🪟 Window Functions`](#-window-functions)
+- [ ] 🧩 Subqueries and CTEs
+- [ ] 🔗 Advanced Joins
+- [ ] 🔀 Set Operations
+- [ ] 🧾 Expressions and Conditional Logic
+- [ ] 🧹 Text and Cleaning Functions
+- [ ] 📦 Advanced Aggregation
+- [ ] 🛠️ Function and Trigger Structure
+- [ ] 🚀 Query Performance
+- [ ] 🔒 Views and Security
+- [ ] [`📊 Analysis`](#-analysis)
+- [x] [`🛠️ Tools Used`](#-tools-used)
+- [x] [`🎯 My Goal`](#-my-goal)
+- [x] [`🤝 Contributing`](#-contributing)
 
 ## 🎮 Game Store Project
 
@@ -52,16 +58,16 @@ It does not reduce the number of rows like `GROUP BY` does.
 
 Use a window function when you want to:
 
-- 🔢 Give a row number to each row → ROW_NUMBER()
-- 🧜‍♂️ Find the rank of each row → RANK(), DENSE_RANK(), PERCENT_RANK()
-- 🧗‍♂️ Find the relative position inside a group → CUME_DIST(), NTILE()
-- 👀 Compare a row to the next or previous → LEAD(), LAG()
-- 🎯 Get the first or last value in a group → FIRST_VALUE(), LAST_VALUE()
-- ➕ Make a running total → SUM() OVER(...)
-- ⚖️ Find a running average → AVG() OVER(...)
-- 📈 Get the highest or lowest value in a group → MAX() OVER(...), MIN() OVER(...)
+- 🔢 Give a row number to each row → `ROW_NUMBER()`
+- 🧜‍♂️ Find the rank of each row → `RANK()`, `DENSE_RANK()`, `PERCENT_RANK()`
+- 🧗‍♂️ Find the relative position inside a group → `CUME_DIST()`, `NTILE()`
+- 👀 Compare a row to the next or previous → `LEAD()`, `LAG()`
+- 🎯 Get the first or last value in a group → `FIRST_VALUE()`, `LAST_VALUE()`
+- ➕ Make a running total → `SUM() OVER(...)`
+- ⚖️ Find a running average → `AVG() OVER(...)`
+- 📈 Get the highest or lowest value in a group → `MAX() OVER(...)`, `MIN() OVER(...)`
 - 🔁 Count how many rows in a group → COUNT() OVER(...)
-- 🧶 Use aggregate functions but keep row details → any function with OVER(...)
+- 🧶 Use aggregate functions but keep row details → any function with `OVER(...)`
 
 ### Windows Function Syntax
 ![](./assets/window-syntax.png)

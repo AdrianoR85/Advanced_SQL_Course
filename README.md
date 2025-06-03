@@ -49,6 +49,9 @@ It return a single row for each row. The granularity stay the same.
 ### Windows Function Syntax
 ![](./assets/window-syntax.png)
 
+
+![How to use 'FRAME'](./assets/frame-syntax.png)
+
 This folder has code examples using:
 
 - `ROW_NUMBER()`

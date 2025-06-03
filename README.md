@@ -81,6 +81,8 @@ WHERE purchase_date >= '2024-01-01'
 ORDER BY purchase_date, purchase_id
 LIMIT 1000;
 ```
+![](./assets/example.png)
+
 Find the code [here](./window-functions) <!-- Edite conforme o caminho real -->
 
 ---

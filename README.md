@@ -43,6 +43,8 @@ You can find the SQL code in the [Game Store folder](./Game%20Store%20Project) <
 ---
 
 ## 🪟 Window Functions
+It is a performe calculations on a specififc subset of data, without losing the level of details of rows.
+It return a single row for each row. The granularity stay the same.
 
 ### Windows Function Syntax
 ![](./assets/window-syntax.png)

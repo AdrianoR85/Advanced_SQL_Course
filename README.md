@@ -43,8 +43,25 @@ You can find the SQL code in the [Game Store folder](./Game%20Store%20Project) <
 ---
 
 ## 🪟 Window Functions
-It is a performe calculations on a specififc subset of data, without losing the level of details of rows.
-It return a single row for each row. The granularity stay the same.
+A window function is a special SQL function.
+It does a calculation across rows, but it keeps all the rows in the result.
+
+It does not reduce the number of rows like `GROUP BY` does.
+
+### 📌 When to Use Window Functions
+
+Use a window function when you want to:
+
+- 🔢 Give a row number to each row → ROW_NUMBER()
+- 🧜‍♂️ Find the rank of each row → RANK(), DENSE_RANK(), PERCENT_RANK()
+- 🧗‍♂️ Find the relative position inside a group → CUME_DIST(), NTILE()
+- 👀 Compare a row to the next or previous → LEAD(), LAG()
+- 🎯 Get the first or last value in a group → FIRST_VALUE(), LAST_VALUE()
+- ➕ Make a running total → SUM() OVER(...)
+- ⚖️ Find a running average → AVG() OVER(...)
+- 📈 Get the highest or lowest value in a group → MAX() OVER(...), MIN() OVER(...)
+- 🔁 Count how many rows in a group → COUNT() OVER(...)
+- 🧶 Use aggregate functions but keep row details → any function with OVER(...)
 
 ### Windows Function Syntax
 ![](./assets/window-syntax.png)

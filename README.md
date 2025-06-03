@@ -44,6 +44,9 @@ You can find the SQL code in the [Game Store folder](./Game%20Store%20Project) <
 
 ## 🪟 Window Functions
 
+### Windows Function Syntax
+![](./assets/window-syntax.png)
+
 This folder has code examples using:
 
 - `ROW_NUMBER()`

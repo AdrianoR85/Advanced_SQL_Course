@@ -1,7 +1,6 @@
 # 📘 SQL Learning
 
-Welcome to my SQL learning repository!  
-Here I share my SQL code, small projects, and data analysis.
+Welcome to my SQL learning repository. This is a personal space where I practice and organize everything I learn about SQL, especially advanced topics. I use simple examples, real-world projects, and clear comments in the code to help me understand each concept step by step. My goal is to improve my SQL skills, learn how to write better queries, and practice English at the same time. You will find topics like window functions, subqueries, joins, functions, triggers, and more.
 
 ## 🧩 Contents
 - [x] [`🕹️ Game Store Project`](#-game-store-project)
@@ -22,17 +21,13 @@ Here I share my SQL code, small projects, and data analysis.
 
 ## 🎮 Game Store Project
 
-This is a simple database for a fake game store.  
-I use it to learn how to:
-
-- Create tables
-- Use foreign keys
-- Write SELECT queries
-- Analyze sales and customers
+The Game Store Project is a small database I created to help me learn SQL in a practical way. It simulates a simple video game store, with tables for customers, employees, products, purchases, and categories. I use this project to practice creating tables, writing queries, using foreign keys, and analyzing data like sales and customer behavior. This project helps me apply what I learn in real situations and makes studying more interesting.
 
 ### 🗺️ Database Diagram
+<p align="center">
+  <img src="./Game Store Project/Model/game_store_model.png" width="85%" alt="Game Store Database Model"/>
+</p>
 
-![Game Store Database](./Game%20Store%20Project/Model/game_store_model.png)
 
 ### 🧱 Tables in the Project
 
@@ -70,9 +65,13 @@ Use a window function when you want to:
 - 🧶 Use aggregate functions but keep row details → any function with `OVER(...)`
 
 ### Windows Function Syntax
-![](./assets/window-syntax.png)
+<p align="center">
+  <img src="./assets/window-syntax.png" width="70%" alt="window syntax"/>
+</p>
 
-![How to use 'FRAME'](./assets/frame-syntax.png)
+<p align="center">
+  <img src="./assets/frame-syntax.png" width="70%" alt="frame syntax"/>
+</p>
 
 
 #### This code is an example of how to use window functions in SQL.
@@ -109,6 +108,7 @@ LIMIT 1000;
 Find the code [here](./window-functions) <!-- Edite conforme o caminho real -->
 
 ---
+
 ## Function and Trigger Structure
 ### Function
 ```sql
@@ -165,4 +165,3 @@ But you can give ideas or tips.
 Feel free to open an issue!
 
 ---
- 

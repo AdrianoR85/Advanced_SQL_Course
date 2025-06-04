@@ -5,7 +5,7 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 ## 🧩 Contents
 - [x] [`🕹️ Game Store Project`](#-game-store-project)
 - [x] [`🪟 Window Functions`](#-window-functions)
-- [ ] 🧩 Subqueries and CTEs
+- [x] [`🧩 Subqueries and CTEs`](#-sql-subqueries)
 - [ ] 🔗 Advanced Joins
 - [ ] 🔀 Set Operations
 - [ ] 🧾 Expressions and Conditional Logic
@@ -108,7 +108,7 @@ LIMIT 1000;
 Find the code [here](./window-functions) <!-- Edite conforme o caminho real -->
 
 ---
-## SQL Subqueries
+## 🧩 SQL Subqueries
 ### Overview
 Subqueries are queries written inside other queries. They work like nested boxes - the inner query (subquery) runs first and provides results to the outer query (main query).
 
@@ -136,6 +136,22 @@ Subqueries are queries written inside other queries. They work like nested boxes
 |SELECT    | Add calculated columns    | Show percentage of total   | 
 |FROM      | Use results as temp table | Complex data combinations  |
 
+<p align="center">
+  <img src="./assets/subquery.png" width="70%" alt="subcquery structure"/>
+</p>
+
+### Key Points
+- Subqueries execute before the main query
+- Can be nested multiple levels deep
+- May impact performance with large datasets
+- Often replaceable with JOINs for better speed
+- Useful for breaking complex problems into steps
+
+### Best Practices
+- Keep subqueries simple when possible
+- Consider JOIN alternatives for performance
+- Test with small data sets first
+- Use meaningful aliases for readability
 
 ---
 

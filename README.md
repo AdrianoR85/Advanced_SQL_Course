@@ -108,6 +108,36 @@ LIMIT 1000;
 Find the code [here](./window-functions) <!-- Edite conforme o caminho real -->
 
 ---
+## SQL Subqueries
+### Overview
+Subqueries are queries written inside other queries. They work like nested boxes - the inner query (subquery) runs first and provides results to the outer query (main query).
+
+### Basic Concept
+```sql
+  SELECT column_name 
+  FROM table_name 
+  WHERE column_name > (SELECT AVG(column_name) FROM table_name);
+```
+### Types of Subqueries
+#### Single Value Subqueries
+- Return one result (number, text, date)
+- Used with operators: =, >, <, >=, <=, <>
+- Example: Find products above average price
+
+#### Multiple Value Subqueries
+- Return multiple results
+- Used with: IN, ANY, ALL, EXISTS
+- Example: Find customers in cities with stores
+
+#### Common Locations
+|Location  | Purpose                   | Example Use                |
+| -------- | ------------------------- | -----------                |
+|WHERE     | Filter data               | Find records above average |
+|SELECT    | Add calculated columns    | Show percentage of total   | 
+|FROM      | Use results as temp table | Complex data combinations  |
+
+
+---
 
 ## Function and Trigger Structure
 ### Function

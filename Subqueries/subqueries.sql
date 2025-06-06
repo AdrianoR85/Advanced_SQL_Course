@@ -14,6 +14,13 @@ WHERE
 -------------------------------------------------------------------------------------
 -- Using the subquery in FROM clause.
 -- Show customers and how much each spent, along with the overall average spend
+/*
+What happening:
+    - The cust_total subquery calculates how much each customer spent in total.
+    - The avg_total subquery calculates the total average of purchases.
+    - CROSS JOIN is used to combine all customers with the same overall average.
+    - In the SELECT, you can compare the values.
+*/
 SELECT 
     c.customer_id,
     c.first_name,

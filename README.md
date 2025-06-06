@@ -136,6 +136,9 @@ Subqueries are queries written inside other queries. They work like nested boxes
 |SELECT    | Add calculated columns    | Show percentage of total   | 
 |FROM      | Use results as temp table | Complex data combinations  |
 
+<p align="center">
+  <img src="./assets/subquery.png" width="75%" alt="subquery"/>
+</p>
 
 ### Key Points
 - Subqueries execute before the main query

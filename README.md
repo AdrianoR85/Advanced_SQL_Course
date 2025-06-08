@@ -1,3 +1,5 @@
+[![Postgres](https://img.shields.io/badge/Postgres-17.5+-blue?logo=postgres)](https://www.postgres.org/)
+[![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)]()
 # 📘 SQL Learning
 
 Welcome to my SQL learning repository. This is a personal space where I practice and organize everything I learn about SQL, especially advanced topics. I use simple examples, real-world projects, and clear comments in the code to help me understand each concept step by step. My goal is to improve my SQL skills, learn how to write better queries, and practice English at the same time. You will find topics like window functions, subqueries, joins, functions, triggers, and more.

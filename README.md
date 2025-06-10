@@ -44,6 +44,7 @@ The Game Store Project is a small database I created to help me learn SQL in a p
 
 You can find the SQL code in the [Game Store folder](./Game%20Store%20Project) <!-- Edite se o nome da pasta for diferente -->
 
+[`⬆️Back to Top`](#-Contents)
 ---
 
 ## 🪟 Window Functions
@@ -108,9 +109,14 @@ LIMIT 1000;
 ```
 ![](./assets/example.png)
 
-Find the code [here](./window-functions) <!-- Edite conforme o caminho real -->
+Find the code [here](./window-functions)
+
+[Learn more](https://datawithbaraa.substack.com/p/your-guide-to-sql-window-functions?utm_source=publication-search)
+
+[`⬆️Back to Top`](#-Contents)
 
 ---
+
 ## 🧩 SQL Subqueries
 ### Overview
 Subqueries are queries written inside other queries. They work like nested boxes - the inner query (subquery) runs first and provides results to the outer query (main query).
@@ -156,8 +162,16 @@ Subqueries are queries written inside other queries. They work like nested boxes
   <img src="./assets/subquery.png" width="75%" alt="subquery"/>
 </p>
 
+Find the code [here](./subqueries)
+
+[Learn more](https://datawithbaraa.substack.com/p/sql-subqueries-a-comprehensive-guide?utm_source=publication-search)
+
+[`⬆️Back to Top`](#-Contents)
+
 ---
+
 ## 🧩 SQL CTEs (Common Table Expressions)
+
 ### Overview
 CTEs stands for "Common Table Expressions." They are a useful feature in SQL databases that let you create temporary named result sets within a query.
 Used to simplify writing complex queries, it helps break down logic into smaller parts making them easier to understand.
@@ -206,10 +220,16 @@ We don’t use the ORDER BY clause directly in CTEs unless it's combined with a 
   <img src="./assets/cte_query.drawio.png" width="50%" alt="cte_query"/>
 </p>
 
-[`🔝Back to Top`](#-Contents)
+Find the code [here](./cte-common-table-expressions)
+
+[Learn more](https://datawithbaraa.substack.com/p/sql-ctes-a-comprehensive-guide?utm_source=publication-search)
+
+[`⬆️Back to Top`](#-Contents)
+
 ---
 
 ## Function and Trigger Structure
+
 ### Function
 ```sql
  CREATE OR REPLACE FUNCTION function_name()
@@ -229,14 +249,18 @@ We don’t use the ORDER BY clause directly in CTEs unless it's combined with a 
  FOR EACH ROW
  EXECUTE { PROCEDURE | FUNCTION } name();
 ```
+[`⬆️Back to Top`](#-Contents)
 
 ---
+
 ## 📊 Analysis
 
 This directory contains descriptive and investigative analysis using SQL.  
 Inside the `Description and Investigation` folder, you will find the SQL files used for deeper data exploration and reporting.
 
 Explore the SQL scripts [here](./Analysis)
+
+[`⬆️Back to Top`](#-Contents)
 
 ---
 
@@ -265,3 +289,4 @@ But you can give ideas or tips.
 Feel free to open an issue!
 
 ---
+[`⬆️Back to Top`](#-Contents)

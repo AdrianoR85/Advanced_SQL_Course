@@ -6,14 +6,14 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 
 ## 🧩 Contents
 - [x] [`🕹️ Game Store Project`](#-game-store-project)
+- [ ] 🔗 Joins
+- [ ] 🔗 Union
 - [x] [`🪟 Window Functions`](#-window-functions)
 - [x] [`🧩 Subqueries and CTEs`](#-sql-subqueries)
-- [ ] [`🧩 CTE - Common Table Expressions`](#-sql-subqueries)
-- [ ] 🔗 Advanced Joins
+- [x] [`🧩 CTE - Common Table Expressions`](#-sql-ctes-common-table-expressions)
 - [ ] 🔀 Set Operations
 - [ ] 🧾 Expressions and Conditional Logic
 - [ ] 🧹 Text and Cleaning Functions
-- [ ] 📦 Advanced Aggregation
 - [ ] 🛠️ Function and Trigger Structure
 - [ ] 🚀 Query Performance
 - [ ] 🔒 Views and Security
@@ -139,10 +139,6 @@ Subqueries are queries written inside other queries. They work like nested boxes
 |SELECT    | Add calculated columns    | Show percentage of total   | 
 |FROM      | Use results as temp table | Complex data combinations  |
 
-<p align="center">
-  <img src="./assets/subquery.png" width="75%" alt="subquery"/>
-</p>
-
 ### Key Points
 - Subqueries execute before the main query
 - Can be nested multiple levels deep
@@ -156,11 +152,25 @@ Subqueries are queries written inside other queries. They work like nested boxes
 - Test with small data sets first
 - Use meaningful aliases for readability
 
+<p align="center">
+  <img src="./assets/subquery.png" width="75%" alt="subquery"/>
+</p>
+
 ---
 ## 🧩 SQL CTEs (Common Table Expressions)
 ### Overview
-CTEs (Common Table Expressions) are temporary named result sets that you define within a WITH clause and use in a SELECT, INSERT, UPDATE, or DELETE statement.
-They help organize complex queries and improve readability.
+CTEs stands for "Common Table Expressions." They are a useful feature in SQL databases that let you create temporary named result sets within a query.
+Used to simplify writing complex queries, it helps break down logic into smaller parts making them easier to understand.
+
+Basic Concept
+```sql
+  WITH cte_name AS (
+    SELECT column1, column2
+    FROM table_name
+  )
+  SELECT *
+  FROM cte_name;
+```
 
 ### Types of CTEs:
  - Non-Recursive CTE: Used to structure and simplify queries.
@@ -180,6 +190,11 @@ They help organize complex queries and improve readability.
 - Can use multiple CTEs, separated by commas
 - Recursive CTEs must include UNION ALL
 - CTEs often replace subqueries or derived tables
+
+<p align="center">
+  <img src="./assets/cte_query.drawio.png" width="50%" alt="cte_query"/>
+</p>
+
 ---
 
 ## Function and Trigger Structure

@@ -157,6 +157,30 @@ Subqueries are queries written inside other queries. They work like nested boxes
 - Use meaningful aliases for readability
 
 ---
+## 🧩 SQL CTEs (Common Table Expressions)
+### Overview
+CTEs (Common Table Expressions) are temporary named result sets that you define within a WITH clause and use in a SELECT, INSERT, UPDATE, or DELETE statement.
+They help organize complex queries and improve readability.
+
+### Types of CTEs:
+ - Non-Recursive CTE: Used to structure and simplify queries.
+ - Recursive CTE: Used for hierarchical or tree-structured data.
+
+### Use Cases
+|Purpose	| Example Use |
+|-------- | ----------- |
+| Simplify complex queries | Break down into readable steps|
+| Reuse a result set | Join same result multiple times |
+| Recursive queries |	Hierarchical data like org charts, trees. |
+| Temporary aggregations |	Pre-compute totals, counts, rankings |
+
+### Key Points
+- CTE is temporary, valid only for that query
+- Defined with WITH keyword before the main query
+- Can use multiple CTEs, separated by commas
+- Recursive CTEs must include UNION ALL
+- CTEs often replace subqueries or derived tables
+---
 
 ## Function and Trigger Structure
 ### Function

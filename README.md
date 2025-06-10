@@ -8,6 +8,7 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 - [x] [`🕹️ Game Store Project`](#-game-store-project)
 - [x] [`🪟 Window Functions`](#-window-functions)
 - [x] [`🧩 Subqueries and CTEs`](#-sql-subqueries)
+- [ ] [`🧩 CTE - Common Table Expressions`](#-sql-subqueries)
 - [ ] 🔗 Advanced Joins
 - [ ] 🔀 Set Operations
 - [ ] 🧾 Expressions and Conditional Logic

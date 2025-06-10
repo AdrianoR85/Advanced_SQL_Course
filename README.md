@@ -10,7 +10,7 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 - [ ] 🔗 Union
 - [x] [`🪟 Window Functions`](#-window-functions)
 - [x] [`🧩 Subqueries and CTEs`](#-sql-subqueries)
-- [ ] [`🧩 CTE - Common Table Expressions`](#-sql-ctes-common-table-expressions)
+- [x] [`🧩 CTE - Common Table Expressions`](#-sql-ctes-common-table-expressions)
 - [ ] 🔀 Set Operations
 - [ ] 🧾 Expressions and Conditional Logic
 - [ ] 🧹 Text and Cleaning Functions

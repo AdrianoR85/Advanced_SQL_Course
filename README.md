@@ -175,6 +175,7 @@ Basic Concept
 ### Types of CTEs:
  - Non-Recursive CTE: Used to structure and simplify queries.
  - Recursive CTE: Used for hierarchical or tree-structured data.
+ - Nested CTE: When a CTE dependend on the other CTE
 
 ### Use Cases
 |Purpose	| Example Use |
@@ -190,6 +191,9 @@ Basic Concept
 - Can use multiple CTEs, separated by commas
 - Recursive CTEs must include UNION ALL
 - CTEs often replace subqueries or derived tables
+
+### ❌ Attention
+We don’t use the ORDER BY clause directly in CTEs unless it's combined with a TOP or LIMIT clause, or you're using it inside a subquery that supports ordering.
 
 <p align="center">
   <img src="./assets/cte_query.drawio.png" width="50%" alt="cte_query"/>

@@ -26,13 +26,13 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 
 The Game Store Project is a small database I created to help me learn SQL in a practical way. It simulates a simple video game store, with tables for customers, employees, products, purchases, and categories. I use this project to practice creating tables, writing queries, using foreign keys, and analyzing data like sales and customer behavior. This project helps me apply what I learn in real situations and makes studying more interesting.
 
-### 🗺️ Database Diagram
+### Database Diagram
 <p align="center">
   <img src="./Game Store Project/Model/game_store_model.png" width="85%" alt="Game Store Database Model"/>
 </p>
 
 
-### 🧱 Tables in the Project
+### Tables in the Project
 
 - `Customer` – People who buy games  
 - `Address` – Customer address  
@@ -45,6 +45,7 @@ The Game Store Project is a small database I created to help me learn SQL in a p
 You can find the SQL code in the [Game Store folder](./Game%20Store%20Project) <!-- Edite se o nome da pasta for diferente -->
 
 [`⬆️Back to Top`](#-Contents)
+
 ---
 
 ## 🪟 Window Functions
@@ -53,20 +54,20 @@ It does a calculation across rows, but it keeps all the rows in the result.
 
 It does not reduce the number of rows like `GROUP BY` does.
 
-### 📌 When to Use Window Functions
+### When to Use Window Functions
 
 Use a window function when you want to:
 
-- 🔢 Give a row number to each row → `ROW_NUMBER()`
-- 🧜‍♂️ Find the rank of each row → `RANK()`, `DENSE_RANK()`, `PERCENT_RANK()`
-- 🧗‍♂️ Find the relative position inside a group → `CUME_DIST()`, `NTILE()`
-- 👀 Compare a row to the next or previous → `LEAD()`, `LAG()`
-- 🎯 Get the first or last value in a group → `FIRST_VALUE()`, `LAST_VALUE()`
-- ➕ Make a running total → `SUM() OVER(...)`
-- ⚖️ Find a running average → `AVG() OVER(...)`
-- 📈 Get the highest or lowest value in a group → `MAX() OVER(...)`, `MIN() OVER(...)`
-- 🔁 Count how many rows in a group → COUNT() OVER(...)
-- 🧶 Use aggregate functions but keep row details → any function with `OVER(...)`
+- Give a row number to each row → `ROW_NUMBER()`
+- Find the rank of each row → `RANK()`, `DENSE_RANK()`, `PERCENT_RANK()`
+- Find the relative position inside a group → `CUME_DIST()`, `NTILE()`
+- Compare a row to the next or previous → `LEAD()`, `LAG()`
+- Get the first or last value in a group → `FIRST_VALUE()`, `LAST_VALUE()`
+- Make a running total → `SUM() OVER(...)`
+- Find a running average → `AVG() OVER(...)`
+- Get the highest or lowest value in a group → `MAX() OVER(...)`, `MIN() OVER(...)`
+- Count how many rows in a group → COUNT() OVER(...)
+- Use aggregate functions but keep row details → any function with `OVER(...)`
 
 ### Windows Function Syntax
 <p align="center">
@@ -109,15 +110,16 @@ LIMIT 1000;
 ```
 ![](./assets/example.png)
 
-Find the code [here](./window-functions)
+🔎 Find the code [here](./window-functions)
 
-[Learn more](https://datawithbaraa.substack.com/p/your-guide-to-sql-window-functions?utm_source=publication-search)
+🧑‍💻 [Learn more](https://datawithbaraa.substack.com/p/your-guide-to-sql-window-functions?utm_source=publication-search)
 
 [`⬆️Back to Top`](#-Contents)
 
 ---
 
 ## 🧩 SQL Subqueries
+
 ### Overview
 Subqueries are queries written inside other queries. They work like nested boxes - the inner query (subquery) runs first and provides results to the outer query (main query).
 
@@ -162,9 +164,9 @@ Subqueries are queries written inside other queries. They work like nested boxes
   <img src="./assets/subquery.png" width="75%" alt="subquery"/>
 </p>
 
-Find the code [here](./subqueries)
+🔎 Find the code [here](./subqueries)
 
-[Learn more](https://datawithbaraa.substack.com/p/sql-subqueries-a-comprehensive-guide?utm_source=publication-search)
+🧑‍💻 [Learn more](https://datawithbaraa.substack.com/p/sql-subqueries-a-comprehensive-guide?utm_source=publication-search)
 
 [`⬆️Back to Top`](#-Contents)
 
@@ -220,9 +222,9 @@ We don’t use the ORDER BY clause directly in CTEs unless it's combined with a 
   <img src="./assets/cte_query.drawio.png" width="50%" alt="cte_query"/>
 </p>
 
-Find the code [here](./cte-common-table-expressions)
+🔎 Find the code [here](./cte-common-table-expressions)
 
-[Learn more](https://datawithbaraa.substack.com/p/sql-ctes-a-comprehensive-guide?utm_source=publication-search)
+🧑‍💻 [Learn more](https://datawithbaraa.substack.com/p/sql-ctes-a-comprehensive-guide?utm_source=publication-search)
 
 [`⬆️Back to Top`](#-Contents)
 

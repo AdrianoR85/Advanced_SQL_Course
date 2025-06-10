@@ -192,6 +192,13 @@ Basic Concept
 - Recursive CTEs must include UNION ALL
 - CTEs often replace subqueries or derived tables
 
+### Best Practices
+- Rethink and refactor your CTEs before starting a new one.
+- Don't use more than 5 CTEs in one query; otherside, your code will be hard to understand and maintain.
+- Favor CTEs over deeply nested subqueries.
+- Test performance with large datasets.
+- Use descriptive names for CTEs.
+  
 ### ❌ Attention
 We don’t use the ORDER BY clause directly in CTEs unless it's combined with a TOP or LIMIT clause, or you're using it inside a subquery that supports ordering.
 
@@ -199,6 +206,7 @@ We don’t use the ORDER BY clause directly in CTEs unless it's combined with a 
   <img src="./assets/cte_query.drawio.png" width="50%" alt="cte_query"/>
 </p>
 
+[`🔝Back to Top`](#-Contents)
 ---
 
 ## Function and Trigger Structure

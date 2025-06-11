@@ -1,4 +1,4 @@
--- Union customer names and employee names
+-- Combine the data from employees and customers into one table
 SELECT 
 	first_name,
 	last_name

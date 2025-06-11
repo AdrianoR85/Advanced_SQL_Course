@@ -6,8 +6,6 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 
 ## 🧩 Contents
 - [x] [`🕹️ Game Store Project`](#-game-store-project)
-- [ ] 🔗 Joins
-- [ ] 🔗 Union
 - [x] [`🪟 Window Functions`](#-window-functions)
 - [x] [`🧩 Subqueries and CTEs`](#-sql-subqueries)
 - [x] [`🧩 CTE - Common Table Expressions`](#-sql-ctes-common-table-expressions)
@@ -225,6 +223,60 @@ We don’t use the ORDER BY clause directly in CTEs unless it's combined with a 
 🔎 Find the code [here](./cte-common-table-expressions)
 
 🧑‍💻 [Learn more](https://datawithbaraa.substack.com/p/sql-ctes-a-comprehensive-guide?utm_source=publication-search)
+
+[`⬆️Back to Top`](#-Contents)
+
+---
+
+## 🧩 SQL Set Operations
+
+SQL set operations allow you to combine results from multiple SELECT statements into a single result set. These operations work similarly to mathematical set operations and are used to merge data from different queries
+
+### Main SQL Set Operations
+
+1. **UNION**
+  - Combines results from two or more SELECT statements
+  - Removes duplicate rows
+  - Syntax:
+  ```sql
+    SELECT column1, column2 FROM table1
+    UNION
+    SELECT column1, column2 FROM table2;
+  ```
+2. **UNION ALL**
+  - Combines results from multiple SELECT statements
+  - Includes all rows, including duplicates
+  - More efficient than UNION if duplicates are acceptable
+  - Syntax:
+  ```sql
+    SELECT column1, column2 FROM table1
+    UNION ALL
+    SELECT column1, column2 FROM table2;
+  ```
+3. **INTERSECT**
+  - Returns only rows that appear in both result sets.
+  - Removes duplicates.
+  - Syntax:
+  ```sql
+    SELECT column1, column2 FROM table1
+    INTERSECT
+    SELECT column1, column2 FROM table2;
+  ```
+4. **EXCEPT** (or MINUS in some databases)
+  - Returns rows from the first query that aren't in the second query.
+  - Removes duplicates.
+  - Syntax:
+  ```sql
+    SELECT column1, column2 FROM table1
+    EXCEPT
+    SELECT column1, column2 FROM table2;
+  ```
+### Requirements for Set Operations
+- All SELECT statements must have the same number of columns
+- Corresponding columns must have compatible data types
+- Column names in the result set are taken from the first query
+
+🔎 Find the code [here](./#set-operations)
 
 [`⬆️Back to Top`](#-Contents)
 

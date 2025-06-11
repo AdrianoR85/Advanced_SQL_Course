@@ -10,9 +10,9 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 - [x] [`🧩 Subqueries and CTEs`](#-sql-subqueries)
 - [x] [`🧩 CTE - Common Table Expressions`](#-sql-ctes-common-table-expressions)
 - [ ] 🔀 Set Operations
+- [ ] 🛠️ Function and Trigger Structure
 - [ ] 🧾 Expressions and Conditional Logic
 - [ ] 🧹 Text and Cleaning Functions
-- [ ] 🛠️ Function and Trigger Structure
 - [ ] 🚀 Query Performance
 - [ ] 🔒 Views and Security
 - [ ] [`📊 Analysis`](#-analysis)
@@ -276,7 +276,7 @@ SQL set operations allow you to combine results from multiple SELECT statements 
 - Corresponding columns must have compatible data types
 - Column names in the result set are taken from the first query
 
-🔎 Find the code [here](./#set-operations)
+🔎 Find the code [here](./set-operations)
 
 [`⬆️Back to Top`](#-Contents)
 

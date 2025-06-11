@@ -9,7 +9,7 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 - [x] [`🪟 Window Functions`](#-window-functions)
 - [x] [`🧩 Subqueries and CTEs`](#-sql-subqueries)
 - [x] [`🧩 CTE - Common Table Expressions`](#-sql-ctes-common-table-expressions)
-- [ ] 🔀 Set Operations
+- [x] [`🔀 Set Operations`](#sql-set-operations)
 - [ ] 🛠️ Function and Trigger Structure
 - [ ] 🧾 Expressions and Conditional Logic
 - [ ] 🧹 Text and Cleaning Functions

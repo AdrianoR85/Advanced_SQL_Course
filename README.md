@@ -10,8 +10,8 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 - [x] [`🧩 Subqueries and CTEs`](#-sql-subqueries)
 - [x] [`🧩 CTE - Common Table Expressions`](#-sql-ctes-common-table-expressions)
 - [x] [`🔀 Set Operations`](#sql-set-operations)
-- [ ] [`🛠️ Function and Procedure Structure`](#function-and-procedure-structure)
-- [ ] 🛠️ Trigger
+- [x] [`🛠️ Function and Procedure Structure`](#function-and-procedure-structure)
+- [x] [``🛠️ Trigger``](#-trigger)
 - [ ] 🧾 Expressions and Conditional Logic
 - [ ] 🧹 Text and Cleaning Functions
 - [ ] 🚀 Query Performance
@@ -332,10 +332,6 @@ $$ LANGUAGE plpgsql;
 - Execute multiple SQL statements as a unit
 - Don't need to use the result in a SQL statement
 
-
-[`⬆️Back to Top`](#-Contents)
-
----
 ### Key Differences
 | Feature             | Function      | Procedure   |
 | ------------------- | ------------- | ----------- |
@@ -345,18 +341,52 @@ $$ LANGUAGE plpgsql;
 | Calling syntax	    | SELECT func() |	CALL proc() |
 | Exception handling	| Yes	          | Yes         |
 
+🔎 Find the code [here](./Functions_and_Procedures/)
+
+[`⬆️Back to Top`](#-Contents)
+
+---
 
  
 ## 🧩 Trigger
 
 ### Trigger
+A trigger is a database object that automatically executes (or "fires") in response to specific events on a table or view, such as ``INSERT``, ``UPDATE``, ``DELETE``, or ``TRUNCATE``. Triggers are used to enforce business rules, maintain data integrity, audit changes, and automate tasks.
+
+Triggers are powerful tools for automating database actions, but they should be used carefully to avoid performance issues and maintainability problems.
+
+#### Types of Triggers
+1. *Based on Timing*
+- ``BEFORE``: Execute before the triggering event (e.g., before a row is inserted). 
+- ``AFTER``: Execute after the triggering event (e.g., after a row is updated)
+- ``INTEAD OF``: Used with views to modify data when direct DML operations are not possible.
+
+2.  *Based on Event*
+- ``INSERT``: Fires when a new row is inserted.
+- ``UPDATE``: Fires when a row is modified.
+- ``DELETE``:Fires when a row is deleted.
+- ``TRUNCATE``: Fires when a table is truncated (not supported in all databases)
+
+Trigger Syntax (PostgreSQL Example)
 ```sql
- CREATE TRIGGER trigger_name()
- { BEFORE | AFTER | INSTEAD OF }
- { INSERT OR UPDATE OR DELETE } ON table_name
- FOR EACH ROW
- EXECUTE { PROCEDURE | FUNCTION } name();
+CREATE OR REPLACE TRIGGER trigger_name
+{BEFORE | AFTER | INSTEAD OF} {INSERT | UPDATE | DELETE | TRUNCATE}
+ON table_name
+[FOR EACH ROW | FOR EACH STATEMENT]
+[WHEN (condition)]
+EXECUTE FUNCTION trigger_function();
 ```
+#### Key Components
+- ``trigger_name``: Name of the trigger.
+- ``BEFORE/AFTER/INSTEAD OF``: When the trigger executes.
+- ``INSERT/UPDATE/DELETE/TRUNCATE``: The event that fires the trigger.
+- ``FOR EACH ROW``: Executes once per affected row.
+- ``FOR EACH STATEMENT``: Executes once per SQL statement (default).
+- ``WHEN (condition)``: Optional condition to control trigger execution.
+- ``EXECUTE FUNCTION`` Calls a function that contains the trigger logic.
+
+🔎 Find the code [here](./Triggers/)
+
 [`⬆️Back to Top`](#-Contents)
 
 ---

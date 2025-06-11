@@ -10,7 +10,8 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 - [x] [`🧩 Subqueries and CTEs`](#-sql-subqueries)
 - [x] [`🧩 CTE - Common Table Expressions`](#-sql-ctes-common-table-expressions)
 - [x] [`🔀 Set Operations`](#sql-set-operations)
-- [ ] 🛠️ Function and Trigger Structure
+- [ ] [`🛠️ Function and Procedure Structure`](#function-and-procedure-structure)
+- [ ] 🛠️ Trigger
 - [ ] 🧾 Expressions and Conditional Logic
 - [ ] 🧹 Text and Cleaning Functions
 - [ ] 🚀 Query Performance
@@ -282,9 +283,18 @@ SQL set operations allow you to combine results from multiple SELECT statements 
 
 ---
 
-## Function and Trigger Structure
+## 🧩 Function and Procedure Structure
+  Functions and procedures are both database objects that contain reusable SQL code, but they have important differences in how they work and when to use them.
 
 ### Function
+
+#### Characteristics:
+- Must return a value (can be scalar or table-valued)
+- Can be used in SQL statements (SELECT, WHERE, HAVING, etc.)
+- Cannot modify database state (with some exceptions)
+- Run within the calling transaction
+- No transaction control (cannot COMMIT/ROLLBACK)
+- Syntax:
 ```sql
  CREATE OR REPLACE FUNCTION function_name()
  RETURNS return_type AS $$
@@ -294,6 +304,50 @@ SQL set operations allow you to combine results from multiple SELECT statements 
  END;
  $$ LANGUAGE plpgslq;
 ```
+#### Use functions when you need to:
+- Return a single value or table
+- Use the result in a larger SQL query
+- Need read-only operations
+
+### Procedure
+
+#### Characteristics:
+- Don't return values (but can have OUT parameters)
+- Can modify database state
+- Can control transactions (COMMIT/ROLLBACK allowed)
+- Called with EXECUTE or CALL
+- Cannot be used directly in SQL statements
+- Syntax:
+```sql
+ CREATE OR REPLACE PROCEDURE procedure_name(parameters)
+AS $$
+BEGIN
+    -- Procedure logic
+END;
+$$ LANGUAGE plpgsql;
+```
+
+#### Use procedures when you need to:
+- Perform data modification with transaction control
+- Execute multiple SQL statements as a unit
+- Don't need to use the result in a SQL statement
+
+
+[`⬆️Back to Top`](#-Contents)
+
+---
+### Key Differences
+| Feature             | Function      | Procedure   |
+| ------------------- | ------------- | ----------- |
+| Return value        | Required	    | Optional    |
+| SQL statement use   |	Yes	          | No          |
+| Transaction control |	No	          | Yes         |
+| Calling syntax	    | SELECT func() |	CALL proc() |
+| Exception handling	| Yes	          | Yes         |
+
+
+ 
+## 🧩 Trigger
 
 ### Trigger
 ```sql

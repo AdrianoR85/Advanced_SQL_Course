@@ -12,7 +12,7 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 - [x] [`🔀 Set Operations`](#sql-set-operations)
 - [x] [`🛠️ Function and Procedure Structure`](#function-and-procedure-structure)
 - [x] [``🛠️ Trigger``](#-trigger)
-- [ ] 🧾 Conditional Logic
+- [x] 🧾 Conditional Logic
 - [ ] 🧹 Text and Cleaning Functions
 - [ ] 🚀 Query Performance
 - [ ] 🔒 Views and Security
@@ -442,7 +442,7 @@ FROM tabela
 WHERE condição_booleana;
 ```
 
-🔎 Find the code [here](./Functions_and_Procedures/)
+🔎 Find the code [here](./Conditional%20Logic/)
 
 [`⬆️Back to Top`](#-Contents)
 

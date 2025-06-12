@@ -394,7 +394,7 @@ EXECUTE FUNCTION trigger_function();
 ## 🧩 Conditional Logic
 Conditional logic allows you to control the flow of your SQL queries based on specified conditions. PostgreSQL offers several constructs for this:
 
-1. *CASE Statement*
+1. **CASE Statement**
 
 - The ``CASE`` expression allows conditional logic similar to if-then-else.
 
@@ -407,20 +407,20 @@ CASE
     ELSE resultN
 END
 ```
-2. *COALESCE*
+2. **COALESCE**
 - Returns the first ``non-null`` value in the list.
 - Syntax:
 ```sql
   COALESCE(valor1, valor2, ..., valorN)
 ```
-3. *NULLIF*
+3. **NULLIF**
 - Returns ``NULL`` if the two arguments are equal; otherwise returns the first argument.
 - Syntax:
 ```sql
 NULLIF(valor1, valor2)
 ```
 
-4. *IF-THEN-ELSE*
+4. **IF-THEN-ELSE**
 - Inside functions or stored procedures, you can use ``IF-THEN-ELSE`` logic.
 - Syntax:
 ```sql
@@ -433,7 +433,7 @@ ELSE
 END IF;
 ```
 
-5. *Boolean Expressions*
+5. **Boolean Expressions**
 - Used directly in WHERE, JOIN, ON, etc.
 - Syntax:
 ```sql

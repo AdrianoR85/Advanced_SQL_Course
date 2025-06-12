@@ -12,7 +12,7 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 - [x] [`🔀 Set Operations`](#sql-set-operations)
 - [x] [`🛠️ Function and Procedure Structure`](#function-and-procedure-structure)
 - [x] [``🛠️ Trigger``](#-trigger)
-- [ ] 🧾 Expressions and Conditional Logic
+- [ ] 🧾 Conditional Logic
 - [ ] 🧹 Text and Cleaning Functions
 - [ ] 🚀 Query Performance
 - [ ] 🔒 Views and Security
@@ -45,9 +45,9 @@ You can find the SQL code in the [Game Store folder](./Game%20Store%20Project) <
 
 [`⬆️Back to Top`](#-Contents)
 
----
+------------------------------------------------------------------------------------------------
 
-## 🪟 Window Functions
+## 🧩 Window Functions
 A window function is a special SQL function.
 It does a calculation across rows, but it keeps all the rows in the result.
 
@@ -115,7 +115,7 @@ LIMIT 1000;
 
 [`⬆️Back to Top`](#-Contents)
 
----
+------------------------------------------------------------------------------------------------
 
 ## 🧩 SQL Subqueries
 
@@ -169,7 +169,7 @@ Subqueries are queries written inside other queries. They work like nested boxes
 
 [`⬆️Back to Top`](#-Contents)
 
----
+------------------------------------------------------------------------------------------------
 
 ## 🧩 SQL CTEs (Common Table Expressions)
 
@@ -227,7 +227,7 @@ We don’t use the ORDER BY clause directly in CTEs unless it's combined with a 
 
 [`⬆️Back to Top`](#-Contents)
 
----
+------------------------------------------------------------------------------------------------
 
 ## 🧩 SQL Set Operations
 
@@ -281,7 +281,7 @@ SQL set operations allow you to combine results from multiple SELECT statements 
 
 [`⬆️Back to Top`](#-Contents)
 
----
+------------------------------------------------------------------------------------------------
 
 ## 🧩 Function and Procedure Structure
   Functions and procedures are both database objects that contain reusable SQL code, but they have important differences in how they work and when to use them.
@@ -345,7 +345,7 @@ $$ LANGUAGE plpgsql;
 
 [`⬆️Back to Top`](#-Contents)
 
----
+------------------------------------------------------------------------------------------------
 
  
 ## 🧩 Trigger
@@ -389,7 +389,64 @@ EXECUTE FUNCTION trigger_function();
 
 [`⬆️Back to Top`](#-Contents)
 
----
+------------------------------------------------------------------------------------------------
+
+## 🧩 Conditional Logic
+Conditional logic allows you to control the flow of your SQL queries based on specified conditions. PostgreSQL offers several constructs for this:
+
+1. *CASE Statement*
+
+- The ``CASE`` expression allows conditional logic similar to if-then-else.
+
+- Syntax:
+```sql
+CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    ...
+    ELSE resultN
+END
+```
+2. *COALESCE*
+- Returns the first ``non-null`` value in the list.
+- Syntax:
+```sql
+  COALESCE(valor1, valor2, ..., valorN)
+```
+3. *NULLIF*
+- Returns ``NULL`` if the two arguments are equal; otherwise returns the first argument.
+- Syntax:
+```sql
+NULLIF(valor1, valor2)
+```
+
+4. *IF-THEN-ELSE*
+- Inside functions or stored procedures, you can use ``IF-THEN-ELSE`` logic.
+- Syntax:
+```sql
+IF condição THEN
+    -- comandos
+ELSIF outra_condição THEN
+    -- comandos
+ELSE
+    -- comandos
+END IF;
+```
+
+5. *Boolean Expressions*
+- Used directly in WHERE, JOIN, ON, etc.
+- Syntax:
+```sql
+SELECT ...
+FROM tabela
+WHERE condição_booleana;
+```
+
+🔎 Find the code [here](./Functions_and_Procedures/)
+
+[`⬆️Back to Top`](#-Contents)
+
+------------------------------------------------------------------------------------------------
 
 ## 📊 Analysis
 

@@ -448,6 +448,38 @@ WHERE condição_booleana;
 
 ------------------------------------------------------------------------------------------------
 
+## 🧩 Text and Cleaning Functions
+
+Text and cleaning functions in PostgreSQL help standardize and prepare string data for querying, analysis, and reporting. These functions are especially useful when working with product names, customer records, or address fields.
+
+### Common Functions
+
+| Function	                         | Description	                             | Example
+| ---------------------------------- | ----------------------------------------- | ------------------------------------------------- |
+| ``UPPER(text)``	                   | Converts text to uppercase	               | ``UPPER('gamepad')`` → 'GAMEPAD'                      |
+| ``LOWER(text)``	                   | Converts text to lowercase	               | ``LOWER('GAMER')`` → 'gamer'                          |
+| ``INITCAP(text)``	                 | Capitalizes the first letter of each word | ``INITCAP('john doe')`` → 'John Doe'                  |
+| ``TRIM(text)``	                   | Removes spaces from both ends	           | ``TRIM(' game ')`` → 'game'                           |
+| ``REPLACE(text, from, to)``	       | Replaces all occurrences of a substring	 | ``REPLACE('XBOX_ONE', '_', ' ')`` → 'XBOX ONE'        |
+| ``SUBSTRING(text, from, len)``	   | Extracts a substring	                     | ``SUBSTRING('controller', 1, 4)`` → 'cont'            |
+| ``SPLIT_PART(text, delimiter, n)`` | Returns the n-th part of a split string   | ``SPLIT_PART('PS5-DUALSENSE', '-', 2)`` → 'DUALSENSE' | 
+| ``LENGTH(text)``	                 | Returns length of string	                 | ``LENGTH('keyboard')`` → 8                            | 
+
+### Advanced Functions and Cleaning
+
+| Function	                           | Description	                     | Example
+| ------------------------------------ | --------------------------------- | ------------------------------------------------- |
+| ``REGEXP_REPLACE``	                 | Replace using regular expressions | REGEXP_REPLACE('a1b2', '[0-9]', '', 'g') → 'ab' |
+| ``REGEXP_MATCHES``	                 | Search using regular expressions	 | REGEXP_MATCHES('abc123', '\d+') |
+| ``SPLIT_PART(string, delim, field)`` | Split text and get specific part	 | SPLIT_PART('a;b;c', ';', 2) → 'b' |
+| ``POSITION(sub IN text)``	           | Find position of a substring      | POSITION('b' IN 'abc') → 2 |
+
+
+[`⬆️Back to Top`](#-Contents)
+
+------------------------------------------------------------------------------------------------
+
+
 ## 📊 Analysis
 
 This directory contains descriptive and investigative analysis using SQL.  

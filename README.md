@@ -455,7 +455,7 @@ Text and cleaning functions in PostgreSQL help standardize and prepare string da
 ### Common Functions
 
 | Function	                         | Description	                             | Example
-| ---------------------------------- | ----------------------------------------- | ------------------------------------------------- |
+| ---------------------------------- | ----------------------------------------- | ----------------------------------------------------- |
 | ``UPPER(text)``	                   | Converts text to uppercase	               | ``UPPER('gamepad')`` → 'GAMEPAD'                      |
 | ``LOWER(text)``	                   | Converts text to lowercase	               | ``LOWER('GAMER')`` → 'gamer'                          |
 | ``INITCAP(text)``	                 | Capitalizes the first letter of each word | ``INITCAP('john doe')`` → 'John Doe'                  |
@@ -464,16 +464,12 @@ Text and cleaning functions in PostgreSQL help standardize and prepare string da
 | ``SUBSTRING(text, from, len)``	   | Extracts a substring	                     | ``SUBSTRING('controller', 1, 4)`` → 'cont'            |
 | ``SPLIT_PART(text, delimiter, n)`` | Returns the n-th part of a split string   | ``SPLIT_PART('PS5-DUALSENSE', '-', 2)`` → 'DUALSENSE' | 
 | ``LENGTH(text)``	                 | Returns length of string	                 | ``LENGTH('keyboard')`` → 8                            | 
+| ``REGEXP_REPLACE``	               | Replace using regular expressions         | ``REGEXP_REPLACE('a1b2', '[0-9]', '', 'g')`` → 'ab'   |
+| ``REGEXP_MATCHES``	               | Search using regular expressions	         | ``REGEXP_MATCHES('abc123', '\d+')``                   |
+| ``POSITION(sub IN text)``	         | Find position of a substring              | ``POSITION('b' IN 'abc')`` → 2                        |
 
-### Advanced Functions and Cleaning
 
-| Function	                           | Description	                     | Example
-| ------------------------------------ | --------------------------------- | ------------------------------------------------- |
-| ``REGEXP_REPLACE``	                 | Replace using regular expressions | REGEXP_REPLACE('a1b2', '[0-9]', '', 'g') → 'ab' |
-| ``REGEXP_MATCHES``	                 | Search using regular expressions	 | REGEXP_MATCHES('abc123', '\d+') |
-| ``SPLIT_PART(string, delim, field)`` | Split text and get specific part	 | SPLIT_PART('a;b;c', ';', 2) → 'b' |
-| ``POSITION(sub IN text)``	           | Find position of a substring      | POSITION('b' IN 'abc') → 2 |
-
+🔎 Find the code [here](./Text%20and%20Cleaning%20Functions/)
 
 [`⬆️Back to Top`](#-Contents)
 
@@ -489,7 +485,7 @@ Explore the SQL scripts [here](./Analysis)
 
 [`⬆️Back to Top`](#-Contents)
 
----
+------------------------------------------------------------------------------------------------
 
 ## 🛠️ Tools Used
 
@@ -497,7 +493,7 @@ Explore the SQL scripts [here](./Analysis)
 - **DBeaver / pgAdmin** – Tools to manage the database
 - **VS Code** – Editor for SQL code
 
----
+------------------------------------------------------------------------------------------------
 
 ## 🎯 My Goal
 
@@ -507,7 +503,7 @@ I want to:
 - Create small but real projects
 - Learn step by step with fun ideas
 
----
+------------------------------------------------------------------------------------------------
 
 ## 🤝 Contributing
 
@@ -515,5 +511,6 @@ This is a study project.
 But you can give ideas or tips.  
 Feel free to open an issue!
 
----
+------------------------------------------------------------------------------------------------
+
 [`⬆️Back to Top`](#-Contents)

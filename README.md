@@ -13,7 +13,7 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 - [x] [`🧩 Function and Procedure Structure`](#function-and-procedure-structure)
 - [x] [`🧩 Trigger`](#-trigger)
 - [x] [`🧩 Conditional Logic`](#-conditional-logic) 
-- [ ] 🧩 Text and Cleaning Functions
+- [ ] [`🧩 Text and Cleaning Functions`](#-text-and-cleaning-functions)
 - [ ] 🧩 Query Performance
 - [ ] 🧩 Views and Security
 - [ ] [`📊 Analysis`](#-analysis)

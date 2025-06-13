@@ -111,7 +111,8 @@ LIMIT 1000;
 
 🔎 Find the code [here](./window-functions)
 
-🧑‍💻 [Learn more](https://datawithbaraa.substack.com/p/your-guide-to-sql-window-functions?utm_source=publication-search)
+🧑‍💻 Lear more about in [Data with Baraa](https://datawithbaraa.substack.com/p/your-guide-to-sql-window-functions?utm_source=publication-search)
+
 
 [`⬆️Back to Top`](#-Contents)
 
@@ -165,7 +166,7 @@ Subqueries are queries written inside other queries. They work like nested boxes
 
 🔎 Find the code [here](./subqueries)
 
-🧑‍💻 [Learn more](https://datawithbaraa.substack.com/p/sql-subqueries-a-comprehensive-guide?utm_source=publication-search)
+🧑‍💻 Lear more about in [Data with Baraa](https://datawithbaraa.substack.com/p/sql-subqueries-a-comprehensive-guide?utm_source=publication-search)
 
 [`⬆️Back to Top`](#-Contents)
 
@@ -223,7 +224,7 @@ We don’t use the ORDER BY clause directly in CTEs unless it's combined with a 
 
 🔎 Find the code [here](./cte-common-table-expressions)
 
-🧑‍💻 [Learn more](https://datawithbaraa.substack.com/p/sql-ctes-a-comprehensive-guide?utm_source=publication-search)
+🧑‍💻 Learn more about it in [Data with Baraa](https://datawithbaraa.substack.com/p/sql-ctes-a-comprehensive-guide?utm_source=publication-search)
 
 [`⬆️Back to Top`](#-Contents)
 
@@ -475,6 +476,51 @@ Text and cleaning functions in PostgreSQL help standardize and prepare string da
 
 ------------------------------------------------------------------------------------------------
 
+## 🧩 Query Optimization
+
+SQL query optimization is the process of improving the efficiency of SQL queries to achieve faster execution times and reduce resource consumption, thereby enhancing overall database performance. This is crucial for ensuring applications run smoothly, especially as data volumes grow and queries become more complex
+
+### Why SQL Query Optimization Matters
+- Faster Query Execution: Optimized queries retrieve and manipulate data more quickly, improving application responsiveness and user experience.
+- Reduced Resource Usage: Efficient queries minimize CPU, memory, and I/O load, enabling the database to handle more concurrent users.
+- Cost Savings and Scalability: Optimized queries reduce infrastructure costs and ensure performance remains stable as data grows.
+- Improved Productivity: Faster queries allow developers and analysts to work more effectively without long wait times
+
+### Key Techniques for SQL Query Optimization
+
+#### 1. Indexing:
+Creating indexes on columns frequently used in ``WHERE``, ``JOIN``, ``ORDER BY``, and ``GROUP BY`` clauses drastically reduces data scanning time. However, over-indexing can slow down write operations and consume extra storage, so indexes should be applied judiciously on critical columns.
+
+#### 2. Selective Column Retrieval:
+Avoid using ``SELECT *``; instead, specify only the necessary columns. This reduces the volume of data processed and transferred, speeding up query execution.
+
+#### 3. Optimizing Joins:
+Choosing the right type of join (e.g., ``INNER JOIN`` vs. ``LEFT JOIN``) based on the data retrieval needs can improve performance. ``INNER JOIN``s are generally faster when only matching rows are needed.
+
+#### 4. Query Rewriting and Simplification:
+Techniques such as predicate pushdown (applying filters early), subquery unnesting (replacing subqueries with joins), join elimination, and expression simplification help the query optimizer generate better execution plans.
+
+#### 5. Using Execution Plans and Tools:
+Analyzing execution plans (e.g., via ``EXPLAIN``) helps identify bottlenecks and inefficiencies in queries, guiding targeted optimizations.
+
+#### 6. Stored Procedures:
+Precompiled stored procedures reduce parsing and compilation overhead for frequently executed queries, improving performance.
+
+#### 7. Database Design and Structure:
+Proper normalization reduces data redundancy, while strategic denormalization can speed up complex queries. Table partitioning can also help by limiting data access to relevant partitions.
+
+#### 8. Limiting and Pagination:
+Using clauses like ``LIMIT`` or `TOP` restricts the number of rows returned, which is especially useful for large datasets and improves response times.
+
+#### 9. Updating Statistics:
+Keeping database statistics current ensures the query optimizer makes informed decisions, avoiding suboptimal execution plans.
+
+#### 10. Query Caching:
+Caching frequent query results reduces database load and speeds up response times
+
+**🧑‍💻 Learn more about in** [DataCamp](https://www.datacamp.com/blog/sql-query-optimization), [AccelData](https://www.acceldata.io/blog/query-optimization-in-sql-essential-techniques-tools-and-best-practices), [SeveralNines](https://severalnines.com/blog/using-explain-improve-sql-query-performance/)
+
+[`⬆️Back to Top`](#-Contents)
 
 ## 📊 Analysis
 

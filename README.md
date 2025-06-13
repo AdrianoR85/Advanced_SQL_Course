@@ -490,6 +490,10 @@ SQL query optimization is the process of improving the efficiency of SQL queries
 
 #### 1. Indexing:
 Creating indexes on columns frequently used in ``WHERE``, ``JOIN``, ``ORDER BY``, and ``GROUP BY`` clauses drastically reduces data scanning time. However, over-indexing can slow down write operations and consume extra storage, so indexes should be applied judiciously on critical columns.
+```sql
+  CREATE INDEX nome_do_indice
+  ON nome_da_tabela (coluna1 [, coluna2, ...]);
+```
 
 #### 2. Selective Column Retrieval:
 Avoid using ``SELECT *``; instead, specify only the necessary columns. This reduces the volume of data processed and transferred, speeding up query execution.
@@ -502,6 +506,12 @@ Techniques such as predicate pushdown (applying filters early), subquery unnesti
 
 #### 5. Using Execution Plans and Tools:
 Analyzing execution plans (e.g., via ``EXPLAIN``) helps identify bottlenecks and inefficiencies in queries, guiding targeted optimizations.
+```sql
+  EXPLAIN
+  SELECT coluna1, coluna2
+  FROM tabela
+  WHERE condição; 
+```
 
 #### 6. Stored Procedures:
 Precompiled stored procedures reduce parsing and compilation overhead for frequently executed queries, improving performance.
@@ -518,7 +528,8 @@ Keeping database statistics current ensures the query optimizer makes informed d
 #### 10. Query Caching:
 Caching frequent query results reduces database load and speeds up response times
 
-**🧑‍💻 Learn more about in** [DataCamp](https://www.datacamp.com/blog/sql-query-optimization), [AccelData](https://www.acceldata.io/blog/query-optimization-in-sql-essential-techniques-tools-and-best-practices), [SeveralNines](https://severalnines.com/blog/using-explain-improve-sql-query-performance/)
+
+🧑‍💻 Learn more about it in [DataCamp](https://www.datacamp.com/blog/sql-query-optimization), [AccelData](https://www.acceldata.io/blog/query-optimization-in-sql-essential-techniques-tools-and-best-practices), [SeveralNines](https://severalnines.com/blog/using-explain-improve-sql-query-performance/)
 
 [`⬆️Back to Top`](#-Contents)
 

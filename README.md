@@ -14,14 +14,23 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 - [x] [`🧩 Trigger`](#-trigger)
 - [x] [`🧩 Conditional Logic`](#-conditional-logic) 
 - [x] [`🧩 Text and Cleaning Functions`](#-text-and-cleaning-functions)
-- [ ] 🧩 Query Performance
-- [ ] 🧩 Views and Security
-- [ ] [`📊 Analysis`](#-analysis)
+- [x] [`🧩 Query Performance`](#-query-optimization)
+- [x] [`🧩 Views`](#-sql-views)
+- [x] [`📊 Analysis`](#-analysis)
 - [x] [`🛠️ Tools Used`](#-tools-used)
 - [x] [`🎯 My Goal`](#-my-goal)
 - [x] [`🤝 Contributing`](#-contributing)
 
-## 🎮 Game Store Project
+------------------------------------------------------------------------------------------------
+
+## 🧑‍💻 Source of Study
+- [Data with Baraa](https://www.youtube.com/@DataWithBaraa)
+- [SQL for Data Analysis - Book](https://www.oreilly.com/library/view/sql-for-data/9781492088776/)
+- Technology websites
+
+------------------------------------------------------------------------------------------------
+
+## 🗄️ Game Store Project
 
 The Game Store Project is a small database I created to help me learn SQL in a practical way. It simulates a simple video game store, with tables for customers, employees, products, purchases, and categories. I use this project to practice creating tables, writing queries, using foreign keys, and analyzing data like sales and customer behavior. This project helps me apply what I learn in real situations and makes studying more interesting.
 
@@ -532,6 +541,44 @@ Caching frequent query results reduces database load and speeds up response time
 🧑‍💻 Learn more about it in [DataCamp](https://www.datacamp.com/blog/sql-query-optimization), [AccelData](https://www.acceldata.io/blog/query-optimization-in-sql-essential-techniques-tools-and-best-practices), [SeveralNines](https://severalnines.com/blog/using-explain-improve-sql-query-performance/)
 
 [`⬆️Back to Top`](#-Contents)
+
+## SQL Views
+
+Views are virtual tables in SQL that don't store data themselves but instead display data from one or more underlying tables. They act as saved SQL queries that you can reference like regular tables.
+
+### Key Characteristics of Views
+- Virtual Tables: Views don't physically store data (except materialized views)
+- Dynamic: Data is fetched from base tables when the view is queried
+- Customizable: Can show selected columns, calculated fields, or filtered data
+- Security Layer: Can restrict access to sensitive data
+
+### Basic syntax:
+```sql
+  CREATE VIEW view_name AS
+  SELECT column1, column2, ...
+  FROM table_name
+  WHERE condition;
+```
+### Modifying and Dropping Views
+#### Update a view:
+```sql
+  CREATE OR REPLACE VIEW view_name AS
+  SELECT new_columns...
+  FROM tables...
+  WHERE new_conditions...;
+```
+#### Drop a view:
+```sql
+  DROP VIEW view_name;
+```
+
+🔎 Find the code [here](./views)
+
+🧑‍💻 Learn more about it in [Data with Baraa](https://datawithbaraa.substack.com/p/sql-views-the-hidden-gem-of-database?utm_source=publication-search)
+
+[`⬆️Back to Top`](#-Contents)
+
+------------------------------------------------------------------------------------------------
 
 ## 📊 Analysis
 

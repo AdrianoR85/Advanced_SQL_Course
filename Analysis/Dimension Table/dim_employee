@@ -1,0 +1,7 @@
+CREATE VIEW dim_employee AS
+SELECT
+	employee_id,
+	CONCAT(first_name, ' ', last_name) AS employee_name,
+	DATE_PART('YEAR', AGE(birth_date)) AS age,
+	EXTRACT('YEAR' FROM AGE(CURRENT_DATE, hire_date)) AS company_time
+FROM employee;

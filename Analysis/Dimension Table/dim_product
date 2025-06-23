@@ -1,0 +1,9 @@
+CREATE VIEW dim_product AS
+SELECT 
+	p.product_id,
+	p.product_name,
+	c.name AS category,
+	p.unit_price,
+	p.units_in_stock
+FROM product p
+JOIN category c ON p.category_id = c.category_id;

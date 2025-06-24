@@ -582,8 +582,41 @@ Views are virtual tables in SQL that don't store data themselves but instead dis
 
 ## 📊 Analysis
 
-This directory contains descriptive and investigative analysis using SQL.  
-Inside the `Description and Investigation` folder, you will find the SQL files used for deeper data exploration and reporting.
+This project aims to build a Data Warehouse using PostgreSQL to support sales analysis for a video game store. The architecture follows an **ETL pipeline** and a **Star Schema dimensional model**, allowing data visualization through BI tools like Power BI or Tableau.
+
+### Business Objectives (Logistics)
+
+- Identify the best-selling products
+- Evaluate shipping performance (delivery time, delays)
+- Understand customer behavior
+- Measure employee performance
+- Analyze sales trends and seasonality
+- Explore regional sales performance (city, state)
+
+### Data Architecture
+
+```text
+[1] Analisy the data and Ask the question.
+       ↓
+[2] Bronze: raw - normalized relational database
+       ↓
+[3] Silver: Extract, Transform and Load the data into the data warehouse 
+       ↓
+[4] Gold Layer: Star Schema with fact and dimension tables
+       ↓
+[5] BI: Dashboard built with Power BI / Tableau
+```
+
+### Questions to Answer.
+- Total Sales (revenue)
+- Average Shipping Days
+- % of On-Time Deliveries
+- Total Orders
+- Monthly Sales Trend
+- Top 10 Best-Selling Products
+- Sales by State or Region
+- Product Category vs. Avg. Shipping Time
+- Orders On-Time vs. Delayed by Employee
 
 Explore the SQL scripts [here](./Analysis)
 

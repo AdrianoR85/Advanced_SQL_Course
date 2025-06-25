@@ -1,0 +1,26 @@
+SELECT
+	customer_id,
+	CASE
+		WHEN first_name IS NULL THEN 'N/A'
+		ELSE TRIM(first_name)
+	END first_name,
+	CASE
+		WHEN last_name IS NULL THEN 'N/A'
+		ELSE TRIM(last_name)
+	END last_name,
+	LOWER(email),
+	CASE 
+		WHEN gender = 'F' THEN 'Female'
+		WHEN gender = 'M' THEN 'Male'
+		ELSE 'Other'
+	END gender,
+	birth_date,
+	CASE
+		WHEN LENGTH(REGEXP_REPLACE(cpf, '[^0-9]', '', 'g'))<> 11 THEN 'N/A'
+		ELSE cpf
+	END cpf,
+	CASE
+		WHEN LENGTH(REGEXP_REPLACE(phone_number, '[^0-9]', '', 'g'))<> 11 THEN 'N/A'
+		ELSE phone_number
+	END phone_number
+FROM customer;

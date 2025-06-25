@@ -1,4 +1,4 @@
-CREATE TABLE silver.category (
+CREATE TABLE category (
     category_id SERIAL,
     name VARCHAR(60) NOT NULL,
     description TEXT,
@@ -6,7 +6,7 @@ CREATE TABLE silver.category (
 	
 );
 
-CREATE TABLE silver.product (
+CREATE TABLE product (
     product_id SERIAL,
     product_name VARCHAR(40) NOT NULL,
     quantity_per_unit INTEGER,
@@ -19,7 +19,7 @@ CREATE TABLE silver.product (
     FOREIGN KEY (category_id) REFERENCES category(category_id)
 );
 
-CREATE TABLE silver.customer (
+CREATE TABLE customer (
     customer_id SERIAL,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(40) NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE silver.customer (
 	CONSTRAINT pk_customer PRIMARY KEY (customer_id),
 );
 
-CREATE TABLE silver.address(
+CREATE TABLE address(
 	address_id SERIAL, 
 	street VARCHAR(120) NOT NULL,
     city VARCHAR(30) NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE silver.address(
 );
 
 
-CREATE TABLE silver.employee (
+CREATE TABLE employee (
     employee_id SERIAL,
     last_name VARCHAR(40) NOT NULL,
     first_name VARCHAR(20) NOT NULL,
@@ -55,7 +55,7 @@ CREATE TABLE silver.employee (
     FOREIGN KEY (reports_to) REFERENCES employee(employee_id)
 );
 
-CREATE TABLE silver.purchase (
+CREATE TABLE purchase (
     purchase_id SERIAL,
     total_price DECIMAL(10,2),
     purchase_date TIMESTAMP,
@@ -71,7 +71,7 @@ CREATE TABLE silver.purchase (
     FOREIGN KEY (employee_id) REFERENCES employee(employee_id)
 );
 
-CREATE TABLE silver.purchase_item (
+CREATE TABLE purchase_item (
 	purchase_item_id INTEGER,
     quantity INTEGER NOT NULL,
     unit_price DECIMAL(10,2) NOT NULL,

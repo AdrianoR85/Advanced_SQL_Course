@@ -35,3 +35,40 @@ SELECT
   customer_id
 FROM address;
 
+-- Category Table - Transform and Clean
+
+SELECT DISTINCT
+	category_id,
+	COALESCE(INITCAP(TRIM(name)), 'N/A') AS name,
+	CASE
+		WHEN description = '' OR description IS NULL THEN 'N/A'
+		ELSE description
+	END description
+FROM category;
+
+-- Product Table - Transform and Clean
+
+SELECT
+	product_id,
+	COALESCE(INITCAP(TRIM(product_name)), 'N/A') AS product_name,
+	category_id,
+	CASE
+		WHEN quantity_per_unit < 1 OR quantity_per_unit IS NULL THEN 1
+		ELSE quantity_per_unit
+	END quantity_per_unit,
+	CASE
+		WHEN unit_price < 1 OR unit_price IS NULL THEN 0.00
+		ELSE unit_price
+	END unit_price,
+	CASE
+		WHEN units_in_stock < 1 OR units_in_stock IS NULL THEN 0
+		ELSE units_in_stock
+	END unit_price,
+	CASE
+		WHEN discontinued = 'false' THEN 'No'
+		WHEN discontinued = 'true' THEN 'Yes'
+		ELSE 'N/A'
+	END unit_price,
+	COALESCE(INITCAP(TRIM(description)), 'N/A') As description
+FROM product
+ORDER BY product_id ASC;

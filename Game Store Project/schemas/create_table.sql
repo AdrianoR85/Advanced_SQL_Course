@@ -1,83 +1,105 @@
-CREATE TABLE category (
-    category_id SERIAL,
-    name VARCHAR(60) NOT NULL,
-    description TEXT,
-	CONSTRAINT pk_category PRIMARY KEY (category_id)
-	
-);
+-- Customer Table - Transform and Clean
+SELECT
+	customer_id,
+	COALESCE(INITCAP(TRIM(first_name)), 'N/A') AS first_name,
+  	COALESCE(INITCAP(TRIM(last_name)), 'N/A') AS last_name,
+  	COALESCE(LOWER(TRIM(email)), 'N/A') AS email,
+	CASE 
+		WHEN gender = 'F' THEN 'Female'
+		WHEN gender = 'M' THEN 'Male'
+		ELSE 'Other'
+	END gender,
+	CASE
+        WHEN birth_date IS NULL OR birth_date > CURRENT_DATE THEN NULL
+        ELSE birth_date
+    END,
+	CASE
+		WHEN LENGTH(REGEXP_REPLACE(cpf, '[^0-9]', '', 'g')) <> 11 THEN 'N/A'
+		ELSE REGEXP_REPLACE(cpf, '[^0-9]', '', 'g')
+	END cpf,
+	CASE
+		WHEN LENGTH(REGEXP_REPLACE(phone_number, '[^0-9]', '', 'g')) <> 11 THEN 'N/A'
+		ELSE REGEXP_REPLACE(phone_number, '[^0-9]', '', 'g')
+	END phone_number
+FROM customer;
 
-CREATE TABLE product (
-    product_id SERIAL,
-    product_name VARCHAR(40) NOT NULL,
-    quantity_per_unit INTEGER,
-    unit_price DECIMAL(10,2),
-    units_in_stock INTEGER,
-    discontinued BOOLEAN DEFAULT FALSE,
-	description TEXT, 
-    category_id INTEGER NOT NULL,
-	CONSTRAINT pk_product PRIMARY KEY (product_id),
-    FOREIGN KEY (category_id) REFERENCES category(category_id)
-);
+-- Address Table - Transform and Clean
+SELECT
+  COALESCE(INITCAP(TRIM(street)), 'N/A') AS street,
+  COALESCE(INITCAP(TRIM(city)), 'N/A') AS city,
+  CASE 
+    WHEN state !~* '^[A-Za-z]{2}$' THEN 'N/A' 
+    ELSE UPPER(TRIM(state)) 
+  END AS state,
+  CASE
+    WHEN TRIM(region) IS NULL OR TRIM(region) = '' THEN 'N/A'
+    ELSE INITCAP(TRIM(region))
+  END AS region,
+  customer_id
+FROM address;
 
-CREATE TABLE customer (
-    customer_id SERIAL,
-    first_name VARCHAR(30) NOT NULL,
-    last_name VARCHAR(40) NOT NULL,
-    email VARCHAR(128),
-	gender CHAR(1),
-	bith_date DATE,
-	cpf CHAR(11),
-	phone_number CHAR(13),
-	CONSTRAINT pk_customer PRIMARY KEY (customer_id),
-);
+-- Category Table - Transform and Clean
 
-CREATE TABLE address(
-	address_id SERIAL, 
-	street VARCHAR(120) NOT NULL,
-    city VARCHAR(30) NOT NULL,
-    state CHAR(2) NOT NULL,
-	region VARCHAR(15) NOT NULL,
-	customer_id INTEGER NOT NULL,
-	CONSTRAINT pk_address PRIMARY KEY (address_id),
-	FOREIGN KEY (customer_id) REFERENCES employee(employee_id)
-);
+SELECT DISTINCT
+	category_id,
+	COALESCE(INITCAP(TRIM(name)), 'N/A') AS name,
+	CASE
+		WHEN description = '' OR description IS NULL THEN 'N/A'
+		ELSE description
+	END description
+FROM category;
+
+-- Product Table - Transform and Clean
+
+SELECT
+	product_id,
+	COALESCE(INITCAP(TRIM(product_name)), 'N/A') AS product_name,
+	category_id,
+	CASE
+		WHEN quantity_per_unit < 1 OR quantity_per_unit IS NULL THEN 1
+		ELSE quantity_per_unit
+	END quantity_per_unit,
+	CASE
+		WHEN unit_price < 1 OR unit_price IS NULL THEN 0.00
+		ELSE unit_price
+	END unit_price,
+	CASE
+		WHEN units_in_stock < 1 OR units_in_stock IS NULL THEN 0
+		ELSE units_in_stock
+	END unit_price,
+	CASE
+		WHEN discontinued = 'false' THEN 'No'
+		WHEN discontinued = 'true' THEN 'Yes'
+		ELSE 'N/A'
+	END unit_price,
+	COALESCE(INITCAP(TRIM(description)), 'N/A') As description
+FROM product
+ORDER BY product_id ASC;
+
+-- Employee Table - Transform and Clean
+
+SELECT 
+	employee_id,
+	COALESCE(INITCAP(TRIM(last_name)), 'N/A') AS last_name, 
+	COALESCE(INITCAP(TRIM(first_name)), 'N/A') AS first_name,
+	CASE
+        WHEN birth_date IS NULL OR birth_date > CURRENT_DATE THEN NULL
+        ELSE birth_date
+    END,
+	CASE
+        WHEN hire_date IS NULL OR hire_date < '2022-02-02' OR hire_date > CURRENT_DATE THEN NULL
+        ELSE hire_date
+    END AS hire_date,
+	reports_to,
+	CASE
+        WHEN fired_date < '2022-02-02' 
+			OR fired_date > CURRENT_DATE 
+			OR fired_date <= hire_date
+			THEN NULL
+        ELSE fired_date
+    END fired_date
+FROM employee;
 
 
-CREATE TABLE employee (
-    employee_id SERIAL,
-    last_name VARCHAR(40) NOT NULL,
-    first_name VARCHAR(20) NOT NULL,
-    birth_date DATE,
-    hire_date DATE,
-	fired_date DATE,
-    reports_to INTEGER,
-	CONSTRAINT pk_employee PRIMARY KEY (employee_id),
-    FOREIGN KEY (reports_to) REFERENCES employee(employee_id)
-);
 
-CREATE TABLE purchase (
-    purchase_id SERIAL,
-    total_price DECIMAL(10,2),
-    purchase_date TIMESTAMP,
-    shipped_date TIMESTAMP,
-    ship_street VARCHAR(100),
-    ship_city VARCHAR(50),
-    ship_state CHAR(2),
-    ship_region VARCHAR(15),
-    customer_id INTEGER NOT NULL,
-    employee_id INTEGER NOT NULL,
-	CONSTRAINT pk_purchase PRIMARY KEY (purchase_id),
-    FOREIGN KEY (customer_id) REFERENCES customer(customer_id),
-    FOREIGN KEY (employee_id) REFERENCES employee(employee_id)
-);
 
-CREATE TABLE purchase_item (
-	purchase_item_id INTEGER,
-    quantity INTEGER NOT NULL,
-    unit_price DECIMAL(10,2) NOT NULL,
-    purchase_id INTEGER,
-    product_id INTEGER,
-	CONSTRAINT pk_purchase_item PRIMARY KEY (purchase_item_id),
-    FOREIGN KEY (purchase_id) REFERENCES purchase(purchase_id),
-    FOREIGN KEY (product_id) REFERENCES product(product_id)
-);

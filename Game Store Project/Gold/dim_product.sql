@@ -39,16 +39,16 @@ SELECT
 	cumulative_value_percent,
 
 	CASE
-	  WHEN unit_price < 500 THEN 'Low'
-	  WHEN unit_price BETWEEN 500 AND 5500 THEN 'Medium'
-	  ELSE 'High'
+	  WHEN unit_price < 500 THEN 'Low'::VARCHAR(6)
+	  WHEN unit_price BETWEEN 500 AND 5500 THEN 'Medium'::VARCHAR(6)
+	  ELSE 'High'::VARCHAR(6)
 	END AS unit_value_class,
 	
 	CASE 
-		WHEN cumulative_value_percent <= 80 THEN 'A'
-		WHEN cumulative_value_percent <= 90 THEN 'B'
-		ELSE 'C'
+		WHEN cumulative_value_percent <= 80 THEN 'A'::CHAR(1)
+		WHEN cumulative_value_percent <= 90 THEN 'B'::CHAR(1)
+		ELSE 'C'::CHAR(1)
 	END abc_class,
 
-	item_value_rank
+	item_value_rank::INT
 FROM ranked_products 

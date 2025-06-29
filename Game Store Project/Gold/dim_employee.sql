@@ -1,12 +1,12 @@
 CREATE OR REPLACE VIEW gold.dim_employee AS
 SELECT
 	e.employee_id,
-	CONCAT(e.first_name, ' ', e.last_name) AS employee_name,
-	DATE_PART('YEAR', AGE(e.birth_date)),
+	CONCAT(e.first_name, ' ', e.last_name)::VARCHAR(60) AS employee_name,
+	DATE_PART('YEAR', AGE(e.birth_date))::INT AS age,
 	
 	CASE
-		WHEN e.reports_to IS NULL THEN 'Manager'
-		ELSE CONCAT(m.first_name, ' ', m.last_name)
+		WHEN e.reports_to IS NULL THEN 'Manager'::VARCHAR(50)
+		ELSE CONCAT(m.first_name, ' ', m.last_name)::VARCHAR(50)
 	END AS manager_name,
 
 	CASE
@@ -19,8 +19,8 @@ SELECT
 	e.fired_date,
 
 	CASE
-		WHEN e.fired_date IS NULL THEN 'Active'
-		ELSE 'Terminated'
+		WHEN e.fired_date IS NULL THEN 'Active'::VARCHAR(12)
+		ELSE 'Terminated'::VARCHAR(12)
 	END employment_status
 	
 FROM (

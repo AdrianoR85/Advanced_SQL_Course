@@ -595,28 +595,19 @@ This project aims to build a Data Warehouse using PostgreSQL to support sales an
 
 ### Data Architecture
 
-```text
-[1] Analisy the data and Ask the question.
-       ↓
-[2] Bronze: raw - normalized relational database
-       ↓
-[3] Silver: Extract, Transform and Load the data into the data warehouse 
-       ↓
-[4] Gold Layer: Star Schema with fact and dimension tables
-       ↓
-[5] BI: Dashboard built with Power BI / Tableau
-```
+- [x] Bronze: raw - normalized relational database
+         ↓
+- [x] Silver: Extract, Transform and Load the data into the data warehouse 
+         ↓
+- [ ] Gold Layer: Star Schema with fact and dimension tables
+         ↓
+- [ ] Analisy the data and Ask the question.
+         ↓
+- [ ] Design the Dashboard (Chart Types & Layout)
+         ↓
+- [ ] BI: Dashboard built with Power BI / Tableau
 
 ### Questions to Answer.
-- Total Sales (revenue)
-- Average Shipping Days
-- % of On-Time Deliveries
-- Total Orders
-- Monthly Sales Trend
-- Top 10 Best-Selling Products
-- Sales by State or Region
-- Product Category vs. Avg. Shipping Time
-- Orders On-Time vs. Delayed by Employee
 
 Explore the SQL scripts [here](./Analysis)
 

@@ -39,9 +39,9 @@ SELECT
 	cumulative_value_percent,
 
 	CASE
-	  WHEN unit_price < 500 THEN 'Low'::VARCHAR(6)
-	  WHEN unit_price BETWEEN 500 AND 5500 THEN 'Medium'::VARCHAR(6)
-	  ELSE 'High'::VARCHAR(6)
+	  WHEN unit_price < 500 THEN 'Budget'::VARCHAR(12)
+	  WHEN unit_price BETWEEN 500 AND 5500 THEN 'Standard'::VARCHAR(12)
+	  ELSE 'Premium'::VARCHAR(12)
 	END AS unit_value_class,
 	
 	CASE 

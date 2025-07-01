@@ -35,8 +35,8 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 The Game Store Project is a small database I created to help me learn SQL in a practical way. It simulates a simple video game store, with tables for customers, employees, products, purchases, and categories. I use this project to practice creating tables, writing queries, using foreign keys, and analyzing data like sales and customer behavior. This project helps me apply what I learn in real situations and makes studying more interesting.
 
 ### Database Diagram
-<p align="center">
-  <img src="./Game Store Project/Model/game_store_model.png" width="85%" alt="Game Store Database Model"/>
+<p align="left">
+  <img src="./Game Store Project/Bronze/Model/game_store_model.png" width="85%" alt="Game Store Database Model"/>
 </p>
 
 
@@ -600,7 +600,7 @@ This project aims to build a Data Warehouse using PostgreSQL to support sales an
 - [x] BI: Dashboard built with Power BI / Tableau.
 
 ### Dashboard
-<p align="center">
+<p align="left">
   <img src="./assets/dashboard.png" width="70%" alt="window syntax"/>
 </p>
 

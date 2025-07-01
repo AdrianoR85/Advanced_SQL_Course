@@ -589,29 +589,20 @@ This project aims to build a Data Warehouse using PostgreSQL to support sales an
 - Identify the best-selling products
 - Evaluate shipping performance (delivery time, delays)
 - Understand customer behavior
-- Measure employee performance
-- Analyze sales trends and seasonality
-- Explore regional sales performance (city, state)
+- Explore regional sales performance (region)
 
-### Data Architecture
+### Project Steps
 
 - [x] Bronze: raw - normalized relational database.
 - [x] Silver: Extract, Transform and Load the data into the data warehouse. 
 - [x] Gold Layer: Star Schema with fact and dimension tables.
 - [x] Analisy the data and Ask the question.
-- [ ] Design the Dashboard (Chart Types & Layout).
-- [ ] BI: Dashboard built with Power BI / Tableau.
+- [x] BI: Dashboard built with Power BI / Tableau.
 
-### Questions to Answer.
-1. Total Shipments										
-2. Average Days to Ship										
-3. % On-Time Deliveries										
-4. Total Shipping Volume (Quantity)										
-5. Average Days to ship by Month										
-6. Number of Orders vs. On-time vs. Delayed										
-7. Total shipments or delivery delays by ship_city and region_en																		
-8. Top 10 Products by Quantity shipped										
-9 Product Category vs. Avg. Days to ship										
+### Dashboard
+<p align="center">
+  <img src="./assets/dashboard.png" width="70%" alt="window syntax"/>
+</p>
 
 Explore the SQL scripts [here](./Analysis)
 

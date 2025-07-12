@@ -137,3 +137,24 @@ JOIN gold.dim_date d ON s.purchase_date = d.date_id
 WHERE product_id = 51 and d."year" = 2022
 GROUP BY 1
 ORDER BY 1, 2 DESC;
+
+-----------------------------------------------------------------------------------------------------
+
+-- Console Sales Trend Over Time
+SELECT
+    d.year,
+    p.product_name,
+    SUM(s.quantity * s.unit_price) AS total_sales
+FROM 
+    gold.fact_sales s
+JOIN gold.dim_date d ON s.purchase_date = d.date_id
+JOIN gold.dim_product p ON s.product_id = p.product_id
+WHERE 
+    p.product_name SIMILAR TO '(Xbox One%|Playstation%|Nintendo Switch%)'
+    AND p.category = 'Consoles'
+GROUP BY 
+    d.year,
+    p.product_name
+ORDER BY 
+    d.year,
+    total_sales DESC;

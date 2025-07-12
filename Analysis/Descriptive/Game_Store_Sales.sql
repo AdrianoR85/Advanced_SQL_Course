@@ -124,4 +124,16 @@ SELECT
 		100 * (total - previous_month_total) / NULLIF(previous_month_total,0),2
 	) AS growth_pct
 FROM monthly_totals
+	
+---------------------------------------------------------------------------------------------------------------------
 
+--> Is the revenue for product 51 increasing or decreasing over the months of 2022? 
+SELECT
+	d.month_name,
+	SUM(s.quantity * s.unit_price) AS sales
+FROM 
+	gold.fact_sales s
+JOIN gold.dim_date d ON s.purchase_date = d.date_id
+WHERE product_id = 51 and d."year" = 2022
+GROUP BY 1
+ORDER BY 1, 2 DESC;

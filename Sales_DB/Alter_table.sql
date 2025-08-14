@@ -14,5 +14,6 @@ ALTER TABLE sales_item DROP COLUMN weekday;
 ALTER TABLE transaction RENAME TO transaction_type;
 
 ALTER TABLE sales_person ALTER COLUMN zip TYPE INTEGER; 
+ALTER TABLE customer ALTER COLUMN zip TYPE INTEGER; 
 
 ALTER TABLE sales_order ALTER COLUMN purchase_order_number TYPE BIGINT; 

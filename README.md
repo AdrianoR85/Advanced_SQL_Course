@@ -16,6 +16,7 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 - [x] [`🧩 Text and Cleaning Functions`](#-text-and-cleaning-functions)
 - [x] [`🧩 Query Performance`](#-query-optimization)
 - [x] [`🧩 Views`](#-sql-views)
+- [x] [`🧩 Regex`](#-regular-expression-pattern)
 - [x] [`📊 Analysis`](#-analysis)
 - [x] [`🛠️ Tools Used`](#-tools-used)
 - [x] [`🎯 My Goal`](#-my-goal)
@@ -577,6 +578,28 @@ Views are virtual tables in SQL that don't store data themselves but instead dis
 🧑‍💻 Learn more about it in [Data with Baraa](https://datawithbaraa.substack.com/p/sql-views-the-hidden-gem-of-database?utm_source=publication-search)
 
 [`⬆️Back to Top`](#-Contents)
+
+
+-----------------------------------------------------------------------------------------------
+## Regular Expression Pattern
+
+|Expession| What do it do?|
+|----------|---------------|
+|    .     | Any single character
+|    *     | 0 or more 
+|    +     | 1 or more
+|    ^     | Beginning of string
+|    $     | End of string
+|  [^ab]   | Not `a` or `b`
+|  [ab]    | Only `a`or `b`
+|  [A-Z]   | All uppercase letters
+|  [a-z]   | All lowercase letters
+|  [0-9]   | All numbers
+|  {n}     | `n` instance of
+|  {m,n}   | Between `m` or `n`
+|  m|n     | Match `m` or `n`
+
+[`⬆️Back to Top`](#-Regex)
 
 ------------------------------------------------------------------------------------------------
 

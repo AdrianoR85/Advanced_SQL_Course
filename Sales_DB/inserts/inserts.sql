@@ -409,3 +409,8 @@ INSERT INTO sales_item VALUES
 (24, 82, 2, 0.09, false, 0.0), 
 (30, 87, 1, 0.15, false, 0.0), 
 (22, 57, 1, 0.19, false, 0.0);
+
+INSERT INTO past_due(cust_id, balance)
+VALUES
+(1, 123.45),
+(2, 324.50);

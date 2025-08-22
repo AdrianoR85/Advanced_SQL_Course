@@ -1,0 +1,4 @@
+CREATE TABLE distributor(
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(100)
+);

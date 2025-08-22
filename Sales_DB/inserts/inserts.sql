@@ -414,3 +414,9 @@ INSERT INTO past_due(cust_id, balance)
 VALUES
 (1, 123.45),
 (2, 324.50);
+
+INSERT INTO distributor(name)
+VALUES
+('Parawholesale'),
+('J & B Sales'),
+('Steel City Clothing');

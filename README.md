@@ -308,12 +308,14 @@ SQL set operations allow you to combine results from multiple SELECT statements 
 - Syntax:
 ```sql
  CREATE OR REPLACE FUNCTION function_name()
- RETURNS return_type AS $$
+ RETURNS return_type AS 
+ $body$
  BEGIN
      -- function logic here
      RETURN ...;
  END;
- $$ LANGUAGE plpgslq;
+ $body$ 
+ LANGUAGE plpgslq;
 ```
 #### Use functions when you need to:
 - Return a single value or table
@@ -331,11 +333,14 @@ SQL set operations allow you to combine results from multiple SELECT statements 
 - Syntax:
 ```sql
  CREATE OR REPLACE PROCEDURE procedure_name(parameters)
-AS $$
+AS 
+$body$
+DECLARE -- optional
 BEGIN
     -- Procedure logic
 END;
-$$ LANGUAGE plpgsql;
+$body$ 
+LANGUAGE plpgsql;
 ```
 
 #### Use procedures when you need to:

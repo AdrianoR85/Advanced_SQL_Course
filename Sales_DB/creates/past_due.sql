@@ -1,0 +1,5 @@
+CREATE TABLE past_due(
+	id SERIAL PRIMARY KEY,
+	cust_id INTEGER NOT NULL,
+	balance NUMERIC(6,2) NOT NULL
+);

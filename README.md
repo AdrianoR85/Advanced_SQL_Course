@@ -7,6 +7,7 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 ## 🧩 Contents
 - [x] [`🛢️ Game Store Project`](#-game-store-project)
 - [ ] [`🧩 Postgres Command`](#-postgres-command)
+- [ ] [`🧩 Constraints in PostgreSQL`](#-constraints-in-postgreSQL)
 - [x] [`🧩 Window Functions`](#-window-functions)
 - [x] [`🧩 Subqueries and CTEs`](#-sql-subqueries)
 - [x] [`🧩 CTE - Common Table Expressions`](#-sql-ctes-common-table-expressions)
@@ -93,6 +94,28 @@ ALTER TABLE <table_name> DROP COLUMN <column_name>;
 You can find the SQL code in the [Mercado Y](./Mercado_y_DB)
 
 [`⬆️Back to Top`](#-Contents)
+
+------------------------------------------------------------------------------------------------
+
+## 🧩 Constraints in PostgreSQL
+📖 What is a Constraint?
+
+A constraint is a rule applied to a column or table to enforce data integrity.
+They ensure that the data inserted into the database follows specific rules, preventing invalid or inconsistent values.
+
+### Main Types of Constraints
+**1. NOT NULL**
+    - Prevents empty values.
+**2. ENUM**
+    - Not technically a constraint, but acts like one because it restricts values to  a predefined list.
+**3. CHECK**
+    - Validates a conditon for each value. 
+**4. UNIQUE**
+    - Ensures that columns values are all different.
+**5. PRIMARY KEY**
+    - Ensures that each row is unique and not null.
+**6. FOREIGN KEY**
+    - Creates a relationship between two tables.
 
 ------------------------------------------------------------------------------------------------
 

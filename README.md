@@ -58,23 +58,37 @@ You can find the SQL code in the [Game Store folder](./Game%20Store%20Project) <
 
 ------------------------------------------------------------------------------------------------
 
-## 🧩 Postgres Command
+## 🧩 PostgreSQL Commands
 
-- `SELECT datname FROM pg_database;`: List the names of all database.
-- `\l` List database (used in command line)
+### Databases
+- `SELECT datname FROM pg_database;` → List all database names.
+- `\l` → List databases (psql command line).
 
-### Handle with schemas:
-- `SELECT schema_name FROM information_schema.schemata;`: List the names of all schemas.
-- `SELECT * FROM information_schema.schemata`: List detailed schemas.
-- `SELECT * FROM information_schema.schemata WHERE catalog_name = 'mercado_y';`: List detailed schemas of specific schema. 
-- `SELECT nspname FROM pg_catalog.pg_namespace;`: List the names of all schemas (nspname) in the current PostgreSQL database (pg_catalog).
-- `SELECT * FROM information_schema.tables;`: List all tables within a schema. 
-  
-- `CREATE SCHEMA [schema_name]`: Create a new schema.
-- `ALTER SCHEMA [old_schema_name] RENAME TO [new_schema_name]`: Alter a schema.
-- `DROP SCHEMA [schema_name]`: Delete a schema.
+### Schemas
+- `SELECT schema_name FROM information_schema.schemata;` → List schema names.
+- `SELECT * FROM information_schema.schemata;` → List schema details.
+- `SELECT * FROM information_schema.schemata WHERE catalog_name = 'mercado_y';` → List schema details for a specific catalog.
+- `SELECT nspname FROM pg_catalog.pg_namespace;` → List schema names from `pg_catalog`.
+- `CREATE SCHEMA schema_name;` → Create a new schema.
+- `ALTER SCHEMA old_schema_name RENAME TO new_schema_name;` → Rename a schema.
+- `DROP SCHEMA schema_name;` → Delete a schema.
 
-- `CREATE TABLE [schema_name].[table_name](-- columns here)` Create a table within a schema.
+### Create and Drop Tables
+
+```sql
+CREATE TABLE <schema_name>.<table_name>;
+DROP TABLE <schema_name>.<table_name>;
+```
+### Rename Tables and Fields
+```sql
+ALTER TABLE <schema_name>.<table_name> RENAME TO <new_table_name>;
+ALTER TABLE <schema_name>.<table_name> RENAME COLUMN <column_name> TO <new_column_name>;
+```
+### Add or Delete Columns
+```sql
+ALTER TABLE <table_name> ADD COLUMN <new_column> <data_type>;
+ALTER TABLE <table_name> DROP COLUMN <column_name>;
+```
 
 You can find the SQL code in the [Mercado Y](./Mercado_y_DB)
 

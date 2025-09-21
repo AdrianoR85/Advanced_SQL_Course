@@ -18,7 +18,7 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 - [x] [`🧩 Views`](#-sql-views)
 - [x] [`🧩 Regex`](#-regular-expression-pattern)
 - [x] [`📊 Analysis`](#-analysis)
-- [ ] [`🖥️ Postgres Command`](#-postgres-command)
+- [ ] [`🧩 Postgres Command`](#-postgres-command)
 - [x] [`🛠️ Tools Used`](#-tools-used)
 - [x] [`🎯 My Goal`](#-my-goal)
 - [x] [`🤝 Contributing`](#-contributing)
@@ -363,7 +363,6 @@ LANGUAGE plpgsql;
 [`⬆️Back to Top`](#-Contents)
 
 ------------------------------------------------------------------------------------------------
-
  
 ## 🧩 Trigger
 
@@ -549,7 +548,7 @@ Caching frequent query results reduces database load and speeds up response time
 
 [`⬆️Back to Top`](#-Contents)
 
-## SQL Views
+## 🧩 SQL Views
 
 Views are virtual tables in SQL that don't store data themselves but instead display data from one or more underlying tables. They act as saved SQL queries that you can reference like regular tables.
 
@@ -588,7 +587,7 @@ Views are virtual tables in SQL that don't store data themselves but instead dis
 
 -----------------------------------------------------------------------------------------------
 
-## Regular Expression Pattern
+## 🧩 Regular Expression Pattern
 
 |Expession| What do it do?|
 |----------|---------------|
@@ -640,9 +639,19 @@ Explore the SQL scripts [here](./Analysis)
 
 ------------------------------------------------------------------------------------------------
 
-## Postgres Command
-- List all database: `SELECT datname FROM pg_database;` or `\l` on command line terminal.
-- List all schemas: `SELECT schema_name FROM information_schema.schemata;`
+## 🧩 Postgres Command
+
+- List the names of all database: `SELECT datname FROM pg_database;` or `\l` on command line terminal.
+
+### Handle with schemas:
+- List the names of all schemas: `SELECT schema_name FROM information_schema.schemata;`.
+- List the names of all schemas (nspname) in the current PostgreSQL database (pg_catalog). `SELECT nspname FROM pg_catalog.pg_namespace;`.
+- To create a new schema: `CREATE SCHEMA [schema_name]`.
+- To alter a schema:  `ALTER SCHEMA [old_schema_name] RENAME TO [new_schema_name]`.
+- To delete a schema: `DROP SCHEMA [schema_name]`
+
+
+[`⬆️Back to Top`](#-Contents)
 
 ------------------------------------------------------------------------------------------------
 

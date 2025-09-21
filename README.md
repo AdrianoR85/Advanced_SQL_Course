@@ -18,7 +18,7 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 - [x] [`🧩 Views`](#-sql-views)
 - [x] [`🧩 Regex`](#-regular-expression-pattern)
 - [x] [`📊 Analysis`](#-analysis)
-- [ ] [`🖥️ Postgres Commands`](#-postgres-command)
+- [ ] [`🖥️ Postgres Command`](#-postgres-command)
 - [x] [`🛠️ Tools Used`](#-tools-used)
 - [x] [`🎯 My Goal`](#-my-goal)
 - [x] [`🤝 Contributing`](#-contributing)

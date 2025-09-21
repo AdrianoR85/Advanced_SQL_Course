@@ -18,6 +18,7 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 - [x] [`🧩 Views`](#-sql-views)
 - [x] [`🧩 Regex`](#-regular-expression-pattern)
 - [x] [`📊 Analysis`](#-analysis)
+- [ ] [`🖥️ Postgres Commands`](#-postgres-command)
 - [x] [`🛠️ Tools Used`](#-tools-used)
 - [x] [`🎯 My Goal`](#-my-goal)
 - [x] [`🤝 Contributing`](#-contributing)
@@ -586,6 +587,7 @@ Views are virtual tables in SQL that don't store data themselves but instead dis
 
 
 -----------------------------------------------------------------------------------------------
+
 ## Regular Expression Pattern
 
 |Expession| What do it do?|
@@ -635,6 +637,12 @@ This project aims to build a Data Warehouse using PostgreSQL to support sales an
 Explore the SQL scripts [here](./Analysis)
 
 [`⬆️Back to Top`](#-Contents)
+
+------------------------------------------------------------------------------------------------
+
+## Postgres Command
+- List all database: `SELECT datname FROM pg_database;` or `\l` on command line terminal.
+- List all schemas: `SELECT schema_name FROM information_schema.schemata;`
 
 ------------------------------------------------------------------------------------------------
 

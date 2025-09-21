@@ -32,3 +32,15 @@ CREATE TABLE produto.tb_fabricante(
 	telefone VARCHAR(17),
 	contato VARCHAR(30) 
 );
+
+
+-- list columns of a table
+SELECT 
+	* 
+FROM
+	information_schema.columns
+WHERE 
+	table_catalog = 'mercado_y' AND 
+	table_schema = 'produto' AND
+	table_name = 'tb_categoria'
+;

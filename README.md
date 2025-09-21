@@ -98,25 +98,32 @@ You can find the SQL code in the [Mercado Y](./Mercado_y_DB)
 ------------------------------------------------------------------------------------------------
 
 ## 🧩 Constraints in PostgreSQL
-📖 What is a Constraint?
+
+### What is a Constraint?
 
 A constraint is a rule applied to a column or table to enforce data integrity.
 They ensure that the data inserted into the database follows specific rules, preventing invalid or inconsistent values.
 
-### Main Types of Constraints
-**1. NOT NULL**
-    - Prevents empty values.
-**2. ENUM**
-    - Not technically a constraint, but acts like one because it restricts values to  a predefined list.
-**3. CHECK**
-    - Validates a conditon for each value. 
-**4. UNIQUE**
-    - Ensures that columns values are all different.
-**5. PRIMARY KEY**
-    - Ensures that each row is unique and not null.
-**6. FOREIGN KEY**
-    - Creates a relationship between two tables.
+### Main Types of Constraints:
 
+  - *PRIMARY KEY* → Ensures that each row is unique and not null. 
+  - *FOREIGN KEY* → Creates a relationship between two tables.
+  - *UNIQUE* → Ensures that columns values are all different.
+  - *NOT NULL* → Prevents empty values.
+  - *CHECK* → Validates a conditon for each value. 
+  - *ENUM* → Not technically a constraint, but acts like one because it restricts values to  a predefined list.
+
+### Definindo Constraints: CREATE vs ALTER TABLE
+
+| Constraint Type | Durante Criação da Tabela (`CREATE TABLE`) | Após Criação da Tabela (`ALTER TABLE`)                        |
+|-----------------|--------------------------------------------|---------------------------------------------------------------|
+| **PRIMARY KEY** | `CREATE TABLE users (id SERIAL PRIMARY KEY,name TEXT);`                        | `ALTER TABLE users ADD CONSTRAINT users_pkey PRIMARY KEY (id);`|                  
+| **FOREIGN KEY** | `CREATE TABLE orders (id SERIAL PRIMARY KEY,user_id INT REFERENCES users(id);` | `ALTER TABLE orders ADD CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id);`|
+| **UNIQUE**      | `CREATE TABLE employees (email TEXT UNIQUE);`                                  | `ALTER TABLE employees ADD CONSTRAINT email_unique UNIQUE (email);` 
+| **NOT NULL**    | `CREATE TABLE products (name TEXT NOT NULL);`                                  | `ALTER TABLE products ALTER COLUMN name SET NOT NULL;` 
+| **CHECK**       | `CREATE TABLE accounts balance NUMERIC CHECK (balance >= 0);`                  | `ALTER TABLE accounts ADD CONSTRAINT balance_check CHECK (balance >= 0);` |
+| **DEFAULT**     | `CREATE TABLE tasks (status TEXT DEFAULT 'pending');`                          | `ALTER TABLE tasks ALTER COLUMN status SET DEFAULT 'pending';`|
+| **ENUM**        | `CREATE TYPE task_status AS ENUM ('pending','done'); <br> CREATE TABLE tasks (id SERIAL PRIMARY KEY,status task_status DEFAULT 'pending';`| `ALTER TABLE tasks ADD COLUMN status task_status DEFAULT 'pending';` |
 ------------------------------------------------------------------------------------------------
 
 ## 🧩 Window Functions

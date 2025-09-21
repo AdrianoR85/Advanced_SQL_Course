@@ -6,6 +6,7 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 
 ## 🧩 Contents
 - [x] [`🛢️ Game Store Project`](#-game-store-project)
+- [ ] [`🧩 Postgres Command`](#-postgres-command)
 - [x] [`🧩 Window Functions`](#-window-functions)
 - [x] [`🧩 Subqueries and CTEs`](#-sql-subqueries)
 - [x] [`🧩 CTE - Common Table Expressions`](#-sql-ctes-common-table-expressions)
@@ -18,7 +19,6 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 - [x] [`🧩 Views`](#-sql-views)
 - [x] [`🧩 Regex`](#-regular-expression-pattern)
 - [x] [`📊 Analysis`](#-analysis)
-- [ ] [`🧩 Postgres Command`](#-postgres-command)
 - [x] [`🛠️ Tools Used`](#-tools-used)
 - [x] [`🎯 My Goal`](#-my-goal)
 - [x] [`🤝 Contributing`](#-contributing)
@@ -53,6 +53,28 @@ The Game Store Project is a small database I created to help me learn SQL in a p
 - `Category` – Type of game (Action, Adventure, etc.)
 
 You can find the SQL code in the [Game Store folder](./Game%20Store%20Project) <!-- Edite se o nome da pasta for diferente -->
+
+[`⬆️Back to Top`](#-Contents)
+
+------------------------------------------------------------------------------------------------
+
+## 🧩 Postgres Command
+
+- List the names of all database: `SELECT datname FROM pg_database;` or `\l` on command line terminal.
+
+### Handle with schemas:
+- List the names of all schemas:`SELECT schema_name FROM information_schema.schemata;`.
+- List detailed schemas: `SELECT * FROM information_schema.schemata`
+- List detailed schemas of specific schema: `SELECT * FROM information_schema.schemata WHERE catalog_name = 'mercado_y'`; 
+- List the names of all schemas (nspname) in the current PostgreSQL database (pg_catalog). `SELECT nspname FROM pg_catalog.pg_namespace;`.
+- List all tables within a schema: `SELECT * FROM information_schema.tables;`
+  
+- To create a new schema: `CREATE SCHEMA [schema_name]`.
+- To alter a schema:  `ALTER SCHEMA [old_schema_name] RENAME TO [new_schema_name]`.
+- To delete a schema: `DROP SCHEMA [schema_name]`
+
+- Create a table within a schema: `CREATE TABLE [schema_name].[table_name](-- columns here)`
+
 
 [`⬆️Back to Top`](#-Contents)
 
@@ -637,21 +659,6 @@ Explore the SQL scripts [here](./Analysis)
 
 [`⬆️Back to Top`](#-Contents)
 
-------------------------------------------------------------------------------------------------
-
-## 🧩 Postgres Command
-
-- List the names of all database: `SELECT datname FROM pg_database;` or `\l` on command line terminal.
-
-### Handle with schemas:
-- List the names of all schemas: `SELECT schema_name FROM information_schema.schemata;`.
-- List the names of all schemas (nspname) in the current PostgreSQL database (pg_catalog). `SELECT nspname FROM pg_catalog.pg_namespace;`.
-- To create a new schema: `CREATE SCHEMA [schema_name]`.
-- To alter a schema:  `ALTER SCHEMA [old_schema_name] RENAME TO [new_schema_name]`.
-- To delete a schema: `DROP SCHEMA [schema_name]`
-
-
-[`⬆️Back to Top`](#-Contents)
 
 ------------------------------------------------------------------------------------------------
 

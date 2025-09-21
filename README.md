@@ -76,6 +76,7 @@ You can find the SQL code in the [Game Store folder](./Game%20Store%20Project) <
 
 - `CREATE TABLE [schema_name].[table_name](-- columns here)` Create a table within a schema.
 
+You can find the SQL code in the [Mercado Y](./Mercado_y_DB)
 
 [`⬆️Back to Top`](#-Contents)
 

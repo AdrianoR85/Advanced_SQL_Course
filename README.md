@@ -73,6 +73,17 @@ You can find the SQL code in the [Game Store folder](./Game%20Store%20Project) <
 - `CREATE SCHEMA schema_name;` → Create a new schema.
 - `ALTER SCHEMA old_schema_name RENAME TO new_schema_name;` → Rename a schema.
 - `DROP SCHEMA schema_name;` → Delete a schema.
+- List the constraints existing in a specific schema:
+  ```sql
+  SELECT 
+  	*
+  FROM 
+  	pg_catalog.pg_constraint con
+  	INNER JOIN pg_catalog.pg_class rel ON rel.oid = con.conrelid
+  	INNER JOIN pg_catalog.pg_namespace nsp ON nsp.oid = con.connamespace
+  WHERE 
+  	nsp.nspname = 'produto';
+  ```
 
 ### Create and Drop Tables
 

@@ -101,6 +101,15 @@ ALTER TABLE <schema_name>.<table_name> RENAME COLUMN <column_name> TO <new_colum
 ALTER TABLE <table_name> ADD COLUMN <new_column> <data_type>;
 ALTER TABLE <table_name> DROP COLUMN <column_name>;
 ```
+### Create a sequence
+```sql
+CREATE SEQUENCE produto.sequence_x_1 INCREMENT 100 START 10000;
+
+CREATE TABLE produto.test_1(
+	id_test_1 int default nextval('produto.sequence_x_1') primary key,
+	test varchar(100)
+);
+```
 
 You can find the SQL code in the [Mercado Y](./Mercado_y_DB)
 

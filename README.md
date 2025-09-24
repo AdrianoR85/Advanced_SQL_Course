@@ -110,6 +110,10 @@ CREATE TABLE produto.test_1(
 	test varchar(100)
 );
 ```
+### UPDATE DATA
+```sql
+UPDATE <schema_name>.<table_name> SET <column_name> = <value> WHERE <id> = <value>;
+```
 
 You can find the SQL code in the [Mercado Y](./Mercado_y_DB)
 

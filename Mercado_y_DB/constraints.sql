@@ -19,3 +19,36 @@ FOREIGN KEY (fk_id_fabricante) REFERENCES produto.tb_fabricante (id_fabricante);
 
 ALTER TABLE produto.tb_produto ADD CONSTRAINT fk_id_categoria 
 FOREIGN KEY (fk_id_categoria) REFERENCES produto.tb_categoria(id_categoria);
+
+-- MERCADO Y CONSTRAINT
+ALTER TABLE produto.tb_produto ADD CONSTRAINT fk_produto_categoria
+	FOREIGN KEY (fk_id_categoria)
+	REFERENCES produto.tb_categoria (id_categoria);
+
+ALTER TABLE produto.tb_produto ADD CONSTRAINT fk_produto_fabricante
+	FOREIGN KEY (fk_id_fabricante)
+	REFERENCES produto.tb_fabricante (id_fabricante);
+	
+ALTER TABLE estoque.tb_estoque_produto ADD CONSTRAINT fk_estoque_produto_produto
+	FOREIGN KEY (fk_id_produto)
+	REFERENCES produto.tb_produto (id_produto);
+	
+ALTER TABLE venda.tb_venda ADD CONSTRAINT fk_venda_estoque_produto
+	FOREIGN KEY (fk_id_estoque_produto)
+	REFERENCES estoque.tb_estoque_produto (id_estoque_produto);
+	
+ALTER TABLE venda.tb_venda ADD CONSTRAINT fk_venda_produto
+	FOREIGN KEY (fk_id_produto)
+	REFERENCES produto.tb_produto (id_produto);
+	
+ALTER TABLE estoque.tb_movimentacao ADD CONSTRAINT fk_tb_movimentacao_2
+	FOREIGN KEY (id_movimentacao)
+	REFERENCES estoque.tb_estoque_produto (id_estoque_produto);
+	
+ALTER TABLE estoque.tb_movimentacao ADD CONSTRAINT fk_movimentacao_produto
+	FOREIGN KEY (fk_id_produto)
+	REFERENCES produto.tb_produto (id_produto);
+	
+ALTER TABLE estoque.tb_movimentacao ADD CONSTRAINT fk_movimentacao_estoque_produto
+	FOREIGN KEY(fk_id_estoque_produto)
+	REFERENCES estoque.tb_estoque_produto (id_estoque_produto);

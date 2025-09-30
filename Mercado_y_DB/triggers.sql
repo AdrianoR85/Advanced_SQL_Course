@@ -1,4 +1,3 @@
-
 CREATE OR REPLACE FUNCTION produto.func_log_produto()
 RETURNS TRIGGER AS
 $body$
@@ -65,3 +64,21 @@ CREATE TRIGGER tr_before_update_produto
 BEFORE UPDATE ON  produto.tb_produto
 FOR EACH ROW
 EXECUTE PROCEDURE produto.fun_log_produto_update();
+
+--- CREATE STOCK
+CREATE OR REPLACE FUNCTION produto.func_inicia_estoque()
+RETURNS TRIGGER AS 
+$$
+BEGIN
+	INSERT INTO estoque.tb_estoque_produto (fk_id_produto, qtde_estoque) 
+	VALUES (NEW.id_produto, 0);
+
+	RETURN NEW;
+END
+$$
+LANGUAGE plpgsql;
+
+CREATE OR REPLACE TRIGGER tr_cria_estoque
+AFTER INSERT ON produto.tb_produto
+FOR EACH ROW
+EXECUTE PROCEDURE produto.func_inicia_estoque();

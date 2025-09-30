@@ -82,3 +82,22 @@ CREATE OR REPLACE TRIGGER tr_cria_estoque
 AFTER INSERT ON produto.tb_produto
 FOR EACH ROW
 EXECUTE PROCEDURE produto.func_inicia_estoque();
+
+-- UPADATE QUANTITY IN STOCK
+CREATE OR REPLACE FUNCTION estoque.func_atualiza_estoque()
+RETURNS TRIGGER AS 
+$$
+BEGIN
+	UPDATE estoque.tb_estoque_produto 
+	SET qtde_estoque = qtde_estoque + NEW.qtde_movimento
+	WHERE fk_id_produto = NEW.id_produto;
+	
+	RETURN NEW;
+END
+$$
+LANGUAGE plpgsql;
+
+CREATE TRIGGER tr_insert_after_atualiza_estoque
+AFTER INSERT ON estoque.tb_movimentacao
+FOR EACH ROW
+EXECUTE PROCEDURE estoque.func_atualiza_estoque();

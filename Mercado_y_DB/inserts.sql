@@ -50,8 +50,13 @@ INSERT INTO estoque.tb_movimentacao (
 	'entrada'
 );
 
-ALTER TABLE estoque.tb_movimentacao
-ADD CONSTRAINT fk_tb_movimentacao_estoque
-FOREIGN KEY (fk_id_estoque_produto) REFERENCES estoque.tb_estoque_produto(id_estoque_produto);
+-- Insert Vendas
+INSERT INTO venda.tb_venda (
+	fk_id_produto, fk_id_estoque_produto, qtde_venda
+) VALUES (
+	3,
+	(SELECT id_estoque_produto FROM estoque.tb_estoque_produto WHERE fk_id_produto = 3),
+	5
+);
 
 

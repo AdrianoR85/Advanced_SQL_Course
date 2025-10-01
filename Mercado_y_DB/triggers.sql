@@ -101,3 +101,29 @@ CREATE TRIGGER tr_insert_after_atualiza_estoque
 AFTER INSERT ON estoque.tb_movimentacao
 FOR EACH ROW
 EXECUTE PROCEDURE estoque.func_atualiza_estoque();
+
+
+-- UPDATE STOCKE MOVIMENT AFTER SALE
+CREATE OR REPLACE FUNCTION estoque.func_atualiza_movimento()
+RETURNS TRIGGER AS 
+$$
+BEGIN
+	INSERT INTO estoque.tb_movimentacao (
+		fk_id_produto, fk_id_estoque_produto, qtde_movimento, tipo_movimento
+	) VALUES (
+		NEW.fk_id_produto,
+		NEW.fk_id_estoque_produto,
+		NEW.qtde_venda,
+		'saída'
+	);
+
+	RETURN NEW;
+
+END
+$$
+LANGUAGE plpgsql;
+
+CREATE OR REPLACE TRIGGER tr_after_insert_atualiza_movimento
+AFTER INSERT ON venda.tb_venda
+FOR EACH ROW
+EXECUTE PROCEDURE estoque.func_atualiza_movimento();

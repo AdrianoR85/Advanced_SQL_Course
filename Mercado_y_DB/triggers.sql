@@ -83,14 +83,21 @@ AFTER INSERT ON produto.tb_produto
 FOR EACH ROW
 EXECUTE PROCEDURE produto.func_inicia_estoque();
 
+
 -- UPADATE QUANTITY IN STOCK
 CREATE OR REPLACE FUNCTION estoque.func_atualiza_estoque()
 RETURNS TRIGGER AS 
 $$
 BEGIN
-	UPDATE estoque.tb_estoque_produto 
-	SET qtde_estoque = qtde_estoque + NEW.qtde_movimento
-	WHERE fk_id_produto = NEW.id_produto;
+	IF NEW.tipo_movimento = 'entrada' THEN
+		UPDATE estoque.tb_estoque_produto 
+		SET qtde_estoque = qtde_estoque + NEW.qtde_movimento
+		WHERE fk_id_produto = NEW.fk_id_produto;
+	ELSE
+		UPDATE estoque.tb_estoque_produto 
+		SET qtde_estoque = qtde_estoque - NEW.qtde_movimento
+		WHERE fk_id_produto = NEW.fk_id_produto;
+	END IF;
 	
 	RETURN NEW;
 END

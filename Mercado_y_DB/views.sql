@@ -26,3 +26,21 @@ FROM estoque.tb_estoque_produto AS estp
 LEFT JOIN produto.tb_produto prod ON estp.fk_id_produto = prod.id_produto
 LEFT JOIN produto.tb_categoria cat ON prod.fk_id_categoria = cat.id_categoria
 LEFT JOIN produto.tb_fabricante fab ON prod.fk_id_fabricante = fab.id_fabricante;
+
+-- MATERIALIZED VIEW
+/*
+	CREATE MATERIALIZED VIEW <schema><view_name> AS ...
+	ALTER MATERIALIZED VIEW <schema><view_name> RENAME TO <new_view_name>;
+	DROP MATERIALIZED VIEW <schema><view_name>;
+*/
+CREATE MATERIALIZED VIEW produto.vwm_produto AS
+SELECT 
+	prod.produto,
+	cat.categoria,
+	fab.fabricante
+FROM produto.tb_produto AS prod 
+LEFT JOIN produto.tb_categoria cat ON prod.fk_id_categoria = cat.id_categoria
+LEFT JOIN produto.tb_fabricante fab ON prod.fk_id_fabricante = fab.id_fabricante
+WITH NO DATA;
+
+REFRESH MATERIALIZED VIEW produto.vwm_produto;

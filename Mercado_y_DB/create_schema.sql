@@ -2,7 +2,7 @@ CREATE SCHEMA estoque;
 CREATE SCHEMA produto;
 CREATE SCHEMA auditoria;
 CREATE SCHEMA venda;
-
+CREATE SCHEMA cliente;
 
 -- List databases
 SELECT datname FROM pg_database;

@@ -58,3 +58,10 @@ CREATE TABLE venda.tb_venda (
 	fk_id_estoque_produto serial,
 	qtde_venda int not null
 );
+
+create table cliente.tb_cliente (
+    nome varchar(20),
+    sobrenome varchar(50),
+    idade int,
+    email varchar(100)
+);

@@ -19,6 +19,7 @@ Welcome to my SQL learning repository. This is a personal space where I practice
 - [x] [`🧩 Query Performance`](#-query-optimization)
 - [x] [`🧩 Views`](#-sql-views)
 - [x] [`🧩 Regex`](#-regular-expression-pattern)
+- [x] [`🧩 DBA`](#-dba-in-postgres)
 - [x] [`📊 Analysis`](#-analysis)
 - [x] [`🛠️ Tools Used`](#-tools-used)
 - [x] [`🎯 My Goal`](#-my-goal)
@@ -731,6 +732,115 @@ Explore the SQL scripts [here](./Analysis)
 
 
 ------------------------------------------------------------------------------------------------
+## DBA In Postgres
+
+### Understanding “SETTINGS MANIPULATION CONTEXT” in PostgreSQL
+
+PostgresSQL settings (or configuration parameters) can be change in different **contexts** - each defining **where and how** a parameter can be modified.
+
+Each parameter belongs to one these categories (contexts), wich controls *when* and *by whom* it can be change.
+
+**1. INTERNAL**
+
+**- Meaing:** These are parameters that cannot be changed at all. They are hardcoded inside PostgresSQL's source code and exist only for internal use.
+  
+**- Examples:** Internal debugging or system constants.
+  
+**- How to access:**
+  You can view them with:
+  ```sql
+  SHOW ALL;
+  ```
+  but you cannot modify them in any way.
+**- Modification:** Not possible.
+
+
+**2. POSTMASTER**
+
+**- Meaning:** These parameters **can only be set at server start-up**.
+To change them, you must edit the configuration file (`postgresql.conf`) or use the sql command `ALTER SYSTEM`, then restart the PostgresSQL server.
+	
+**- Examples:**
+ 	- `max_connections`
+ 	- `shared_buffers`
+ 	- `listen_addresses`
+	
+**- How to access/modify:**
+	- To view:
+	```sql
+	SHOW max_connections;
+	Or
+	ALTER SYSTEM SET max_connections = 200;
+	```
+	- To modify:
+	```bash
+	# Edit postgresql.conf
+	max_connections = 200;
+	Or
+	sudo systemctl restart postgresql
+	```
+	
+**- Modification:** Requires restart.
+
+**3. SIGHUP**
+
+**- Meaning:**
+
+**- Examples:**
+
+**- How to access/modify:**
+
+**- Modification:**
+
+   
+**4. SUPERUSER**
+
+**- Meaning:**
+
+**- Examples:**
+
+**- How to access/modify:**
+
+**- Modification:**
+
+
+**5. USER**
+
+**- Meaning:**
+
+**- Examples:**
+
+**- How to access/modify:**
+
+**- Modification:**
+
+
+**6. SUPERUSER-BACKEND**
+
+**- Meaning:**
+
+**- Examples:**
+
+**- How to access/modify:**
+
+**- Modification:**
+
+
+**7. BACKEND**
+   
+**- Meaning:**
+
+**- Examples:**
+
+**- How to access/modify:**
+
+**- Modification:**
+
+
+[`⬆️Back to Top`](#-Contents)
+
+------------------------------------------------------------------------------------------------
+
 
 ## 🛠️ Tools Used
 

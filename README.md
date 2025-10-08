@@ -732,15 +732,16 @@ Explore the SQL scripts [here](./Analysis)
 
 
 ------------------------------------------------------------------------------------------------
-## DBA In Postgres
 
-### Understanding “SETTINGS MANIPULATION CONTEXT” in PostgreSQL
+## 🧩 DBA In Postgres
+
+### 🧠 Understanding “SETTINGS MANIPULATION CONTEXT” in PostgreSQL
 
 PostgresSQL settings (or configuration parameters) can be change in different **contexts** - each defining **where and how** a parameter can be modified.
 
 Each parameter belongs to one these categories (contexts), wich controls *when* and *by whom* it can be change.
 
-**1. INTERNAL**
+**🔒 1. INTERNAL**
 
 **- Meaing:** These are parameters that cannot be changed at all. They are hardcoded inside PostgresSQL's source code and exist only for internal use.
   
@@ -755,7 +756,7 @@ Each parameter belongs to one these categories (contexts), wich controls *when* 
 **- Modification:** Not possible.
 
 
-**2. POSTMASTER**
+**⚙️ 2. POSTMASTER**
 
 **- Meaning:** These parameters **can only be set at server start-up**.
 To change them, you must edit the configuration file (`postgresql.conf`) or use the sql command `ALTER SYSTEM`, then restart the PostgresSQL server.
@@ -782,59 +783,130 @@ To change them, you must edit the configuration file (`postgresql.conf`) or use 
 	
 **- Modification:** Requires restart.
 
-**3. SIGHUP**
+**🔁 3. SIGHUP**
 
 **- Meaning:**
+Parameters taht **can be reloaded** without restarting the server.
+After modification, you only need to reload the configuration(send a `SIGHUP` signal).
 
 **- Examples:**
-
+- `log_directory`
+- `log_min_duration_statement`
+  
 **- How to access/modify:**
+```bash
+# Edit postgresql.sql
+log_directory = '/var/log/postgresql'
 
-**- Modification:**
+# Reload configuration (no restart needed)
+sudo systemctl reload postgresql
+```
+or in SQL
+```sql
+SELECT pg_reload_conf();
+```
+**- Modification:** Reload only (no restart).
 
    
-**4. SUPERUSER**
+**🧑‍💼 4. SUPERUSER**
 
 **- Meaning:**
+Can be changed by a superuser at runtime using the `SET` command.
+Affects only the current session or until the database disconnects.
 
 **- Examples:**
+- `log_statement`
+- `session_preload_libraries`
 
 **- How to access/modify:**
+```sql
+SET log_statement = 'all';
+SHOW log_statement;
+```
+To make it permanent:
+```sql
+ALTER SYSTEM SET log_statement = 'all';
+```
 
-**- Modification:**
+**- Modification:**Allowed only by superuser.
 
 
-**5. USER**
+**👤 5. USER**
 
 **- Meaning:**
+These parameters can be changed by any user, for their own session.
+
 
 **- Examples:**
-
+- `search_path`
+- `work_mem`
+  
 **- How to access/modify:**
+```sql
+SET search_path = public, sales;
+SHOW search_path;
+```
+Or make it default for the user:
+```sql
+ALTER ROLE username SET work_mem = '64MB';
+```
 
-**- Modification:**
+**- Modification:** Allowed for normal users (session/local)
 
 
-**6. SUPERUSER-BACKEND**
+**🧑‍💼 6. SUPERUSER-BACKEND**
 
 **- Meaning:**
+These settings can only be changed by a superuser, and only when starting the server (using the command line or config file).
+You cannot modify them with `ALTER SYSTEM` or `SET`.
 
 **- Examples:**
+- `allow_system_table_mods`
+- `data_directory`
 
 **- How to access/modify:**
+In `postgresql.conf` or by command line:
+```bash
+postgres -D /data --allow-system-table-mods
+```
 
-**- Modification:**
+**- Modification:** Only at backend start, by superuser.
 
 
-**7. BACKEND**
+**⚙️ 7. BACKEND**
    
 **- Meaning:**
+Parameters that can be set only when a backend process starts (for example, by pg_ctl or connection parameters).
+They cannot be changed later inside a session.
 
 **- Examples:**
-
+- `client_encoding`
+- `application_name`
+  
 **- How to access/modify:**
+Set during connection:
+```sql
+psql "dbname=mydb user=postgres application_name=myapp"
+```
 
-**- Modification:**
+**- Modification:** Only at connection start.
+
+### 🔍 Checking the Context of Any Parameter
+You can check the context of any configuration variable using:
+```sql
+SELECT name, context FROM pg_settings WHERE name = 'max_connections';
+```
+### 🧾 Summary Table
+| Context           | Who Can Change It        | When It Takes Effect  | Requires Restart | Example Parameters        |
+| ----------------- | ------------------------ | --------------------- | ---------------- | ------------------------- |
+| INTERNAL          | Nobody                   | Never                 | —                | —                         |
+| POSTMASTER        | Superuser / Config file  | On next restart       | ✅ Yes            | `max_connections`         |
+| SIGHUP            | Superuser / Config file  | On reload             | ⚙️ No            | `log_directory`           |
+| SUPERUSER         | Superuser                | Immediately (session) | ❌ No             | `log_statement`           |
+| USER              | Any user                 | Immediately (session) | ❌ No             | `work_mem`, `search_path` |
+| SUPERUSER-BACKEND | Superuser (server start) | At backend start      | ✅ Yes            | `allow_system_table_mods` |
+| BACKEND           | Superuser or client      | At backend start      | ✅ Yes            | `application_name`        |
+
 
 
 [`⬆️Back to Top`](#-Contents)

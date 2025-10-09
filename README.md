@@ -741,32 +741,32 @@ PostgresSQL settings (or configuration parameters) can be change in different **
 
 Each parameter belongs to one these categories (contexts), wich controls *when* and *by whom* it can be change.
 
-**🔒 1. INTERNAL**
+####**🔒 1. INTERNAL**
 
-**- Meaing:** These are parameters that cannot be changed at all. They are hardcoded inside PostgresSQL's source code and exist only for internal use.
+- ** Meaing:** These are parameters that cannot be changed at all. They are hardcoded inside PostgresSQL's source code and exist only for internal use.
   
-**- Examples:** Internal debugging or system constants.
+- **Examples:** Internal debugging or system constants.
   
-**- How to access:**
+- **How to access:**
   You can view them with:
   ```sql
   SHOW ALL;
   ```
   but you cannot modify them in any way.
-**- Modification:** Not possible.
+- **Modification:** Not possible.
 
 
-**⚙️ 2. POSTMASTER**
+#### **⚙️ 2. POSTMASTER**
 
-**- Meaning:** These parameters **can only be set at server start-up**.
+- **Meaning:** These parameters **can only be set at server start-up**.
 To change them, you must edit the configuration file (`postgresql.conf`) or use the sql command `ALTER SYSTEM`, then restart the PostgresSQL server.
 	
-**- Examples:**
+- **Examples:**
  	- `max_connections`
  	- `shared_buffers`
  	- `listen_addresses`
 	
-**- How to access/modify:**
+- **How to access/modify:**
 	- To view:
 	```sql
 	SHOW max_connections;
@@ -781,19 +781,19 @@ To change them, you must edit the configuration file (`postgresql.conf`) or use 
 	sudo systemctl restart postgresql
 	```
 	
-**- Modification:** Requires restart.
+- **Modification:** Requires restart.
 
-**🔁 3. SIGHUP**
+#### **🔁 3. SIGHUP**
 
-**- Meaning:**
+- **Meaning:**
 Parameters taht **can be reloaded** without restarting the server.
 After modification, you only need to reload the configuration(send a `SIGHUP` signal).
 
-**- Examples:**
-- `log_directory`
-- `log_min_duration_statement`
+- **Examples:**
+	- `log_directory`
+	- `log_min_duration_statement`
   
-**- How to access/modify:**
+- **How to access/modify:**
 ```bash
 # Edit postgresql.sql
 log_directory = '/var/log/postgresql'
@@ -805,20 +805,20 @@ or in SQL
 ```sql
 SELECT pg_reload_conf();
 ```
-**- Modification:** Reload only (no restart).
+- **Modification:** Reload only (no restart).
 
    
-**🧑‍💼 4. SUPERUSER**
+#### **🧑‍💼 4. SUPERUSER**
 
-**- Meaning:**
+- **Meaning:**
 Can be changed by a superuser at runtime using the `SET` command.
 Affects only the current session or until the database disconnects.
 
-**- Examples:**
-- `log_statement`
-- `session_preload_libraries`
+- ** Examples:**
+	- `log_statement`
+	- `session_preload_libraries`
 
-**- How to access/modify:**
+- **How to access/modify:**
 ```sql
 SET log_statement = 'all';
 SHOW log_statement;
@@ -828,20 +828,19 @@ To make it permanent:
 ALTER SYSTEM SET log_statement = 'all';
 ```
 
-**- Modification:**Allowed only by superuser.
+- **Modification:** Allowed only by superuser.
 
 
-**👤 5. USER**
+#### **👤 5. USER**
 
-**- Meaning:**
+- **Meaning:**
 These parameters can be changed by any user, for their own session.
 
-
-**- Examples:**
-- `search_path`
-- `work_mem`
+- **Examples:**
+	- `search_path`
+	- `work_mem`
   
-**- How to access/modify:**
+- **How to access/modify:**
 ```sql
 SET search_path = public, sales;
 SHOW search_path;
@@ -851,52 +850,52 @@ Or make it default for the user:
 ALTER ROLE username SET work_mem = '64MB';
 ```
 
-**- Modification:** Allowed for normal users (session/local)
+- **Modification:** Allowed for normal users (session/local)
 
 
-**🧑‍💼 6. SUPERUSER-BACKEND**
+#### **🧑‍💼 6. SUPERUSER-BACKEND**
 
-**- Meaning:**
+- **Meaning:**
 These settings can only be changed by a superuser, and only when starting the server (using the command line or config file).
 You cannot modify them with `ALTER SYSTEM` or `SET`.
 
-**- Examples:**
-- `allow_system_table_mods`
-- `data_directory`
+- **Examples:**
+	- `allow_system_table_mods`
+	- `data_directory`
 
-**- How to access/modify:**
+- **How to access/modify:**
 In `postgresql.conf` or by command line:
 ```bash
 postgres -D /data --allow-system-table-mods
 ```
 
-**- Modification:** Only at backend start, by superuser.
+- **Modification:** Only at backend start, by superuser.
 
 
-**⚙️ 7. BACKEND**
+#### **⚙️ 7. BACKEND**
    
-**- Meaning:**
+- **Meaning:**
 Parameters that can be set only when a backend process starts (for example, by pg_ctl or connection parameters).
 They cannot be changed later inside a session.
 
-**- Examples:**
-- `client_encoding`
-- `application_name`
+- **Examples:**
+	- `client_encoding`
+	- `application_name`
   
-**- How to access/modify:**
+- **How to access/modify:**
 Set during connection:
 ```sql
 psql "dbname=mydb user=postgres application_name=myapp"
 ```
 
-**- Modification:** Only at connection start.
+- **Modification:** Only at connection start.
 
-### 🔍 Checking the Context of Any Parameter
+#### 🔍 Checking the Context of Any Parameter
 You can check the context of any configuration variable using:
 ```sql
 SELECT name, context FROM pg_settings WHERE name = 'max_connections';
 ```
-### 🧾 Summary Table
+#### 🧾 Summary Table
 | Context           | Who Can Change It        | When It Takes Effect  | Requires Restart | Example Parameters        |
 | ----------------- | ------------------------ | --------------------- | ---------------- | ------------------------- |
 | INTERNAL          | Nobody                   | Never                 | —                | —                         |
@@ -907,6 +906,33 @@ SELECT name, context FROM pg_settings WHERE name = 'max_connections';
 | SUPERUSER-BACKEND | Superuser (server start) | At backend start      | ✅ Yes            | `allow_system_table_mods` |
 | BACKEND           | Superuser or client      | At backend start      | ✅ Yes            | `application_name`        |
 
+### 🔐 PostgreSQL Authentication Methods
+PostgreSQL uses the file pg_hba.conf (Host-Based Authentication) to control how clients authenticate when connecting to the database.
+The file defines which method to use for each connection type (local, host, etc.).
+
+Example line in pg_hba.conf:
+```css
+host    all    all    192.168.0.0/24    md5
+```
+Here, the last column (md5) is the authentication metho
+
+#### 🧾 Summary Table
+
+| Method            | Type          | Description (short)                          | Secure?   | Requires Password? |
+| ----------------- | ------------- | -------------------------------------------- | --------- | ------------------ |
+| **trust**         | Local/Network | No password required                         | ❌ No      | ❌ No               |
+| **reject**        | Local/Network | Always deny connection                       | ✅ Yes     | ❌ No               |
+| **md5**           | Local/Network | MD5 hashed password                          | ⚠️ Medium | ✅ Yes              |
+| **password**      | Local/Network | Plain text password                          | ❌ No      | ✅ Yes              |
+| **scram-sha-256** | Local/Network | Modern password hashing (recommended)        | ✅ Yes     | ✅ Yes              |
+| **gss**           | Network       | Kerberos / GSSAPI authentication             | ✅ Yes     | 🔁 External        |
+| **sspi**          | Windows only  | Windows integrated authentication            | ✅ Yes     | 🔁 External        |
+| **ident**         | Local/Network | Match system username with database username | ⚠️ Medium | ❌ No               |
+| **peer**          | Local         | Match OS user = DB user (Unix socket only)   | ✅ Yes     | ❌ No               |
+| **pam**           | Local/Network | Use system’s PAM (Pluggable Authentication)  | ✅ Yes     | 🔁 External        |
+| **ldap**          | Network       | Authenticate using an LDAP server            | ✅ Yes     | 🔁 External        |
+| **radius**        | Network       | Use a RADIUS authentication server           | ✅ Yes     | 🔁 External        |
+| **cert**          | Network       | SSL certificate authentication               | ✅ Yes     | ❌ No (uses cert)   |
 
 
 [`⬆️Back to Top`](#-Contents)

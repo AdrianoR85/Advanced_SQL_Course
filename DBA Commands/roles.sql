@@ -17,8 +17,7 @@ ALTER ROLE ciri NOCREATEDB NOCREATEROLE;
 ALTER ROLE gerald NOSUPERUSER;
 ALTER ROLE triss SUPERUSER;
 
--- Listando todos os usuarios(roles)
--- Listing all users(roles)
+-- Listando todos os usuarios
 SELECT * FROM pg_catalog.pg_roles WHERE rolcanlogin = true;
 SELECT * FROM pg_catalog.pg_user;
 /* CTL
@@ -29,3 +28,15 @@ SELECT * FROM pg_catalog.pg_user;
 -- Where the roles privileges are records
 SELECT DISTINCT(grantor) FROM information_schema.table_privileges;
 SELECT DISTINCT(grantee) FROM information_schema.table_privileges;
+
+
+-- Revoke all default privileges from a user
+REVOKE ALL ON DATABASE postgres FROM PUBLIC;
+REVOKE ALL ON DATABASE mercado_y FROM PUBLIC;
+REVOKE ALL ON DATABASE db_ciri FROM PUBLIC;
+
+-- Schemas
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+
+-- List all database
+SELECT datname FROM pg_database;

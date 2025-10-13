@@ -741,7 +741,7 @@ PostgresSQL settings (or configuration parameters) can be change in different **
 
 Each parameter belongs to one these categories (contexts), wich controls *when* and *by whom* it can be change.
 
-####**🔒 1. INTERNAL**
+#### **🔒 1. INTERNAL**
 
 - ** Meaing:** These are parameters that cannot be changed at all. They are hardcoded inside PostgresSQL's source code and exist only for internal use.
   
@@ -934,6 +934,26 @@ Here, the last column (md5) is the authentication metho
 | **radius**        | Network       | Use a RADIUS authentication server           | ✅ Yes     | 🔁 External        |
 | **cert**          | Network       | SSL certificate authentication               | ✅ Yes     | ❌ No (uses cert)   |
 
+### ✅ Grant Permission
+```sql
+GRANT <privilege> ON <object> TO <role> WITH GRANT OPTION
+```
+| privileges | objects       |
+| ---------- | ------------- |
+| select     | tablem column |
+| insert     | view          |
+| update     | sequence      |
+| delete     | function      |
+| truncate   | schema        |
+| references | database      |
+| trigger    | -             |
+| create     | -             |
+| connect    | -             | 
+| execute    | -             | 
+| all        | -             |
+
+
+Code [here](/.DBA)
 
 [`⬆️Back to Top`](#-Contents)
 

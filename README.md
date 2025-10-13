@@ -953,7 +953,7 @@ GRANT <privilege> ON <object> TO <role> WITH GRANT OPTION
 | all        | -             |
 
 
-Code [here](/.DBA)
+Code [here](./dba-commands)
 
 [`⬆️Back to Top`](#-Contents)
 

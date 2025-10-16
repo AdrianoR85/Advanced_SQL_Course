@@ -109,6 +109,9 @@ REVOKE ALL ON SCHEMA public FROM PUBLIC;
 /* Grupo*/
 CREATE ROLE aplicacao;
 CREATE ROLE dba createdb createrole;
+CREATE ROLE desevolvimento createdb;
+CREATE ROLE terceiros VALID UNTIL '2025-12-31';
+
 /*Usuarios*/
 CREATE ROLE site LOGIN PASSWORD '123456';
 CREATE ROLE app LOGIN PASSWORD '123456';
@@ -128,3 +131,59 @@ GRANT insert, select ON auditoria.tb_produto_log TO aplicacao;
 /* Inclusão de role (login) em role (grupo) */
 GRANT aplicacao TO site;
 GRANT aplicacao TO app;
+
+/* DBA */
+-- Criação dos usuários
+CREATE ROLE felipe LOGIN PASSWORD 'f123';
+-- Privilégio de conexão ao bando de dados;
+GRANT connect ON database mercado_y TO dba;
+-- Privilégio de uso dos schemas
+GRANT usage ON schema produto TO dba;
+GRANT usage ON schema estoque TO dba;
+GRANT usage ON schema venda TO dba;
+GRANT usage ON schema auditoria TO dba;
+GRANT usage ON schema cliente TO dba;
+-- Privilégios DML e DQL para tabelas
+GRANT insert, update, delete, select ON all tables in schema produto TO dba;
+-- Inclusão de role (login) em role (grupo) 
+GRANT dba to felipe;
+
+/* DESENVOLVIMENTO */
+-- Criação dos usuários
+CREATE ROLE pedro LOGIN PASSWORD 'p123';
+CREATE ROLE bianca LOGIN PASSWORD 'b123';
+CREATE ROLE fatima LOGIN PASSWORD 'f123';
+-- Privilégio de conexão ao bando de dados;
+GRANT connect ON database mercado_y TO desenvolvimento;
+-- Privilégio de uso dos schemas
+GRANT usage ON schema produto TO desenvolvimento;
+GRANT usage ON schema estoque TO desenvolvimento;
+GRANT usage ON schema venda TO desenvolvimento;
+GRANT usage ON schema auditoria TO desenvolvimento;
+GRANT usage ON schema cliente TO desenvolvimento;
+-- Privilégios DML e DQL para tabelas
+GRANT insert, update, delete, select ON all tables in schema produto TO desenvolvimento;
+-- Inclusão de role (login) em role (grupo) 
+GRANT desenvolvimento to pedro;
+GRANT desenvolvimento to bianca;
+GRANT desenvolvimento to fatima;
+
+
+/* TERCEIROS */
+-- Criação dos usuários
+CREATE ROLE consultoria_x LOGIN PASSWORD 'cx123';
+CREATE ROLE consultoria_y PASSWORD 'cy123';
+-- Privilégio de conexão ao bando de dados;
+GRANT connect ON database mercado_y TO terceiros;
+-- Privilégio de uso dos schemas
+GRANT usage ON schema produto TO terceiros;
+GRANT usage ON schema estoque TO terceiros;
+GRANT usage ON schema venda TO terceiros;
+GRANT usage ON schema auditoria TO terceiros;
+GRANT usage ON schema cliente TO terceiros;
+-- Privilégios DML e DQL para tabelas
+GRANT insert, update, delete, select ON all tables in schema produto TO terceiros;
+GRANT insert, select ON auditoria.tb_produto_log TO terceiros;
+-- Inclusão de role (login) em role (grupo) 
+GRANT terceiros to consultoria_x;
+GRANT terceiros to consultoria_y;

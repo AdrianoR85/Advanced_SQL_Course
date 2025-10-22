@@ -47,6 +47,7 @@ SELECT schemaname, tablename, tablespace FROM pg_catalog.pg_tables;
 
 -- A new tablespace
 CREATE TABLESPACE repositorio1 LOCATION '/var/lib/postgresql/tablespaces/repositorio1';
+CREATE TABLESPACE repositorio2 LOCATION '/var/lib/postgresql/tablespaces/repositorio2';
 -- create a database associated with specific tablespace
 CREATE DATABASE db_1 TABLESPACE repositorio1;
 -- create tables associated whith specific tablespace
@@ -57,3 +58,11 @@ CREATE TABLE tb_nome_tabela (
 
 /* REMOVER */
 DROP TABLESPACE repositorio1;
+
+/* MOVE */
+-- Moving object from repositorio1 to repositorio2
+ALTER DATABASE db_1 SET TABLESPACE repositorio2;
+ALTER TABLE tb_nome_tabela SET TABLESPACE repositorio2;
+
+/* RENAME */
+ALTER TABLESPACE repositorio2 RENAME TO data3;
